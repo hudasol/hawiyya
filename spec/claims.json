@@ -1,0 +1,5 @@
+{
+  "claims": [
+    {"id": "CL-001", "text": "Hawiyya is released under the Apache License 2.0 (a choice recorded in ADR 0001).", "type": "ASSUMPTION", "kind": "file", "ref": "docs/adr/0001-licence.md", "where": "README"}
+  ]
+}
