@@ -1,0 +1,127 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hawiyya"
+version = "0.1.0"
+description = "Decision support for finding duplicate synthetic patient records across Arabic, English and Arabizi names, with abstention."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+authors = [{ name = "Huda Mueen" }]
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "scikit-learn>=1.5",
+  "rapidfuzz>=3.9",
+  "pydantic>=2.8",
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "typer>=0.12",
+  "jsonschema>=4.23",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6",
+  "mypy>=1.11",
+  "pytest>=8.3",
+  "pytest-cov>=5.0",
+  "hypothesis>=6.112",
+  "import-linter>=2.1",
+  "httpx>=0.27",
+  "pip-audit>=2.7",
+  "cyclonedx-bom>=4.6",
+  "types-jsonschema",
+]
+
+[project.scripts]
+hawiyya = "hawiyya.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hawiyya = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003", "B008"]
+
+[tool.mypy]
+strict = true
+python_version = "3.13"
+mypy_path = "src"
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "rapidfuzz.*", "pandas.*", "importlinter.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+markers = [
+  "slow: long running tests, excluded from the fast check",
+  "req(id): names the requirement identifiers this test covers",
+]
+
+[tool.coverage.run]
+source = ["src/hawiyya"]
+omit = ["src/hawiyya/cli/*"]
+
+[tool.importlinter]
+root_package = "hawiyya"
+include_external_packages = false
+
+[[tool.importlinter.contracts]]
+name = "Layers point downward only"
+type = "layers"
+layers = [
+  "hawiyya.cli",
+  "hawiyya.api",
+  "hawiyya.lab",
+  "hawiyya.workflow",
+  "hawiyya.decision",
+  "hawiyya.scoring",
+  "hawiyya.matching",
+  "hawiyya.normalise",
+  "hawiyya.registry",
+  "hawiyya.contract",
+  "hawiyya.core",
+]
+
+[[tool.importlinter.contracts]]
+name = "Independence: G2 shares no code with the matcher, G1 or ported Tahdeed code"
+type = "forbidden"
+source_modules = ["hawiyya.registry.g2"]
+forbidden_modules = [
+  "hawiyya.normalise",
+  "hawiyya.registry.g1",
+  "hawiyya.matching",
+  "hawiyya.scoring",
+]
+
+[[tool.importlinter.contracts]]
+name = "Label isolation: L2 to L5 see only the registration view"
+type = "forbidden"
+source_modules = [
+  "hawiyya.normalise",
+  "hawiyya.matching",
+  "hawiyya.scoring",
+  "hawiyya.decision",
+]
+forbidden_modules = [
+  "hawiyya.registry.truth",
+  "hawiyya.registry.g1",
+  "hawiyya.registry.g2",
+  "hawiyya.registry.source",
+  "hawiyya.registry.build",
+  "hawiyya.registry.lexicon",
+]

@@ -6,6 +6,13 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
 dist/
 .env
 var/
+web/test-results/
+web/playwright-report/
