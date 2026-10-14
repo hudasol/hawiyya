@@ -20,15 +20,15 @@ phase without a naming test fails the build.
 | HW-X-010 | MUST | P0 | The logging helper refuses values that could carry a name or an identifier. | `tests/test_harness.py` | tested |
 | HW-X-011 | MUST | P8 | Every number in a rendered document matches its source file in results/. |  | planned |
 | HW-X-012 | MUST | P0 | Generated documents (traceability matrix, claims register) are fresh. | `tests/test_harness.py` | tested |
-| HW-L0-001 | MUST | P1 | Every contract model round trips through JSON. |  | planned |
-| HW-L0-002 | MUST | P1 | Generated JSON Schema, TypeScript types and the bilingual field dictionary are fresh. |  | planned |
-| HW-L0-003 | MUST | P1 | A Record containing a truth label field is rejected. |  | planned |
-| HW-L0-004 | MUST | P1 | A Decision without an evidence object is rejected. |  | planned |
-| HW-L0-005 | MUST | P1 | Identifier kinds, capture methods and reason codes are enums; each reason code has English and Arabic descriptions. |  | planned |
-| HW-L0-006 | MUST | P1 | Conventions hold: probabilities in [0, 1], dates carry a precision flag, timestamps are UTC. |  | planned |
+| HW-L0-001 | MUST | P1 | Every contract model round trips through JSON. | `tests/test_contract.py` | tested |
+| HW-L0-002 | MUST | P1 | Generated JSON Schema, TypeScript types and the bilingual field dictionary are fresh. | `tests/test_contract.py` | tested |
+| HW-L0-003 | MUST | P1 | A Record containing a truth label field is rejected. | `tests/test_contract.py` | tested |
+| HW-L0-004 | MUST | P1 | A Decision without an evidence object is rejected. | `tests/test_contract.py` | tested |
+| HW-L0-005 | MUST | P1 | Identifier kinds, capture methods and reason codes are enums; each reason code has English and Arabic descriptions. | `tests/test_contract.py` | tested |
+| HW-L0-006 | MUST | P1 | Conventions hold: probabilities in [0, 1], dates carry a precision flag, timestamps are UTC. | `tests/test_contract.py` | tested |
 | HW-L1-001 | MUST | P1 | The same seed gives an identical registry. |  | planned |
 | HW-L1-002 | MUST | P1 | Every injected duplicate has ground truth. |  | planned |
-| HW-L1-003 | MUST | P1 | The registration view never contains a truth field. |  | planned |
+| HW-L1-003 | MUST | P1 | The registration view never contains a truth field. | `tests/test_contract.py` | tested |
 | HW-L1-004 | MUST | P1 | The lexicon excludes every denylisted family name and the generator never produces a denylisted name combination. |  | planned |
 | HW-L1-005 | MUST | P1 | The population adapter fails loudly, naming the file and column, when the CSV schema drifts. |  | planned |
 | HW-L1-006 | MUST | P1 | Hashes in data/MANIFEST.json verify. |  | planned |
