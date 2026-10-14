@@ -67,19 +67,33 @@ def synthea_command(jar: Path, out_dir: Path, seed: int, population: int) -> lis
     A fixed reference date keeps birth dates identical whatever day the build runs.
     """
     return [
-        "java", "-jar", str(jar),
-        "-s", str(seed),
-        "-cs", str(seed),
-        "-r", REFERENCE_DATE,
-        "-p", str(population),
-        "--exporter.baseDirectory", str(out_dir),
-        "--exporter.csv.export", "true",
-        "--exporter.csv.included_files", "patients.csv,encounters.csv",
-        "--exporter.fhir.export", "false",
-        "--exporter.hospital.fhir.export", "false",
-        "--exporter.practitioner.fhir.export", "false",
-        "--exporter.years_of_history", "1",
-        "--generate.only_alive_patients", "true",
+        "java",
+        "-jar",
+        str(jar),
+        "-s",
+        str(seed),
+        "-cs",
+        str(seed),
+        "-r",
+        REFERENCE_DATE,
+        "-p",
+        str(population),
+        "--exporter.baseDirectory",
+        str(out_dir),
+        "--exporter.csv.export",
+        "true",
+        "--exporter.csv.included_files",
+        "patients.csv,encounters.csv",
+        "--exporter.fhir.export",
+        "false",
+        "--exporter.hospital.fhir.export",
+        "false",
+        "--exporter.practitioner.fhir.export",
+        "false",
+        "--exporter.years_of_history",
+        "1",
+        "--generate.only_alive_patients",
+        "true",
     ]
 
 
@@ -100,11 +114,17 @@ def run_chunks(jar: Path, base: Path, seed: int, total: int, chunk: int, timeout
         cmd = synthea_command(jar, out, seed + k, size)
         out.mkdir(parents=True, exist_ok=True)
         with (out / "synthea_run.log").open("w", encoding="utf-8") as fh:
-            subprocess.run(cmd, cwd=base, stdout=fh, stderr=subprocess.STDOUT, timeout=timeout,
-                           check=True)
+            subprocess.run(
+                cmd, cwd=base, stdout=fh, stderr=subprocess.STDOUT, timeout=timeout, check=True
+            )
         csv = out / "csv" / "patients.csv"
-        meta = {"chunk": k, "seed": seed + k, "population": size, "command": cmd,
-                "patients_sha256": hashlib.sha256(csv.read_bytes()).hexdigest()}
+        meta = {
+            "chunk": k,
+            "seed": seed + k,
+            "population": size,
+            "command": cmd,
+            "patients_sha256": hashlib.sha256(csv.read_bytes()).hexdigest(),
+        }
         done.write_text(json.dumps(meta, indent=2), encoding="utf-8")
         print(f"chunk {k} done", flush=True)
 
@@ -116,5 +136,11 @@ if __name__ == "__main__":
         print(json.dumps(fetch_jar(Path(sys.argv[2])), indent=2))
     elif sys.argv[1] == "run":
         jar_path, base_dir = Path(sys.argv[2]), Path(sys.argv[3])
-        run_chunks(jar_path, base_dir, seed=int(sys.argv[4]), total=int(sys.argv[5]),
-                   chunk=int(sys.argv[6]), timeout=3600)
+        run_chunks(
+            jar_path,
+            base_dir,
+            seed=int(sys.argv[4]),
+            total=int(sys.argv[5]),
+            chunk=int(sys.argv[6]),
+            timeout=3600,
+        )

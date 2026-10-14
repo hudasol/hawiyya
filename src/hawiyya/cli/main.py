@@ -35,8 +35,14 @@ def _run(label: str, cmd: list[str], timeout: int) -> bool:
     env = dict(os.environ, PYTHONUTF8="1", CI="1")
     try:
         proc = subprocess.run(
-            cmd, cwd=ROOT, env=env, timeout=timeout, capture_output=True, text=True,
-            encoding="utf-8", errors="replace",
+            cmd,
+            cwd=ROOT,
+            env=env,
+            timeout=timeout,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
         )
     except subprocess.TimeoutExpired:
         typer.echo(f"[FAIL] {label}: timed out after {timeout}s")
@@ -70,6 +76,19 @@ def check(full: bool = typer.Option(False, help="Also run slow tests.")) -> None
     if not all(results):
         raise typer.Exit(code=1)
     typer.echo("check passed")
+
+
+contract_app = typer.Typer(add_completion=False, help="L0 contract artefacts.")
+app.add_typer(contract_app, name="contract")
+
+
+@contract_app.command("generate")
+def contract_generate() -> None:
+    """Regenerate JSON Schema, TypeScript types and the bilingual field dictionary."""
+    from hawiyya.contract.codegen import write_artefacts
+
+    written = write_artefacts()
+    typer.echo(f"generated; {len(written)} file(s) changed")
 
 
 @docs_app.command("build")

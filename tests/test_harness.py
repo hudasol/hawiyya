@@ -44,7 +44,9 @@ def test_generated_documents_are_fresh() -> None:
 def _tracked_text_files() -> list[str]:
     out = subprocess.run(
         ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
-        cwd=ROOT, capture_output=True, check=True,
+        cwd=ROOT,
+        capture_output=True,
+        check=True,
     ).stdout.decode("utf-8")
     binary = (".png", ".gz", ".woff", ".woff2", ".jpg", ".ico", ".lock")
     return [f for f in out.split("\0") if f and not f.endswith(binary)]
@@ -66,8 +68,13 @@ def test_no_em_dash_in_tracked_files() -> None:
 # Terms are stored reversed so this file does not itself contain them.
 _FORBIDDEN_ANYWHERE = ["ytisrevinu"]
 _AUTHORITY_TERMS = [
-    "AHD", "htlaeH fo tnemtrapeD", "yhtirohtuA htlaeH iabuD", "HDIBAN", "iaffalaM",
-    "htlaeH fo yrtsiniM", "HOD",
+    "AHD",
+    "htlaeH fo tnemtrapeD",
+    "yhtirohtuA htlaeH iabuD",
+    "HDIBAN",
+    "iaffalaM",
+    "htlaeH fo yrtsiniM",
+    "HOD",
 ]
 _CONTEXT_ONLY = {"docs/CONTEXT.md"}
 
