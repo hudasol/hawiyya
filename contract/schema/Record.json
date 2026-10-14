@@ -1,0 +1,211 @@
+{
+  "$defs": {
+    "DatePrecision": {
+      "enum": [
+        "day",
+        "month",
+        "year"
+      ],
+      "title": "DatePrecision",
+      "type": "string"
+    },
+    "IdCapture": {
+      "enum": [
+        "reader",
+        "manual",
+        "substitute",
+        "placeholder"
+      ],
+      "title": "IdCapture",
+      "type": "string"
+    },
+    "IdKind": {
+      "enum": [
+        "EID",
+        "PASSPORT",
+        "GCC_ID",
+        "FILE_NO",
+        "MOTHER_EID",
+        "PLACEHOLDER"
+      ],
+      "title": "IdKind",
+      "type": "string"
+    },
+    "Sex": {
+      "enum": [
+        "M",
+        "F",
+        "U"
+      ],
+      "title": "Sex",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Registration view: what a registration form contains, and nothing else.",
+  "properties": {
+    "area": {
+      "anyOf": [
+        {
+          "maxLength": 20,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Coarse area code",
+      "title": "Area"
+    },
+    "dob": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Date of birth, ISO date",
+      "title": "Dob"
+    },
+    "dob_precision": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/DatePrecision"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "facility_id": {
+      "maxLength": 20,
+      "minLength": 1,
+      "title": "Facility Id",
+      "type": "string"
+    },
+    "id_capture": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/IdCapture"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "id_kind": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/IdKind"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "id_value": {
+      "anyOf": [
+        {
+          "maxLength": 40,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Id Value"
+    },
+    "name_ar": {
+      "anyOf": [
+        {
+          "maxLength": 200,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Name as entered in Arabic script",
+      "title": "Name Ar"
+    },
+    "name_latin": {
+      "anyOf": [
+        {
+          "maxLength": 200,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Name as entered in Latin script, possibly Arabizi",
+      "title": "Name Latin"
+    },
+    "nationality": {
+      "anyOf": [
+        {
+          "maxLength": 3,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "ISO 3166 alpha 3 code",
+      "title": "Nationality"
+    },
+    "phone": {
+      "anyOf": [
+        {
+          "maxLength": 20,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Phone"
+    },
+    "record_id": {
+      "maxLength": 40,
+      "minLength": 1,
+      "title": "Record Id",
+      "type": "string"
+    },
+    "registered_on": {
+      "description": "Registration date, ISO date",
+      "title": "Registered On",
+      "type": "string"
+    },
+    "sex": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Sex"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "record_id",
+    "facility_id",
+    "registered_on"
+  ],
+  "title": "Record",
+  "type": "object"
+}

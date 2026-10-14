@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "c_fm": {
+      "description": "Cost of a false merge",
+      "exclusiveMinimum": 0,
+      "title": "C Fm",
+      "type": "number"
+    },
+    "c_md": {
+      "description": "Cost of a missed duplicate",
+      "exclusiveMinimum": 0,
+      "title": "C Md",
+      "type": "number"
+    },
+    "c_r": {
+      "description": "Cost of a review",
+      "exclusiveMinimum": 0,
+      "title": "C R",
+      "type": "number"
+    }
+  },
+  "required": [
+    "c_fm",
+    "c_md",
+    "c_r"
+  ],
+  "title": "Costs",
+  "type": "object"
+}

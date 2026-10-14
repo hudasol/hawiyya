@@ -1,0 +1,74 @@
+{
+  "$defs": {
+    "ReasonCode": {
+      "enum": [
+        "STRONG_ID_AGREEMENT",
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE",
+        "CONFLICTING_EVIDENCE",
+        "PLACEHOLDER_ONLY",
+        "COMMON_NAME_ONLY",
+        "POSSIBLE_TWIN_OR_SIBLING",
+        "POSSIBLE_PARENT_CHILD_SHARED_ID",
+        "DOB_PLACEHOLDER_SUSPECTED",
+        "CLUSTER_CONFLICT",
+        "HARD_CONFLICT"
+      ],
+      "title": "ReasonCode",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "cluster_id": {
+      "title": "Cluster Id",
+      "type": "string"
+    },
+    "conflict": {
+      "default": false,
+      "title": "Conflict",
+      "type": "boolean"
+    },
+    "edges": {
+      "items": {
+        "maxItems": 3,
+        "minItems": 3,
+        "prefixItems": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "string"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "title": "Edges",
+      "type": "array"
+    },
+    "reason_codes": {
+      "items": {
+        "$ref": "#/$defs/ReasonCode"
+      },
+      "title": "Reason Codes",
+      "type": "array"
+    },
+    "record_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Record Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "cluster_id",
+    "record_ids",
+    "edges"
+  ],
+  "title": "Cluster",
+  "type": "object"
+}

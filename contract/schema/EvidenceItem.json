@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "field": {
+      "title": "Field",
+      "type": "string"
+    },
+    "level": {
+      "title": "Level",
+      "type": "string"
+    },
+    "llr": {
+      "description": "Log likelihood ratio, natural log, before frequency adjustment",
+      "title": "Llr",
+      "type": "number"
+    },
+    "m": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "M",
+      "type": "number"
+    },
+    "placeholder": {
+      "default": false,
+      "title": "Placeholder",
+      "type": "boolean"
+    },
+    "tf_adjustment": {
+      "default": 0.0,
+      "title": "Tf Adjustment",
+      "type": "number"
+    },
+    "u": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "U",
+      "type": "number"
+    },
+    "weight": {
+      "description": "llr + tf_adjustment, the contribution to the log odds",
+      "title": "Weight",
+      "type": "number"
+    }
+  },
+  "required": [
+    "field",
+    "level",
+    "m",
+    "u",
+    "llr",
+    "weight"
+  ],
+  "title": "EvidenceItem",
+  "type": "object"
+}

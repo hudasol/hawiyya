@@ -1,0 +1,165 @@
+{
+  "note": "Arabic labels are machine drafted and need review by a native speaker.",
+  "fields": {
+    "record_id": {
+      "en": "Record id",
+      "ar": "رقم السجل"
+    },
+    "facility_id": {
+      "en": "Facility",
+      "ar": "المنشأة"
+    },
+    "name_ar": {
+      "en": "Name (Arabic script)",
+      "ar": "الاسم بالحروف العربية"
+    },
+    "name_latin": {
+      "en": "Name (Latin script)",
+      "ar": "الاسم بالحروف اللاتينية"
+    },
+    "sex": {
+      "en": "Sex",
+      "ar": "الجنس"
+    },
+    "dob": {
+      "en": "Date of birth",
+      "ar": "تاريخ الميلاد"
+    },
+    "dob_precision": {
+      "en": "Date of birth precision",
+      "ar": "دقة تاريخ الميلاد"
+    },
+    "id_value": {
+      "en": "Identifier",
+      "ar": "رقم الهوية"
+    },
+    "id_kind": {
+      "en": "Identifier kind",
+      "ar": "نوع الهوية"
+    },
+    "id_capture": {
+      "en": "Identifier capture",
+      "ar": "طريقة إدخال الهوية"
+    },
+    "nationality": {
+      "en": "Nationality",
+      "ar": "الجنسية"
+    },
+    "phone": {
+      "en": "Phone",
+      "ar": "الهاتف"
+    },
+    "area": {
+      "en": "Area",
+      "ar": "المنطقة"
+    },
+    "registered_on": {
+      "en": "Registration date",
+      "ar": "تاريخ التسجيل"
+    }
+  },
+  "id_kinds": {
+    "EID": {
+      "en": "National identity card number (synthetic)",
+      "ar": "رقم بطاقة الهوية (اصطناعي)"
+    },
+    "PASSPORT": {
+      "en": "Passport number",
+      "ar": "رقم جواز السفر"
+    },
+    "GCC_ID": {
+      "en": "Gulf country identity number",
+      "ar": "رقم هوية دولة خليجية"
+    },
+    "FILE_NO": {
+      "en": "Facility file number",
+      "ar": "رقم الملف في المنشأة"
+    },
+    "MOTHER_EID": {
+      "en": "Mother's identifier (newborn substitute)",
+      "ar": "رقم هوية الأم (بديل للمولود)"
+    },
+    "PLACEHOLDER": {
+      "en": "Placeholder identifier",
+      "ar": "رقم مؤقت"
+    }
+  },
+  "id_capture": {
+    "reader": {
+      "en": "Card reader",
+      "ar": "قارئ البطاقة"
+    },
+    "manual": {
+      "en": "Typed by hand",
+      "ar": "إدخال يدوي"
+    },
+    "substitute": {
+      "en": "Substitute identifier",
+      "ar": "رقم بديل"
+    },
+    "placeholder": {
+      "en": "Placeholder",
+      "ar": "رقم مؤقت"
+    }
+  },
+  "decisions": {
+    "LINK": {
+      "en": "Recommend a merge request",
+      "ar": "التوصية بطلب دمج"
+    },
+    "REVIEW": {
+      "en": "Send to a human reviewer",
+      "ar": "إحالة إلى مراجع بشري"
+    },
+    "KEEP_APART": {
+      "en": "Keep apart",
+      "ar": "إبقاء السجلين منفصلين"
+    }
+  },
+  "reason_codes": {
+    "STRONG_ID_AGREEMENT": {
+      "en": "The two records share the same valid identifier.",
+      "ar": "يشترك السجلان في رقم تعريف صالح واحد."
+    },
+    "STRONG_DEMOGRAPHIC_AGREEMENT": {
+      "en": "Names, date of birth and other details agree strongly.",
+      "ar": "تتطابق الأسماء وتاريخ الميلاد والتفاصيل الأخرى بدرجة عالية."
+    },
+    "INSUFFICIENT_EVIDENCE": {
+      "en": "There is not enough evidence to decide automatically.",
+      "ar": "لا توجد أدلة كافية لاتخاذ قرار تلقائي."
+    },
+    "CONFLICTING_EVIDENCE": {
+      "en": "Some details agree and others disagree.",
+      "ar": "بعض التفاصيل متطابقة وبعضها مختلف."
+    },
+    "PLACEHOLDER_ONLY": {
+      "en": "The only shared identifier is a placeholder, which proves nothing.",
+      "ar": "الرقم المشترك الوحيد رقم مؤقت لا يثبت شيئا."
+    },
+    "COMMON_NAME_ONLY": {
+      "en": "The records agree mainly on common names.",
+      "ar": "يتفق السجلان أساسا في أسماء شائعة."
+    },
+    "POSSIBLE_TWIN_OR_SIBLING": {
+      "en": "The records may belong to twins or siblings.",
+      "ar": "قد يعود السجلان إلى توأمين أو شقيقين."
+    },
+    "POSSIBLE_PARENT_CHILD_SHARED_ID": {
+      "en": "A parent and a child may share one identifier.",
+      "ar": "قد يشترك أحد الوالدين وطفل في رقم تعريف واحد."
+    },
+    "DOB_PLACEHOLDER_SUSPECTED": {
+      "en": "The date of birth looks like a default value.",
+      "ar": "يبدو تاريخ الميلاد قيمة افتراضية."
+    },
+    "CLUSTER_CONFLICT": {
+      "en": "Linking would join records that contradict each other.",
+      "ar": "الربط سيجمع سجلات متعارضة فيما بينها."
+    },
+    "HARD_CONFLICT": {
+      "en": "Two different card read identifiers of the same kind disagree.",
+      "ar": "رقمان مختلفان من النوع نفسه قرئا من البطاقة."
+    }
+  }
+}

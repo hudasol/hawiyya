@@ -1,0 +1,53 @@
+{
+  "$defs": {
+    "ReviewState": {
+      "enum": [
+        "OPEN",
+        "ASSIGNED",
+        "CONFIRMED_MERGE_REQUEST",
+        "KEPT_APART",
+        "CROSS_REFERENCED",
+        "NEEDS_INFORMATION"
+      ],
+      "title": "ReviewState",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "actor": {
+      "title": "Actor",
+      "type": "string"
+    },
+    "at": {
+      "title": "At",
+      "type": "string"
+    },
+    "from_state": {
+      "$ref": "#/$defs/ReviewState"
+    },
+    "note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Note"
+    },
+    "to_state": {
+      "$ref": "#/$defs/ReviewState"
+    }
+  },
+  "required": [
+    "at",
+    "actor",
+    "from_state",
+    "to_state"
+  ],
+  "title": "ReviewAction",
+  "type": "object"
+}

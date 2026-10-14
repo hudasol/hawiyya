@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "experiment_id": {
+      "title": "Experiment Id",
+      "type": "string"
+    },
+    "generator": {
+      "title": "Generator",
+      "type": "string"
+    },
+    "metrics": {
+      "additionalProperties": true,
+      "title": "Metrics",
+      "type": "object"
+    },
+    "predictions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Predictions",
+      "type": "array"
+    },
+    "seeds": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Seeds",
+      "type": "array"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "experiment_id",
+    "title",
+    "generator",
+    "seeds",
+    "metrics"
+  ],
+  "title": "ExperimentResult",
+  "type": "object"
+}

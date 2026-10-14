@@ -1,0 +1,65 @@
+{
+  "$defs": {
+    "AuditKind": {
+      "enum": [
+        "score",
+        "decision",
+        "review_action",
+        "export",
+        "check"
+      ],
+      "title": "AuditKind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "at": {
+      "title": "At",
+      "type": "string"
+    },
+    "detail": {
+      "additionalProperties": true,
+      "title": "Detail",
+      "type": "object"
+    },
+    "hash": {
+      "title": "Hash",
+      "type": "string"
+    },
+    "inputs_hash": {
+      "title": "Inputs Hash",
+      "type": "string"
+    },
+    "kind": {
+      "$ref": "#/$defs/AuditKind"
+    },
+    "prev_hash": {
+      "title": "Prev Hash",
+      "type": "string"
+    },
+    "seq": {
+      "minimum": 0,
+      "title": "Seq",
+      "type": "integer"
+    },
+    "subject_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Subject Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "seq",
+    "at",
+    "kind",
+    "subject_ids",
+    "inputs_hash",
+    "prev_hash",
+    "hash"
+  ],
+  "title": "AuditEvent",
+  "type": "object"
+}

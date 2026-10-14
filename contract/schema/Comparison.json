@@ -1,0 +1,19 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "field": {
+      "title": "Field",
+      "type": "string"
+    },
+    "level": {
+      "title": "Level",
+      "type": "string"
+    }
+  },
+  "required": [
+    "field",
+    "level"
+  ],
+  "title": "Comparison",
+  "type": "object"
+}

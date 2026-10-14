@@ -1,0 +1,120 @@
+{
+  "$defs": {
+    "EvidenceItem": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "level": {
+          "title": "Level",
+          "type": "string"
+        },
+        "llr": {
+          "description": "Log likelihood ratio, natural log, before frequency adjustment",
+          "title": "Llr",
+          "type": "number"
+        },
+        "m": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "M",
+          "type": "number"
+        },
+        "placeholder": {
+          "default": false,
+          "title": "Placeholder",
+          "type": "boolean"
+        },
+        "tf_adjustment": {
+          "default": 0.0,
+          "title": "Tf Adjustment",
+          "type": "number"
+        },
+        "u": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "U",
+          "type": "number"
+        },
+        "weight": {
+          "description": "llr + tf_adjustment, the contribution to the log odds",
+          "title": "Weight",
+          "type": "number"
+        }
+      },
+      "required": [
+        "field",
+        "level",
+        "m",
+        "u",
+        "llr",
+        "weight"
+      ],
+      "title": "EvidenceItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/EvidenceItem"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "log_odds": {
+      "title": "Log Odds",
+      "type": "number"
+    },
+    "model_version": {
+      "title": "Model Version",
+      "type": "string"
+    },
+    "prior_log_odds": {
+      "title": "Prior Log Odds",
+      "type": "number"
+    },
+    "probability": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Probability",
+      "type": "number"
+    },
+    "probability_high": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Probability High",
+      "type": "number"
+    },
+    "probability_low": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Probability Low",
+      "type": "number"
+    },
+    "record_a": {
+      "title": "Record A",
+      "type": "string"
+    },
+    "record_b": {
+      "title": "Record B",
+      "type": "string"
+    }
+  },
+  "required": [
+    "record_a",
+    "record_b",
+    "prior_log_odds",
+    "log_odds",
+    "probability",
+    "probability_low",
+    "probability_high",
+    "evidence",
+    "model_version"
+  ],
+  "title": "PairScore",
+  "type": "object"
+}

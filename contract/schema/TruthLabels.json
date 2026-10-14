@@ -1,0 +1,72 @@
+{
+  "$defs": {
+    "OriginGroup": {
+      "description": "Generator label used only to stratify results. Never a model input.",
+      "enum": [
+        "gulf_arab",
+        "other_arab",
+        "south_asian",
+        "southeast_asian",
+        "western"
+      ],
+      "title": "OriginGroup",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Truth view: generator labels. Never reaches L2 to L5.",
+  "properties": {
+    "corruption_log": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Corruption Log",
+      "type": "array"
+    },
+    "facility_style": {
+      "title": "Facility Style",
+      "type": "string"
+    },
+    "family_id": {
+      "title": "Family Id",
+      "type": "string"
+    },
+    "name_style": {
+      "title": "Name Style",
+      "type": "string"
+    },
+    "origin_group": {
+      "$ref": "#/$defs/OriginGroup"
+    },
+    "person_id": {
+      "title": "Person Id",
+      "type": "string"
+    },
+    "record_id": {
+      "title": "Record Id",
+      "type": "string"
+    },
+    "twin_group": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Twin Group"
+    }
+  },
+  "required": [
+    "record_id",
+    "person_id",
+    "family_id",
+    "origin_group",
+    "facility_style",
+    "name_style"
+  ],
+  "title": "TruthLabels",
+  "type": "object"
+}
