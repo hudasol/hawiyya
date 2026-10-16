@@ -158,6 +158,23 @@ def lab_train() -> None:
                f"ECE on check seeds {rep['calibration_check']['ece_product']}")
 
 
+@app.command()
+def snapshot() -> None:
+    """Precompute every API response the console needs (static mode, web/public/snapshot)."""
+    from hawiyya.api.snapshot import build_snapshot
+
+    files = build_snapshot()
+    typer.echo(f"snapshot written: {len(files)} files")
+
+
+@app.command()
+def serve(port: int = typer.Option(8000), host: str = typer.Option("127.0.0.1")) -> None:
+    """Start the live API (foreground)."""
+    import uvicorn
+
+    uvicorn.run("hawiyya.api.app:app", host=host, port=port, access_log=False)
+
+
 contract_app = typer.Typer(add_completion=False, help="L0 contract artefacts.")
 app.add_typer(contract_app, name="contract")
 
