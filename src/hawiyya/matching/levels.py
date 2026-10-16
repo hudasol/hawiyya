@@ -46,6 +46,12 @@ FIELDS: tuple[FieldSpec, ...] = (
 )  # fmt: skip
 
 FIELD_INDEX = {f.name: i for i, f in enumerate(FIELDS)}
+
+# Sign constraints used by L4: a disagreement is never evidence for a match, and full agreement
+# is never evidence against one.
+DISAGREEMENT_LEVELS = frozenset({"mismatch", "conflict", "disagree", "different", "far",
+                                 "different_kinds", "different_manual", "different_reader"})  # fmt: skip
+AGREEMENT_LEVELS = frozenset({"exact", "agree", "very_close"})
 N_FIELDS = len(FIELDS)
 
 

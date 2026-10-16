@@ -16,7 +16,7 @@ from rapidfuzz.distance import DamerauLevenshtein, JaroWinkler, Levenshtein
 from hawiyya.contract.enums import DatePrecision, IdCapture, IdKind
 from hawiyya.normalise.dates import digit_differences, transposed, year_off_by_one
 from hawiyya.normalise.names import ParsedName
-from hawiyya.normalise.record import NRecord
+from hawiyya.normalise.record import NRecord, TermFrequencies
 from hawiyya.normalise.text import coarse_key, skeleton_word
 
 from .levels import FIELD_INDEX, FIELDS, N_FIELDS, NAME_LEVELS
@@ -206,3 +206,51 @@ def compare_pairs(feats: Sequence[RecFeat], pairs: np.ndarray) -> np.ndarray:
     for k, (i, j) in enumerate(pairs):
         out[k] = compare_pair(feats[int(i)], feats[int(j)])
     return out
+
+
+# ----------------------------------------------------------------------------- frequencies
+
+TF_FIELDS = ("given", "family", "dob", "phone")
+_AGREE_NAME = (_EXACT, _SKEL)
+
+
+def _shared_key(ka: frozenset[str], kb: frozenset[str], tf: TermFrequencies, table: str) -> float:
+    shared = sorted(ka & kb)
+    if not shared:
+        return float("nan")
+    # A key may sit in the other table when the order was swapped; use the larger frequency.
+    return max(max(tf.get("given", k), tf.get("family", k)) for k in shared)
+
+
+def tf_values(a: RecFeat, b: RecFeat, lv: np.ndarray, tf: TermFrequencies) -> np.ndarray:
+    """Registry frequency of the agreeing value per TF field, or NaN when not applicable.
+
+    For names the most frequent shared skeleton key is used (the conservative choice when a
+    record holds several renderings). Symmetric in record order.
+    """
+    out = np.full(len(TF_FIELDS), np.nan)
+    ra, rb = a.rec, b.rec
+    if int(lv[FIELD_INDEX["given"]]) in _AGREE_NAME:
+        out[0] = _shared_key(ra.given_keys | ra.family_keys, rb.given_keys | rb.family_keys,
+                             tf, "given")
+    if int(lv[FIELD_INDEX["family"]]) in _AGREE_NAME:
+        out[1] = _shared_key(ra.family_keys | ra.given_keys, rb.family_keys | rb.given_keys,
+                             tf, "family")
+    if int(lv[FIELD_INDEX["dob"]]) == 0 and ra.dob is not None:
+        out[2] = tf.get("dob", ra.dob.iso)
+    if int(lv[FIELD_INDEX["phone"]]) == 0 and ra.phone is not None:
+        out[3] = tf.get("phone", ra.phone)
+    return out
+
+
+def compare_with_tf(feats: Sequence[RecFeat], pairs: np.ndarray,
+                    tf: TermFrequencies) -> tuple[np.ndarray, np.ndarray]:
+    """Levels and term frequency values for an array of index pairs."""
+    levels = np.empty((len(pairs), N_FIELDS), dtype=np.int8)
+    tfv = np.empty((len(pairs), len(TF_FIELDS)), dtype=np.float64)
+    for k, (i, j) in enumerate(pairs):
+        a, b = feats[int(i)], feats[int(j)]
+        lv = compare_pair(a, b)
+        levels[k] = lv
+        tfv[k] = tf_values(a, b, lv, tf)
+    return levels, tfv
