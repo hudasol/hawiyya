@@ -89,12 +89,12 @@ phase without a naming test fails the build.
 | HW-L6-001 | MUST | P6 | Review queue state machine allows only legal transitions. |  | planned |
 | HW-L6-002 | MUST | P6 | The audit log hash chain verifies and detects a tampered line. |  | planned |
 | HW-L6-003 | MUST | P6 | The audit log contains no name or identifier from the registry. |  | planned |
-| HW-L6-004 | MUST | P6 | A registration check on a record that exists exactly returns it first. |  | planned |
+| HW-L6-004 | MUST | P6 | A registration check on a record that exists exactly returns it first. | `tests/test_api.py` | tested |
 | HW-L6-005 | MUST | P6 | FHIR R4 style Patient bundle export with Patient.link validates against the project schema and carries the synthetic statement. |  | planned |
 | HW-L6-006 | MUST | P6 | CSV of review cases and a one page summary, each with the synthetic statement. |  | planned |
 | HW-L6-007 | SHOULD | P6 | Simulated reviewer with configurable accuracy and time per case. |  | planned |
 | HW-L6-008 | MUST | P6 | Review priority by expected cost and age. |  | planned |
-| HW-L6-009 | MUST | P6 | Fail open for registration: an internal failure returns an empty advisory result, never blocks registration. |  | planned |
+| HW-L6-009 | MUST | P6 | Fail open for registration: an internal failure returns an empty advisory result, never blocks registration. | `tests/test_api.py` | tested |
 | HW-L7-001 | MUST | P7 | G2 independent generator with its own variant tables and heavier noise. |  | planned |
 | HW-L7-002 | MUST | P7 | Baselines B0 to B5 run on the same pairs as the product. |  | planned |
 | HW-L7-003 | MUST | P7 | Metrics: pairwise precision, recall, F1, false merges per 10,000 records, B cubed, review rate, risk coverage, ECE. |  | planned |
@@ -105,11 +105,11 @@ phase without a naming test fails the build.
 | HW-L7-008 | MUST | P7 | The name origin label is provably not a model input. |  | planned |
 | HW-L7-009 | MUST | P8 | Experiments E1 to E9 write results/*.json. |  | planned |
 | HW-L7-010 | MUST | P8 | Predictions were committed before the first experiment result and each is marked hit or miss. |  | planned |
-| HW-L8-001 | MUST | P4 | Health, registry summary, registration check and name analysis endpoints. |  | planned |
+| HW-L8-001 | MUST | P4 | Health, registry summary, registration check and name analysis endpoints. | `tests/test_api.py` | tested |
 | HW-L8-002 | MUST | P9 | Every listed endpoint exists under /v1 and has an API test. |  | planned |
-| HW-L8-003 | MUST | P4 | Errors use application/problem+json. |  | planned |
-| HW-L8-004 | MUST | P4 | Bounded inputs and a request size limit. |  | planned |
-| HW-L8-005 | MUST | P4 | Static mode: `hawiyya snapshot` writes every response the console needs. |  | planned |
+| HW-L8-003 | MUST | P4 | Errors use application/problem+json. | `tests/test_api.py` | tested |
+| HW-L8-004 | MUST | P4 | Bounded inputs and a request size limit. | `tests/test_api.py` | tested |
+| HW-L8-005 | MUST | P4 | Static mode: `hawiyya snapshot` writes every response the console needs. | `tests/test_api.py` | tested |
 | HW-L8-006 | SHOULD | P9 | A browser side scorer for the registration check in static mode. |  | planned |
 | HW-L8-007 | MUST | P9 | Server logs contain no names or identifiers. |  | planned |
 | HW-L9-001 | MUST | P4 | The synthetic data banner is on every screen and cannot be dismissed. |  | planned |

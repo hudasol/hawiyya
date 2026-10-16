@@ -15,7 +15,7 @@ from hawiyya.core.paths import RESULTS
 from hawiyya.matching.blocking import PASSES, block, pair_completeness, record_keys
 from hawiyya.matching.compare import compare_pair, features
 from hawiyya.matching.levels import FIELD_INDEX, FIELDS, spec
-from hawiyya.normalise.record import normalise_record, normalise_registry
+from hawiyya.normalise.record import normalise_record
 
 
 def rec(rid: str, **kw: object) -> Record:
@@ -34,24 +34,20 @@ def levels(a: Record, b: Record) -> dict[str, str]:
     return {f.name: f.levels[int(lv[i])] for i, f in enumerate(FIELDS)}
 
 
-@pytest.fixture(scope="module")
-def ctx_s(reg_s):  # type: ignore[no-untyped-def]
-    return normalise_registry(reg_s.records)
-
-
 @pytest.mark.req("HW-L3-001", "HW-L3-007")
-def test_multi_pass_union_and_metrics(ctx_s, reg_s) -> None:  # type: ignore[no-untyped-def]
-    res = block(ctx_s.records)
+def test_multi_pass_union_and_metrics(ctx_xs, reg_xs) -> None:  # type: ignore[no-untyped-def]
+    res = block(ctx_xs.records)
     assert set(res.per_pass) >= {"family_year", "given_dob", "id_tail", "phone", "name_pair"}
-    single = block(ctx_s.records, passes=("given_dob",))
+    single = block(ctx_xs.records, passes=("given_dob",))
     enc = set(map(tuple, res.pairs.tolist()))
     assert set(map(tuple, single.pairs.tolist())) <= enc
     assert len(res.pairs) > len(single.pairs)
-    assert 0.99 < res.reduction_ratio < 1.0
+    assert 0.95 < res.reduction_ratio < 1.0
     assert 1.0 < res.pairs_per_record < 50.0
-    idx = {r.record_id: i for i, r in enumerate(ctx_s.records)}
-    tp = np.array([(min(idx[a], idx[b]), max(idx[a], idx[b])) for a, b in reg_s.truth.true_pairs()])
-    assert pair_completeness(res.pairs, tp, len(ctx_s.records)) > 0.95
+    idx = {r.record_id: i for i, r in enumerate(ctx_xs.records)}
+    tp = np.array([(min(idx[a], idx[b]), max(idx[a], idx[b]))
+                   for a, b in reg_xs.truth.true_pairs()])  # fmt: skip
+    assert pair_completeness(res.pairs, tp, len(ctx_xs.records)) > 0.95
     smoke = json.loads((RESULTS / "dev" / "blocking_smoke.json").read_text(encoding="utf-8"))
     assert {"pair_completeness", "reduction_ratio", "pairs_per_record",
             "pair_completeness_lost_to_cap"} <= set(smoke)

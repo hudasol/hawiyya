@@ -15,7 +15,7 @@ from hawiyya.contract.models import TRUTH_FIELDS
 from hawiyya.core.paths import RESULTS, ROOT
 from hawiyya.normalise import dates, identifiers
 from hawiyya.normalise.names import parse_name
-from hawiyya.normalise.record import build_tf, normalise_registry
+from hawiyya.normalise.record import build_tf
 from hawiyya.normalise.similarity import whole_name_similarity
 from hawiyya.normalise.text import (
     coarse_key,
@@ -145,8 +145,8 @@ def test_pattern_placeholders() -> None:
 
 
 @pytest.mark.req("HW-L2-007")
-def test_learned_placeholders_and_report(reg_s) -> None:  # type: ignore[no-untyped-def]
-    ctx = normalise_registry(reg_s.records)
+def test_learned_placeholders_and_report(ctx_s) -> None:  # type: ignore[no-untyped-def]
+    ctx = ctx_s
     assert "784199054321987" in ctx.learned.identifiers
     assert "01-01" in ctx.learned.month_days
     rep = json.loads((RESULTS / "placeholder_detector.json").read_text(encoding="utf-8"))
@@ -156,8 +156,8 @@ def test_learned_placeholders_and_report(reg_s) -> None:  # type: ignore[no-unty
 
 
 @pytest.mark.req("HW-L2-008")
-def test_term_frequencies_from_registry(reg_s) -> None:  # type: ignore[no-untyped-def]
-    ctx = normalise_registry(reg_s.records)
+def test_term_frequencies_from_registry(reg_s, ctx_s) -> None:  # type: ignore[no-untyped-def]
+    ctx = ctx_s
     tf = ctx.tf
     assert tf.n_records == len(reg_s.records)
     assert abs(sum(tf.given.values()) - 1.0) < 1e-9

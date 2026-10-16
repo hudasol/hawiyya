@@ -17,7 +17,6 @@ from hawiyya.core.paths import RESULTS, ROOT
 from hawiyya.lab.train import load_model
 from hawiyya.matching.compare import TF_FIELDS, features
 from hawiyya.matching.levels import FIELD_INDEX, FIELDS, spec
-from hawiyya.normalise.record import normalise_registry
 from hawiyya.scoring.calibration import ece, fit_isotonic
 from hawiyya.scoring.em import fit_from_labels, informed_init, run_em
 from hawiyya.scoring.params import (
@@ -47,9 +46,8 @@ def model():  # type: ignore[no-untyped-def]
 
 
 @pytest.fixture(scope="module")
-def scorer_s(reg_s, model):  # type: ignore[no-untyped-def]
-    ctx = normalise_registry(reg_s.records)
-    return Scorer(model, ctx.tf), [features(r) for r in ctx.records]
+def scorer_s(ctx_s, model):  # type: ignore[no-untyped-def]
+    return Scorer(model, ctx_s.tf), [features(r) for r in ctx_s.records]
 
 
 @pytest.mark.req("HW-L4-001")
