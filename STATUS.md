@@ -10,5 +10,8 @@ What works today, in plain words.
   population: households, twins, cousins, same name fathers and sons, newborns under the
   mother's identifier, placeholders, six synthetic facilities and the G1 corruption engine.
   Ground truth lives in a separate truth view.
-- Name normalisation ported from Tahdeed exists; the person name model, matching, scoring,
-  decisions, the API and the console do not exist yet.
+- L2 normalises Arabic, English and Arabizi names into tokens with given, father,
+  grandfather and family positions, consonant skeletons and coarse keys; parses dates and
+  identifiers; flags placeholders by pattern and by a data driven rule; and builds term
+  frequency tables from the registry itself.
+- Matching, scoring, decisions, the API and the console do not exist yet.

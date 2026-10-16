@@ -2,6 +2,12 @@
 
 All notable changes are listed per phase tag.
 
+## v0.3.0 (P2)
+
+- L2 normalisation: ported text normalisation, person name model, dates, identifiers,
+  pattern and learned placeholder detection, term frequencies, vowel aware similarity.
+- Generator: most placeholders are now typed as ordinary identifiers.
+
 ## v0.2.0 (P1)
 
 - L0 contract models, enums, bilingual reason codes and generated artefacts.

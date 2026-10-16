@@ -22,8 +22,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 | --- | --- | --- | --- |
 | P0 skeleton, tooling, contracts, harness | done | `hawiyya check` passes (ruff, mypy strict, three import contracts, tests) | v0.1.0 |
 | P1 contract and registry | done | contract tests; same seed gives byte identical registry; Tier S 5,000 persons (about 11,800 records), Tier M 20,000 persons (slow test); `results/lexicon_report.json` | v0.2.0 |
-| P2 normalisation | next | | v0.3.0 |
-| P3 matching | not started | | v0.4.0 |
+| P2 normalisation | done | golden table (64 rows) and hypothesis idempotence pass; `results/placeholder_detector.json` (learned detector precision 1.0 on seeds 1 to 3, it finds the dummy value that no pattern catches) | v0.3.0 |
+| P3 matching | next | | v0.4.0 |
 | P4 scoring and walking skeleton | not started | | v0.5.0 |
 | P5 decision | not started | | v0.6.0 |
 | P6 workflow | not started | | v0.7.0 |
@@ -43,8 +43,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 
 ## Next
 
-P2: person name model, date and identifier normalisation, pattern and learned placeholder
-detection, term frequency tables, golden table and property tests.
+P3: multi pass blocking with a cap and sorted neighbourhood fallback, comparison levels for
+every field, blocking metrics (E1 smoke).
 
 ## Blockers
 
