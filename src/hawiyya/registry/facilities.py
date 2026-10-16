@@ -48,11 +48,18 @@ FACILITIES: tuple[Facility, ...] = (
 BY_ID = {f.facility_id: f for f in FACILITIES}
 
 # ASSUMPTION: placeholder values. "All 1" (fifteen ones) follows the public policy reading in
-# docs/CONTEXT.md; the other values are plausible defaults chosen by the author.
+# docs/CONTEXT.md; the other values are plausible defaults chosen by the author. The last one
+# imitates a clerk's habitual dummy number that looks valid, which only a data driven
+# detector can find.
 PLACEHOLDER_VALUES: tuple[tuple[str, float], ...] = (
-    ("111111111111111", 0.70),
-    ("000000000000000", 0.10),
-    ("999999999999999", 0.08),
-    ("784000000000000", 0.07),
-    ("123456789012345", 0.05),
+    ("111111111111111", 0.62),
+    ("000000000000000", 0.08),
+    ("999999999999999", 0.06),
+    ("784000000000000", 0.06),
+    ("123456789012345", 0.04),
+    ("784199054321987", 0.14),
 )
+SANCTIONED_PLACEHOLDER = "111111111111111"
+# ASSUMPTION: share of "All 1" entries flagged as placeholders on the form; the rest, and all
+# other placeholder values, are typed into the identifier field as if they were real.
+SANCTIONED_FLAGGED_SHARE = 0.6

@@ -14,7 +14,12 @@ from datetime import date, timedelta
 import numpy as np
 
 from hawiyya.contract.enums import DatePrecision, IdCapture, IdKind, OriginGroup, Sex
-from hawiyya.registry.facilities import PLACEHOLDER_VALUES, Facility
+from hawiyya.registry.facilities import (
+    PLACEHOLDER_VALUES,
+    SANCTIONED_FLAGGED_SHARE,
+    SANCTIONED_PLACEHOLDER,
+    Facility,
+)
 from hawiyya.registry.g1.translit import translit_name
 from hawiyya.registry.lexicon import NameEntry
 from hawiyya.registry.people import ARAB_ORIGINS, People, Person
@@ -236,7 +241,10 @@ def render_identifier(p: Person, people: People, fac: Facility, reg: date,
     rate = fac.placeholder_rate if cfg.placeholder_override is None else cfg.placeholder_override
     if g.random() < rate:
         log.append("id:placeholder")
-        return _placeholder(g), IdKind.PLACEHOLDER, IdCapture.PLACEHOLDER
+        value = _placeholder(g)
+        if value == SANCTIONED_PLACEHOLDER and g.random() < SANCTIONED_FLAGGED_SHARE:
+            return value, IdKind.PLACEHOLDER, IdCapture.PLACEHOLDER
+        return value, IdKind.EID, IdCapture.MANUAL
     if p.eid:
         if g.random() < fac.reader_share:
             return p.eid, IdKind.EID, IdCapture.READER

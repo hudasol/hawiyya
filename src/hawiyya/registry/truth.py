@@ -29,6 +29,10 @@ class TruthView:
     labels: dict[str, TruthLabels]
     people: People
 
+    def is_placeholder(self, record_id: str) -> bool:
+        """True when the generator injected a placeholder identifier into this record."""
+        return "id:placeholder" in self.labels[record_id].corruption_log
+
     def person_of(self, record_id: str) -> str:
         return self.labels[record_id].person_id
 
@@ -71,7 +75,7 @@ class TruthView:
             return "spouse"
         if pa.clan_id and pa.clan_id == pb.clan_id:
             return "cousin"
-        if (ra.id_kind == IdKind.PLACEHOLDER and rb.id_kind == IdKind.PLACEHOLDER
+        if (self.is_placeholder(ra.record_id) and self.is_placeholder(rb.record_id)
                 and ra.id_value == rb.id_value):  # fmt: skip
             return "shared_placeholder"
         if pa.birth_date == pb.birth_date and pa.sex == pb.sex:
