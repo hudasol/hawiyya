@@ -147,6 +147,17 @@ def lab_blocking_smoke() -> None:
                f"reduction ratio {rep['reduction_ratio']}")
 
 
+@lab_app.command("train")
+def lab_train() -> None:
+    """Fit and freeze the scoring model on development seeds (results/model/)."""
+    from hawiyya.lab.train import write
+
+    rep = write()
+    typer.echo(f"plain EM lambda {rep['plain_em']['lambda']}, anchored lambda "
+               f"{rep['em_anchored']['lambda']}, labels {rep['labels']['lambda']}; "
+               f"ECE on check seeds {rep['calibration_check']['ece_product']}")
+
+
 contract_app = typer.Typer(add_completion=False, help="L0 contract artefacts.")
 app.add_typer(contract_app, name="contract")
 
