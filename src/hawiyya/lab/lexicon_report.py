@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from hawiyya.core.paths import RESULTS
+from hawiyya.normalise.names import parse_name
 from hawiyya.normalise.text import coarse_key, string_skeleton
 from hawiyya.registry.lexicon import Lexicon, NameEntry
 
@@ -47,6 +48,26 @@ def _variant_agreement(entries: list[NameEntry]) -> dict[str, Any]:
             "share": round(agree / total, 4) if total else 0.0, "latin_misses": misses}
 
 
+def _model_key(text: str, family: bool) -> str:
+    """Key from the person name model (handles glued articles and compound names)."""
+    parsed = parse_name(("x " + text) if family else text)
+    if parsed is None:
+        return ""
+    return parsed.family_key if family else parsed.given_key
+
+
+def _name_model_agreement(lex: Lexicon) -> dict[str, Any]:
+    total = agree = 0
+    for entries, fam in ((lex.given, False), (lex.family, True)):
+        for e in entries:
+            base = _model_key(e.canonical_latin, fam)
+            for v in (*e.latin[1:], e.ar):
+                total += 1
+                agree += _model_key(v, fam) == base
+    return {"spellings": total, "same_key": agree,
+            "share": round(agree / total, 4) if total else 0.0}
+
+
 def build_report(lex: Lexicon) -> dict[str, Any]:
     by_canon: dict[str, NameEntry] = {}
     for e in (*lex.given, *lex.family):
@@ -61,6 +82,7 @@ def build_report(lex: Lexicon) -> dict[str, Any]:
         "coarse_key": _collisions(entries, "coarse"),
         "given_only": _collisions(list(lex.given), "skeleton"),
         "variant_agreement": _variant_agreement(entries),
+        "variant_agreement_name_model": _name_model_agreement(lex),
     }
 
 

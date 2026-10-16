@@ -440,5 +440,10 @@
         "El Naggar"
       ]
     ]
+  },
+  "variant_agreement_name_model": {
+    "spellings": 442,
+    "same_key": 410,
+    "share": 0.9276
   }
 }
