@@ -78,6 +78,50 @@ def check(full: bool = typer.Option(False, help="Also run slow tests.")) -> None
     typer.echo("check passed")
 
 
+data_app = typer.Typer(add_completion=False, help="Synthetic data: source, manifest, reports.")
+app.add_typer(data_app, name="data")
+
+
+@data_app.command("synthea")
+def data_synthea(
+    population: int = typer.Option(25000, help="Synthea population size."),
+    seed: int = typer.Option(20261013, help="First chunk seed."),
+    chunk: int = typer.Option(2500, help="Patients per deterministic chunk."),
+) -> None:
+    """Download Synthea, run it in deterministic chunks and derive the committed sample."""
+    from hawiyya.core.paths import PRIVATE
+    from hawiyya.registry import synthea
+
+    meta = synthea.fetch_jar(PRIVATE / "tools")
+    synthea.run_chunks(Path(meta["path"]), PRIVATE / "synthea", seed, population, chunk, 3600)
+    data_manifest(source="synthea")
+
+
+@data_app.command("manifest")
+def data_manifest(source: str = typer.Option("synthea", help="synthea or native")) -> None:
+    """Write data/MANIFEST.json (deriving the Synthea sample when the source is Synthea)."""
+    from hawiyya.registry import manifest
+    from hawiyya.registry.lexicon import default_lexicon
+
+    if source == "synthea":
+        prov = manifest.derive_synthea_sample()
+    else:
+        prov = {"generator": "hawiyya.registry.source.native_population", "pool_seed": 20261013}
+    cowork = {"present": (ROOT / "inputs" / "cowork").is_dir()}
+    manifest.write_manifest(source, prov, default_lexicon().author, cowork)
+    typer.echo(f"manifest written; data source {source}")
+
+
+@data_app.command("lexicon-report")
+def data_lexicon_report() -> None:
+    """Measure skeleton collisions in the lexicon and write results/lexicon_report.json."""
+    from hawiyya.lab.lexicon_report import write_report
+    from hawiyya.registry.lexicon import default_lexicon
+
+    rep = write_report(default_lexicon())
+    typer.echo(f"skeleton collision rate {rep['skeleton']['collision_rate']}")
+
+
 contract_app = typer.Typer(add_completion=False, help="L0 contract artefacts.")
 app.add_typer(contract_app, name="contract")
 

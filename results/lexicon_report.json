@@ -1,0 +1,444 @@
+{
+  "lexicon_author": "build_agent",
+  "definition": "collision_rate is the share of distinct canonical lexicon names (given and family names together) that share a skeleton key with at least one other distinct name.",
+  "skeleton": {
+    "distinct_names": 171,
+    "colliding_names": 49,
+    "collision_rate": 0.2865,
+    "collision_groups": [
+      [
+        "Abdulla",
+        "Abdullah"
+      ],
+      [
+        "Ahmed",
+        "Al Hammadi",
+        "Hamad"
+      ],
+      [
+        "Al Ali",
+        "Al Alili",
+        "Ali",
+        "Laila"
+      ],
+      [
+        "Al Ameri",
+        "Al Marri",
+        "Ammar",
+        "Maria",
+        "Omar"
+      ],
+      [
+        "Al Hosani",
+        "Al Husseini",
+        "Hassan",
+        "Hussain"
+      ],
+      [
+        "Al Mahri",
+        "Al Muhairi"
+      ],
+      [
+        "Al Mansoori",
+        "Mansour"
+      ],
+      [
+        "Al Suwaidi",
+        "Saeed"
+      ],
+      [
+        "Amna",
+        "Menon",
+        "Mona"
+      ],
+      [
+        "Garcia",
+        "Grace"
+      ],
+      [
+        "Haddad",
+        "Hadi"
+      ],
+      [
+        "Imran",
+        "Marwan"
+      ],
+      [
+        "Nair",
+        "Noura"
+      ],
+      [
+        "Paul",
+        "Pillai"
+      ],
+      [
+        "Reyes",
+        "Rosa"
+      ],
+      [
+        "Salem",
+        "Salma"
+      ],
+      [
+        "Santos",
+        "Santoso"
+      ],
+      [
+        "Shaikh",
+        "Shaikha"
+      ],
+      [
+        "Smith",
+        "Thomas"
+      ],
+      [
+        "Yousef",
+        "Youssef"
+      ]
+    ]
+  },
+  "coarse_key": {
+    "distinct_names": 171,
+    "colliding_names": 74,
+    "collision_rate": 0.4327,
+    "collision_groups": [
+      [
+        "Abdulla",
+        "Abdullah",
+        "Patel"
+      ],
+      [
+        "Agus",
+        "Jose"
+      ],
+      [
+        "Ahmed",
+        "Al Hammadi",
+        "Hamad"
+      ],
+      [
+        "Aisha",
+        "Eissa"
+      ],
+      [
+        "Al Ali",
+        "Al Alili",
+        "Ali",
+        "Laila"
+      ],
+      [
+        "Al Ameri",
+        "Al Marri",
+        "Ammar",
+        "Maria",
+        "Omar"
+      ],
+      [
+        "Al Hosani",
+        "Al Husseini",
+        "Hassan",
+        "Hussain"
+      ],
+      [
+        "Al Ketbi",
+        "Al Khatib"
+      ],
+      [
+        "Al Khaili",
+        "Joel"
+      ],
+      [
+        "Al Mahri",
+        "Al Muhairi"
+      ],
+      [
+        "Al Mansoori",
+        "Mansour"
+      ],
+      [
+        "Al Masri",
+        "Al Mazrouei"
+      ],
+      [
+        "Al Shamsi",
+        "Smith",
+        "Thomas"
+      ],
+      [
+        "Al Suwaidi",
+        "Saeed",
+        "Siti"
+      ],
+      [
+        "Al Zaabi",
+        "Theyab"
+      ],
+      [
+        "Amna",
+        "Menon",
+        "Mona"
+      ],
+      [
+        "Bader",
+        "Peter"
+      ],
+      [
+        "Chaudhry",
+        "Yasser"
+      ],
+      [
+        "Cruz",
+        "Garcia",
+        "Grace",
+        "Qureshi"
+      ],
+      [
+        "Haddad",
+        "Hadi"
+      ],
+      [
+        "Imran",
+        "Marwan"
+      ],
+      [
+        "Maitha",
+        "Moza"
+      ],
+      [
+        "Nair",
+        "Noura"
+      ],
+      [
+        "Paul",
+        "Pillai"
+      ],
+      [
+        "Reyes",
+        "Rosa"
+      ],
+      [
+        "Salem",
+        "Salma"
+      ],
+      [
+        "Sanjay",
+        "Singh"
+      ],
+      [
+        "Santos",
+        "Santoso"
+      ],
+      [
+        "Shaikh",
+        "Shaikha"
+      ],
+      [
+        "Yousef",
+        "Youssef"
+      ]
+    ]
+  },
+  "given_only": {
+    "distinct_names": 100,
+    "colliding_names": 15,
+    "collision_rate": 0.15,
+    "collision_groups": [
+      [
+        "Ahmed",
+        "Hamad"
+      ],
+      [
+        "Ali",
+        "Laila"
+      ],
+      [
+        "Ammar",
+        "Maria",
+        "Omar"
+      ],
+      [
+        "Amna",
+        "Mona"
+      ],
+      [
+        "Hassan",
+        "Hussain"
+      ],
+      [
+        "Imran",
+        "Marwan"
+      ],
+      [
+        "Salem",
+        "Salma"
+      ]
+    ]
+  },
+  "variant_agreement": {
+    "spellings": 434,
+    "same_skeleton": 372,
+    "share": 0.8571,
+    "latin_misses": [
+      [
+        "Mohammed",
+        "Mohd"
+      ],
+      [
+        "Ahmed",
+        "Ahmet"
+      ],
+      [
+        "Abdulrahman",
+        "Abd Al Rahman"
+      ],
+      [
+        "Theyab",
+        "Diyab"
+      ],
+      [
+        "Theyab",
+        "Dhiyab"
+      ],
+      [
+        "John",
+        "Jon"
+      ],
+      [
+        "David",
+        "Dave"
+      ],
+      [
+        "Michael",
+        "Mike"
+      ],
+      [
+        "Thomas",
+        "Tomas"
+      ],
+      [
+        "Rosa",
+        "Roza"
+      ],
+      [
+        "Dewi",
+        "Devi"
+      ],
+      [
+        "Al Mazrouei",
+        "Almazrouei"
+      ],
+      [
+        "Al Mansoori",
+        "Almansoori"
+      ],
+      [
+        "Al Kaabi",
+        "Alkaabi"
+      ],
+      [
+        "Al Dhaheri",
+        "Al Daheri"
+      ],
+      [
+        "Al Dhaheri",
+        "Aldhaheri"
+      ],
+      [
+        "Al Shamsi",
+        "Alshamsi"
+      ],
+      [
+        "Al Muhairi",
+        "Almuhairi"
+      ],
+      [
+        "Al Suwaidi",
+        "Alsuwaidi"
+      ],
+      [
+        "Al Hameli",
+        "Alhameli"
+      ],
+      [
+        "Al Ketbi",
+        "Alketbi"
+      ],
+      [
+        "Al Marri",
+        "Almarri"
+      ],
+      [
+        "Al Ameri",
+        "Alameri"
+      ],
+      [
+        "Al Balushi",
+        "Albalushi"
+      ],
+      [
+        "Al Hammadi",
+        "Alhammadi"
+      ],
+      [
+        "Al Rumaithi",
+        "Alrumaithi"
+      ],
+      [
+        "Al Zaabi",
+        "Alzaabi"
+      ],
+      [
+        "Al Hosani",
+        "Alhosani"
+      ],
+      [
+        "Al Mutawa",
+        "Almutawa"
+      ],
+      [
+        "Al Junaibi",
+        "Aljunaibi"
+      ],
+      [
+        "Al Darmaki",
+        "Aldarmaki"
+      ],
+      [
+        "Al Khaili",
+        "Alkhaili"
+      ],
+      [
+        "Al Ahbabi",
+        "Alahbabi"
+      ],
+      [
+        "Al Naqbi",
+        "Alnaqbi"
+      ],
+      [
+        "Al Tunaiji",
+        "Altunaiji"
+      ],
+      [
+        "Al Shehhi",
+        "Alshehhi"
+      ],
+      [
+        "Al Mahri",
+        "Almahri"
+      ],
+      [
+        "Al Masri",
+        "Elmasry"
+      ],
+      [
+        "Al Khatib",
+        "Alkhatib"
+      ],
+      [
+        "Al Najjar",
+        "El Naggar"
+      ]
+    ]
+  }
+}
