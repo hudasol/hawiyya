@@ -40,19 +40,19 @@ phase without a naming test fails the build.
 | HW-L1-012 | MUST | P1 | Tier S (5,000 persons) and Tier M (20,000 persons) are generated. | `tests/test_registry.py` | tested |
 | HW-L1-013 | MAY | P10 | Tier L (100,000 persons) is generated. |  | planned |
 | HW-L1-014 | SHOULD | P1 | An optional documented age and sex re weighting, labelled ASSUMPTION. | `tests/test_registry.py` | tested |
-| HW-L2-001 | MUST | P2 | Ported Arabic and Latin normalisation (diacritics, tatweel, alef, ya, digits, accents). |  | planned |
-| HW-L2-002 | MUST | P2 | Consonant skeleton, coarse key and Arabizi digit decoding. |  | planned |
-| HW-L2-003 | MUST | P2 | Person name model: prefixes, glued prefixes, compound given names, abbreviations, initials, honorifics, single token names. |  | planned |
-| HW-L2-004 | MUST | P2 | Date normalisation with precision flags and transposition variants. |  | planned |
-| HW-L2-005 | MUST | P2 | Identifier normalisation and identifier kind classification. |  | planned |
-| HW-L2-006 | MUST | P2 | Pattern based placeholder detection for identifiers and dates. |  | planned |
-| HW-L2-007 | MUST | P2 | Data driven placeholder detection with precision and recall reported against injected truth. |  | planned |
-| HW-L2-008 | MUST | P2 | Term frequency tables built from the registry itself. |  | planned |
-| HW-L2-009 | MUST | P2 | Normalisation is idempotent (property test). |  | planned |
-| HW-L2-010 | MUST | P2 | A golden table of at least 40 name variants matches the expected keys. |  | planned |
-| HW-L2-011 | MUST | P2 | No function in L2 reads a truth field. |  | planned |
-| HW-L2-012 | SHOULD | P2 | A vowel aware whole name similarity used as an extra comparison level. |  | planned |
-| HW-L2-013 | MUST | P2 | Script detection (Arabic, Latin, Arabizi, mixed). |  | planned |
+| HW-L2-001 | MUST | P2 | Ported Arabic and Latin normalisation (diacritics, tatweel, alef, ya, digits, accents). | `tests/test_normalise.py` | tested |
+| HW-L2-002 | MUST | P2 | Consonant skeleton, coarse key and Arabizi digit decoding. | `tests/test_normalise.py` | tested |
+| HW-L2-003 | MUST | P2 | Person name model: prefixes, glued prefixes, compound given names, abbreviations, initials, honorifics, single token names. | `tests/test_normalise.py` | tested |
+| HW-L2-004 | MUST | P2 | Date normalisation with precision flags and transposition variants. | `tests/test_normalise.py` | tested |
+| HW-L2-005 | MUST | P2 | Identifier normalisation and identifier kind classification. | `tests/test_normalise.py` | tested |
+| HW-L2-006 | MUST | P2 | Pattern based placeholder detection for identifiers and dates. | `tests/test_normalise.py` | tested |
+| HW-L2-007 | MUST | P2 | Data driven placeholder detection with precision and recall reported against injected truth. | `tests/test_normalise.py` | tested |
+| HW-L2-008 | MUST | P2 | Term frequency tables built from the registry itself. | `tests/test_normalise.py` | tested |
+| HW-L2-009 | MUST | P2 | Normalisation is idempotent (property test). | `tests/test_normalise.py` | tested |
+| HW-L2-010 | MUST | P2 | A golden table of at least 40 name variants matches the expected keys. | `tests/test_normalise.py` | tested |
+| HW-L2-011 | MUST | P2 | No function in L2 reads a truth field. | `tests/test_normalise.py` | tested |
+| HW-L2-012 | SHOULD | P2 | A vowel aware whole name similarity used as an extra comparison level. | `tests/test_normalise.py` | tested |
+| HW-L2-013 | MUST | P2 | Script detection (Arabic, Latin, Arabizi, mixed). | `tests/test_normalise.py` | tested |
 | HW-L3-001 | MUST | P3 | Multi pass blocking with a union of candidate pairs. |  | planned |
 | HW-L3-002 | MUST | P3 | Placeholder identifiers never produce blocking keys. |  | planned |
 | HW-L3-003 | MUST | P3 | A cap per block with a sorted neighbourhood fallback; pair completeness lost to the cap is reported. |  | planned |
