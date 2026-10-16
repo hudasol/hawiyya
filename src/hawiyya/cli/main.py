@@ -137,6 +137,16 @@ def lab_placeholders() -> None:
                f"{[(x['precision'], x['recall']) for x in learned]}")
 
 
+@lab_app.command("blocking-smoke")
+def lab_blocking_smoke() -> None:
+    """Development smoke check of blocking (results/dev/blocking_smoke.json)."""
+    from hawiyya.lab.blocking_smoke import write
+
+    rep = write()
+    typer.echo(f"pair completeness {rep['pair_completeness']}, "
+               f"reduction ratio {rep['reduction_ratio']}")
+
+
 contract_app = typer.Typer(add_completion=False, help="L0 contract artefacts.")
 app.add_typer(contract_app, name="contract")
 
