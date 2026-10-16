@@ -1,0 +1,24 @@
+{
+  "note": "Names the generator must never produce. Ruling family names of the Gulf states are excluded from the lexicon, and given and family combinations that form the name of a well known public figure are refused at generation time. The list is the author's and is not exhaustive.",
+  "family_names_latin": [
+    "Al Nahyan", "Al Maktoum", "Al Qasimi", "Al Nuaimi", "Al Mualla", "Al Sharqi",
+    "Al Thani", "Al Saud", "Al Sabah", "Al Khalifa", "Al Said", "Al Falasi", "Al Hashemi"
+  ],
+  "family_names_ar": [
+    "آل نهيان", "آل مكتوم", "القاسمي", "النعيمي", "المعلا", "الشرقي",
+    "آل ثاني", "آل سعود", "الصباح", "آل خليفة", "آل سعيد", "الفلاسي", "الهاشمي"
+  ],
+  "full_name_combinations": [
+    ["Imran", "Khan"],
+    ["James", "Brown"],
+    ["James", "Taylor"],
+    ["John", "Williams"],
+    ["Paul", "Martin"],
+    ["Thomas", "Muller"],
+    ["Grace", "Jones"],
+    ["Mariam", "Al Mansoori"],
+    ["Sara", "Al Ameri"],
+    ["Noura", "Al Kaabi"],
+    ["Khalid", "Al Ameri"]
+  ]
+}
