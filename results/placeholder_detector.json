@@ -1,0 +1,138 @@
+{
+  "description": "Placeholder detectors evaluated against the identifier values that the generator injected as placeholders (synthetic ground truth), on development seeds.",
+  "generator": "G1",
+  "tier": "S",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "per_seed": [
+    {
+      "seed": 1,
+      "value_level": {
+        "pattern": {
+          "predicted": 5,
+          "true": 6,
+          "true_positives": 5,
+          "precision": 1.0,
+          "recall": 0.8333
+        },
+        "learned": {
+          "predicted": 1,
+          "true": 6,
+          "true_positives": 1,
+          "precision": 1.0,
+          "recall": 0.1667
+        },
+        "learned_minus_pattern": {
+          "predicted": 1,
+          "true": 1,
+          "true_positives": 1,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "combined": {
+          "predicted": 6,
+          "true": 6,
+          "true_positives": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "record_level": {
+        "placeholder_records": 956,
+        "flagged_records": 956,
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "learned_month_days": [
+        "01-01"
+      ]
+    },
+    {
+      "seed": 2,
+      "value_level": {
+        "pattern": {
+          "predicted": 5,
+          "true": 6,
+          "true_positives": 5,
+          "precision": 1.0,
+          "recall": 0.8333
+        },
+        "learned": {
+          "predicted": 1,
+          "true": 6,
+          "true_positives": 1,
+          "precision": 1.0,
+          "recall": 0.1667
+        },
+        "learned_minus_pattern": {
+          "predicted": 1,
+          "true": 1,
+          "true_positives": 1,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "combined": {
+          "predicted": 6,
+          "true": 6,
+          "true_positives": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "record_level": {
+        "placeholder_records": 956,
+        "flagged_records": 956,
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "learned_month_days": [
+        "01-01"
+      ]
+    },
+    {
+      "seed": 3,
+      "value_level": {
+        "pattern": {
+          "predicted": 5,
+          "true": 6,
+          "true_positives": 5,
+          "precision": 1.0,
+          "recall": 0.8333
+        },
+        "learned": {
+          "predicted": 1,
+          "true": 6,
+          "true_positives": 1,
+          "precision": 1.0,
+          "recall": 0.1667
+        },
+        "learned_minus_pattern": {
+          "predicted": 1,
+          "true": 1,
+          "true_positives": 1,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "combined": {
+          "predicted": 6,
+          "true": 6,
+          "true_positives": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "record_level": {
+        "placeholder_records": 886,
+        "flagged_records": 886,
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "learned_month_days": [
+        "01-01"
+      ]
+    }
+  ]
+}

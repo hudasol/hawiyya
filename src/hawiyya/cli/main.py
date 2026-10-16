@@ -122,6 +122,21 @@ def data_lexicon_report() -> None:
     typer.echo(f"skeleton collision rate {rep['skeleton']['collision_rate']}")
 
 
+lab_app = typer.Typer(add_completion=False, help="Lab reports and experiments.")
+app.add_typer(lab_app, name="lab")
+
+
+@lab_app.command("placeholders")
+def lab_placeholders() -> None:
+    """Evaluate placeholder detectors on development seeds (results/placeholder_detector.json)."""
+    from hawiyya.lab.placeholder_report import write_report
+
+    rep = write_report()
+    learned = [s["value_level"]["learned"] for s in rep["per_seed"]]
+    typer.echo(f"learned detector precision/recall per seed: "
+               f"{[(x['precision'], x['recall']) for x in learned]}")
+
+
 contract_app = typer.Typer(add_completion=False, help="L0 contract artefacts.")
 app.add_typer(contract_app, name="contract")
 
