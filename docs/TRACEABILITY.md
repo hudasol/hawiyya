@@ -16,7 +16,7 @@ phase without a naming test fails the build.
 | HW-X-006 | MUST | P0 | Every claims register pointer resolves. | `tests/test_harness.py` | tested |
 | HW-X-007 | MUST | P0 | No em dash appears in any tracked text file. | `tests/test_harness.py` | tested |
 | HW-X-008 | MUST | P0 | No institutional affiliation is mentioned and no real authority is named outside docs/CONTEXT.md. | `tests/test_harness.py` | tested |
-| HW-X-009 | MUST | P1 | Same inputs and seed give byte identical outputs. |  | planned |
+| HW-X-009 | MUST | P1 | Same inputs and seed give byte identical outputs. | `tests/test_registry.py` | tested |
 | HW-X-010 | MUST | P0 | The logging helper refuses values that could carry a name or an identifier. | `tests/test_harness.py` | tested |
 | HW-X-011 | MUST | P8 | Every number in a rendered document matches its source file in results/. |  | planned |
 | HW-X-012 | MUST | P0 | Generated documents (traceability matrix, claims register) are fresh. | `tests/test_harness.py` | tested |
@@ -26,20 +26,20 @@ phase without a naming test fails the build.
 | HW-L0-004 | MUST | P1 | A Decision without an evidence object is rejected. | `tests/test_contract.py` | tested |
 | HW-L0-005 | MUST | P1 | Identifier kinds, capture methods and reason codes are enums; each reason code has English and Arabic descriptions. | `tests/test_contract.py` | tested |
 | HW-L0-006 | MUST | P1 | Conventions hold: probabilities in [0, 1], dates carry a precision flag, timestamps are UTC. | `tests/test_contract.py` | tested |
-| HW-L1-001 | MUST | P1 | The same seed gives an identical registry. |  | planned |
-| HW-L1-002 | MUST | P1 | Every injected duplicate has ground truth. |  | planned |
-| HW-L1-003 | MUST | P1 | The registration view never contains a truth field. | `tests/test_contract.py` | tested |
-| HW-L1-004 | MUST | P1 | The lexicon excludes every denylisted family name and the generator never produces a denylisted name combination. |  | planned |
-| HW-L1-005 | MUST | P1 | The population adapter fails loudly, naming the file and column, when the CSV schema drifts. |  | planned |
-| HW-L1-006 | MUST | P1 | Hashes in data/MANIFEST.json verify. |  | planned |
-| HW-L1-007 | MUST | P1 | The data source field in the manifest matches the README and data statement. |  | planned |
-| HW-L1-008 | MUST | P1 | Hard negatives are present: twins, siblings, same name father and son, cousins, coincidental date of birth and sex, newborn sharing the mother's identifier, unrelated people sharing a placeholder. |  | planned |
-| HW-L1-009 | MUST | P1 | At least six synthetic facilities, each with a registration style. |  | planned |
-| HW-L1-010 | MUST | P1 | The skeleton collision rate of the lexicon is measured and written to results/lexicon_report.json. |  | planned |
-| HW-L1-011 | MUST | P1 | Synthetic identifiers follow the documented format (15 digits, prefix 784, birth year segment) and placeholders are generated. |  | planned |
-| HW-L1-012 | MUST | P1 | Tier S (5,000 persons) and Tier M (20,000 persons) are generated. |  | planned |
+| HW-L1-001 | MUST | P1 | The same seed gives an identical registry. | `tests/test_registry.py` | tested |
+| HW-L1-002 | MUST | P1 | Every injected duplicate has ground truth. | `tests/test_registry.py` | tested |
+| HW-L1-003 | MUST | P1 | The registration view never contains a truth field. | `tests/test_contract.py`<br>`tests/test_registry.py` | tested |
+| HW-L1-004 | MUST | P1 | The lexicon excludes every denylisted family name and the generator never produces a denylisted name combination. | `tests/test_registry.py` | tested |
+| HW-L1-005 | MUST | P1 | The population adapter fails loudly, naming the file and column, when the CSV schema drifts. | `tests/test_registry.py` | tested |
+| HW-L1-006 | MUST | P1 | Hashes in data/MANIFEST.json verify. | `tests/test_registry.py` | tested |
+| HW-L1-007 | MUST | P1 | The data source field in the manifest matches the README and data statement. | `tests/test_registry.py` | tested |
+| HW-L1-008 | MUST | P1 | Hard negatives are present: twins, siblings, same name father and son, cousins, coincidental date of birth and sex, newborn sharing the mother's identifier, unrelated people sharing a placeholder. | `tests/test_registry.py` | tested |
+| HW-L1-009 | MUST | P1 | At least six synthetic facilities, each with a registration style. | `tests/test_registry.py` | tested |
+| HW-L1-010 | MUST | P1 | The skeleton collision rate of the lexicon is measured and written to results/lexicon_report.json. | `tests/test_registry.py` | tested |
+| HW-L1-011 | MUST | P1 | Synthetic identifiers follow the documented format (15 digits, prefix 784, birth year segment) and placeholders are generated. | `tests/test_registry.py` | tested |
+| HW-L1-012 | MUST | P1 | Tier S (5,000 persons) and Tier M (20,000 persons) are generated. | `tests/test_registry.py` | tested |
 | HW-L1-013 | MAY | P10 | Tier L (100,000 persons) is generated. |  | planned |
-| HW-L1-014 | SHOULD | P1 | An optional documented age and sex re weighting, labelled ASSUMPTION. |  | planned |
+| HW-L1-014 | SHOULD | P1 | An optional documented age and sex re weighting, labelled ASSUMPTION. | `tests/test_registry.py` | tested |
 | HW-L2-001 | MUST | P2 | Ported Arabic and Latin normalisation (diacritics, tatweel, alef, ya, digits, accents). |  | planned |
 | HW-L2-002 | MUST | P2 | Consonant skeleton, coarse key and Arabizi digit decoding. |  | planned |
 | HW-L2-003 | MUST | P2 | Person name model: prefixes, glued prefixes, compound given names, abbreviations, initials, honorifics, single token names. |  | planned |
