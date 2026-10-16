@@ -2,6 +2,11 @@
 
 All notable changes are listed per phase tag.
 
+## v0.4.0 (P3)
+
+- L3 matching: multi pass blocking with a cap and sorted neighbourhood fallback, symmetric
+  comparison levels for ten fields, blocking smoke check.
+
 ## v0.3.0 (P2)
 
 - L2 normalisation: ported text normalisation, person name model, dates, identifiers,

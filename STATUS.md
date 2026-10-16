@@ -14,4 +14,6 @@ What works today, in plain words.
   grandfather and family positions, consonant skeletons and coarse keys; parses dates and
   identifiers; flags placeholders by pattern and by a data driven rule; and builds term
   frequency tables from the registry itself.
-- Matching, scoring, decisions, the API and the console do not exist yet.
+- L3 finds candidate pairs with seven blocking passes (placeholders never block) and gives
+  each pair a discrete agreement level per field.
+- Scoring, decisions, the API and the console do not exist yet.
