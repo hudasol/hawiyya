@@ -61,16 +61,16 @@ phase without a naming test fails the build.
 | HW-L3-006 | MUST | P3 | Missing data never turns a hard field disagreement into agreement. | `tests/test_matching.py` | tested |
 | HW-L3-007 | MUST | P3 | Blocking metrics: pair completeness, reduction ratio, candidate pairs per record. | `tests/test_matching.py` | tested |
 | HW-L3-008 | MUST | P3 | Identifier capture method modifies identifier level reliability. | `tests/test_matching.py` | tested |
-| HW-L4-001 | MUST | P4 | Score is prior log odds plus the sum of per level log likelihood ratios; a hand worked example matches to six decimals. |  | planned |
-| HW-L4-002 | MUST | P4 | Unsupervised EM estimation with informed initialisation. |  | planned |
-| HW-L4-003 | MUST | P4 | Label fitted parameters as an upper bound, with the EM gap reported. |  | planned |
-| HW-L4-004 | MUST | P4 | Term frequency adjustment for names, dates of birth and phone suffixes. |  | planned |
-| HW-L4-005 | MUST | P4 | A level involving a placeholder contributes exactly zero. |  | planned |
-| HW-L4-006 | MUST | P4 | Isotonic calibration fitted on family grouped development data, with ECE and an interval per probability. |  | planned |
-| HW-L4-007 | MUST | P4 | Scores are symmetric in record order. |  | planned |
-| HW-L4-008 | MUST | P4 | Adding an agreeing field never lowers the score; adding a hard conflict never raises it. |  | planned |
-| HW-L4-009 | MUST | P4 | Evidence items sum to the log odds. |  | planned |
-| HW-L4-010 | MUST | P4 | The scorer never receives a truth field. |  | planned |
+| HW-L4-001 | MUST | P4 | Score is prior log odds plus the sum of per level log likelihood ratios; a hand worked example matches to six decimals. | `tests/test_scoring.py` | tested |
+| HW-L4-002 | MUST | P4 | Unsupervised EM estimation with informed initialisation. | `tests/test_scoring.py` | tested |
+| HW-L4-003 | MUST | P4 | Label fitted parameters as an upper bound, with the EM gap reported. | `tests/test_scoring.py` | tested |
+| HW-L4-004 | MUST | P4 | Term frequency adjustment for names, dates of birth and phone suffixes. | `tests/test_scoring.py` | tested |
+| HW-L4-005 | MUST | P4 | A level involving a placeholder contributes exactly zero. | `tests/test_scoring.py` | tested |
+| HW-L4-006 | MUST | P4 | Isotonic calibration fitted on family grouped development data, with ECE and an interval per probability. | `tests/test_scoring.py` | tested |
+| HW-L4-007 | MUST | P4 | Scores are symmetric in record order. | `tests/test_scoring.py` | tested |
+| HW-L4-008 | MUST | P4 | Adding an agreeing field never lowers the score; adding a hard conflict never raises it. | `tests/test_scoring.py` | tested |
+| HW-L4-009 | MUST | P4 | Evidence items sum to the log odds. | `tests/test_scoring.py` | tested |
+| HW-L4-010 | MUST | P4 | The scorer never receives a truth field. | `tests/test_scoring.py` | tested |
 | HW-L4-011 | SHOULD | P8 | A supervised gradient boosted reference on the same comparison levels. |  | planned |
 | HW-L4-012 | MUST | P10 | Vectorised scoring throughput is measured against the budget of 200,000 pairs per second. |  | planned |
 | HW-L5-001 | MUST | P5 | Cost based decision with closed form thresholds. |  | planned |
