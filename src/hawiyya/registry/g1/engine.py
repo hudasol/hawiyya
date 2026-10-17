@@ -154,7 +154,9 @@ def render_names(p: Person, fac: Facility, g: np.random.Generator, cfg: G1Config
             toks[j] = _typo_latin(toks[j], g)
             log.append("name:typo")
         if g.random() < cfg.swap_order * noise:
-            toks = [toks[-1], *toks[:-1]]
+            # Move the family name (with a separate article, as in "Al Masri") to the front.
+            k = 2 if len(toks) >= 3 and toks[-2].lower() in ("al", "el") else 1
+            toks = [*toks[-k:], *toks[:-k]]
             log.append("name:swap")
         if g.random() < cfg.honorific * noise:
             hon = ["Mr", "Dr"] if p.sex == "M" else ["Mrs", "Ms", "Dr"]
