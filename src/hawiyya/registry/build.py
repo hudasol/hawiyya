@@ -16,9 +16,10 @@ from hawiyya.core.determinism import canonical_json, rng, stable_hash
 from hawiyya.core.paths import DATA
 from hawiyya.core.sealed import check_seed
 from hawiyya.registry.facilities import FACILITIES, Facility
-from hawiyya.registry.g1.engine import G1Config, Rendered, registration_date, render_record
+from hawiyya.registry.g1.engine import G1Config, registration_date, render_record
 from hawiyya.registry.lexicon import Lexicon, default_lexicon
 from hawiyya.registry.people import People, Person, build_people
+from hawiyya.registry.rendered import Rendered
 from hawiyya.registry.source import PopulationPerson, native_population, read_sample
 from hawiyya.registry.truth import TruthView
 from hawiyya.registry.view import RegistrationView
@@ -87,6 +88,10 @@ def build_registry(seed: int, tier: str = "S", generator: str = "G1",
     people = build_people(sample_population(n, seed, src), lex, seed)
     if generator == "G1":
         renderer = _g1_renderer(G1Config(placeholder_override=placeholder_share))
+    elif generator == "G2":
+        from hawiyya.registry.g2.engine import G2Config, g2_renderer
+
+        renderer = g2_renderer(G2Config(placeholder_override=placeholder_share))
     else:
         raise ValueError(f"unknown generator {generator}")
     g = rng(seed, "registrations", generator)

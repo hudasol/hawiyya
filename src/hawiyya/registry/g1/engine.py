@@ -23,6 +23,7 @@ from hawiyya.registry.facilities import (
 from hawiyya.registry.g1.translit import translit_name
 from hawiyya.registry.lexicon import NameEntry
 from hawiyya.registry.people import ARAB_ORIGINS, People, Person
+from hawiyya.registry.rendered import Rendered
 
 WINDOW_START = date(2023, 1, 1)
 WINDOW_END = date(2026, 9, 30)
@@ -53,13 +54,6 @@ class G1Config:
     nationality_missing: float = 0.10
     area_missing: float = 0.15
     placeholder_override: float | None = None
-
-
-@dataclass(frozen=True)
-class Rendered:
-    fields: dict[str, object]
-    name_style: str
-    log: tuple[str, ...]
 
 
 def name_entries(p: Person, g: np.random.Generator, cfg: G1Config) -> list[NameEntry]:
