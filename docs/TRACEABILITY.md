@@ -112,14 +112,14 @@ phase without a naming test fails the build.
 | HW-L8-005 | MUST | P4 | Static mode: `hawiyya snapshot` writes every response the console needs. | `tests/test_api.py` | tested |
 | HW-L8-006 | SHOULD | P9 | A browser side scorer for the registration check in static mode. |  | planned |
 | HW-L8-007 | MUST | P9 | Server logs contain no names or identifiers. |  | planned |
-| HW-L9-001 | MUST | P4 | The synthetic data banner is on every screen and cannot be dismissed. |  | planned |
+| HW-L9-001 | MUST | P4 | The synthetic data banner is on every screen and cannot be dismissed. | `web/src/components/components.test.tsx`<br>`web/e2e/console.spec.ts` | tested |
 | HW-L9-002 | MUST | P9 | All ten console screens exist with loading, empty and error states. |  | planned |
-| HW-L9-003 | MUST | P9 | English and Arabic with right to left layout. |  | planned |
-| HW-L9-004 | MUST | P9 | Every name is rendered inside a bidi isolating element. |  | planned |
-| HW-L9-005 | MUST | P9 | Text contrast meets WCAG 2.2 AA and graphical objects 3:1, checked by a test. |  | planned |
-| HW-L9-006 | MUST | P9 | Automated accessibility checks (axe) pass on every screen. |  | planned |
+| HW-L9-003 | MUST | P9 | English and Arabic with right to left layout. | `web/e2e/console.spec.ts` | tested |
+| HW-L9-004 | MUST | P9 | Every name is rendered inside a bidi isolating element. | `web/src/components/components.test.tsx`<br>`web/e2e/console.spec.ts` | tested |
+| HW-L9-005 | MUST | P9 | Text contrast meets WCAG 2.2 AA and graphical objects 3:1, checked by a test. | `web/src/components/components.test.tsx` | tested |
+| HW-L9-006 | MUST | P9 | Automated accessibility checks (axe) pass on every screen. | `web/e2e/console.spec.ts` | tested |
 | HW-L9-007 | MUST | P9 | Every chart has a table alternative and shows intervals. |  | planned |
 | HW-L9-008 | SHOULD | P9 | Dark theme. |  | planned |
-| HW-L9-009 | MUST | P9 | LINK, REVIEW and KEEP_APART are encoded by shape and label as well as colour. |  | planned |
-| HW-L9-010 | MUST | P4 | Registration check controls have touch targets of at least 44 pixels. |  | planned |
+| HW-L9-009 | MUST | P9 | LINK, REVIEW and KEEP_APART are encoded by shape and label as well as colour. | `web/src/components/components.test.tsx` | tested |
+| HW-L9-010 | MUST | P4 | Registration check controls have touch targets of at least 44 pixels. | `web/src/components/components.test.tsx`<br>`web/e2e/console.spec.ts` | tested |
 | HW-L9-011 | SHOULD | P9 | Audit log screen with hash chain status. |  | planned |
