@@ -1,0 +1,258 @@
+/* Layout and typography. Colours come from CSS custom properties set by tokens.ts. Logical
+   properties (inline/block) keep right to left layout correct. */
+
+:root {
+  --bg: #fdf8f5;
+  --surface: #fbe3ea;
+  --highlight: #f7b6c8;
+  --decor: #d9728f;
+  --ink: #5b3a4a;
+  --muted: #7a4f61;
+  --strong: #a3405e;
+  --focus: #8a2e4c;
+  --link: #2f6b4f;
+  --review: #8a5a00;
+  --apart: #4a4a6a;
+  --border: 2px solid var(--ink);
+  --shadow: 4px 4px 0 var(--ink);
+  --font-head: "Space Grotesk", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+[dir="rtl"] body {
+  font-family: "IBM Plex Sans Arabic", var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-head);
+  line-height: 1.2;
+  margin-block: 0 0.75rem;
+}
+
+a {
+  color: var(--strong);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.mono,
+code,
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.banner {
+  background: var(--highlight);
+  color: var(--ink);
+  border-block-end: var(--border);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav {
+  border-inline-end: var(--border);
+  padding: 1rem;
+  background: var(--surface);
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: var(--ink);
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.nav a[aria-current="page"] {
+  border: var(--border);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.main {
+  padding: 1.5rem;
+  max-width: 1200px;
+}
+
+.card {
+  background: var(--surface);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.25rem;
+  margin-block-end: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.stat {
+  background: var(--bg);
+  border: var(--border);
+  padding: 0.75rem 1rem;
+}
+
+.stat .value {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+button,
+.btn {
+  font: inherit;
+  color: var(--ink);
+  background: var(--bg);
+  border: var(--border);
+  box-shadow: 3px 3px 0 var(--ink);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+button.primary {
+  background: var(--highlight);
+  font-weight: 700;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--ink);
+  background: var(--bg);
+  border: var(--border);
+  padding: 0.5rem 0.75rem;
+  min-height: 44px;
+  width: 100%;
+}
+
+label {
+  display: grid;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.75rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid var(--ink);
+  padding: 0.35rem 0.5rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+th {
+  background: var(--bg);
+}
+
+.decision {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  border: var(--border);
+  padding: 0.15rem 0.6rem;
+  background: var(--bg);
+}
+
+.decision.LINK {
+  color: var(--link);
+}
+
+.decision.REVIEW {
+  color: var(--review);
+}
+
+.decision.KEEP_APART {
+  color: var(--apart);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+bdi.name {
+  unicode-bidi: isolate;
+}
+
+details > summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
