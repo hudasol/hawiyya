@@ -27,8 +27,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 | P4 scoring and walking skeleton | done | hand worked example matches to six decimals; `results/model/fit_report.json` (plain EM lambda 0.162 against true 0.084, anchored estimation 0.085); live API answered a check through `hawiyya serve`; static build passes 8 Playwright tests with axe; screenshots in `docs/img/` reviewed | v0.5.0 |
 | P5 decision | done | 13 decision tests incl. hypothesis monotonicity and VOI non negativity; every guard triggers and does not over trigger; batch decisions equal pairwise decisions | v0.6.0 |
 | P6 workflow | done | audit tamper test passes; FHIR style bundles validate against `contract/fhir_patient_bundle.schema.json`; audit log scanned for names and identifiers | v0.7.0 |
-| P7 lab | next | | v0.8.0 |
-| P8 evaluation | not started | | v0.9.0 |
+| P7 lab | done | preregistration and 37 predictions committed before any run; G2 behind the independence contract; baselines B0 to B6 on one pair universe; strata add up; gold set of 84 pairs | v0.8.0 |
+| P8 evaluation | next | | v0.9.0 |
 | P9 console | not started | | v0.10.0 |
 | P10 hardening | not started | | v1.0.0 |
 
@@ -43,8 +43,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 
 ## Next
 
-P7: commit PREREGISTRATION and PREDICTIONS first; then G2, baselines B0 to B6, metrics,
-fairness, gold set and the experiment harness.
+P8: `hawiyya eval` on development seeds, render EVALUATION.md with hits and misses, freeze,
+then `hawiyya eval --sealed` once (it refuses a second run).
 
 ## Environment notes
 

@@ -2,6 +2,11 @@
 
 All notable changes are listed per phase tag.
 
+## v0.8.0 (P7)
+
+- Preregistration and 37 machine checkable predictions, committed before any run.
+- L7 lab: G2 independent generator, baselines B0 to B6, metrics, strata, gold set, harness.
+
 ## v0.7.0 (P6)
 
 - L6 workflow: review queue, audit hash chain, FHIR style export with its own schema, review

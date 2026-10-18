@@ -27,4 +27,6 @@ What works today, in plain words.
 - L6 runs batch deduplication into a review queue (a state machine with priorities), keeps
   an append only audit log with a hash chain and no names or identifiers, and exports
   FHIR R4 style Patient bundles with Patient.link, a review CSV and a summary.
-- The independent generator, baselines and experiments do not exist yet.
+- L7 has an independent generator (G2), seven systems on one pair universe, metrics with
+  intervals, fairness strata, a gold set and the experiment harness. The predictions were
+  registered before any experiment ran; the experiments have not been run yet.
