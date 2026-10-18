@@ -24,7 +24,7 @@ SYSTEM_LABELS = {
 METRICS = (("link_precision", "LINK precision", 4), ("link_recall", "LINK recall", 4),
            ("link_f1", "LINK F1", 4), ("false_merges_per_10k", "False merges per 10k", 1),
            ("found_recall", "Found recall", 4), ("review_rate", "Reviews per 1k", 1),
-           ("bcubed_precision", "B3 precision", 4), ("bcubed_recall", "B3 recall", 4))  # fmt: skip
+           ("bcubed_precision", "B cubed precision", 4), ("bcubed_recall", "B cubed recall", 4))  # fmt: skip
 
 
 def _load(name: str) -> dict[str, Any] | None:

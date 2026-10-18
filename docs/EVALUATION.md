@@ -64,7 +64,53 @@ Misses are kept.
 
 ## Discussion
 
-Written after the results; see the section below the tables.
+Written after the results. Numbers live only in the generated tables; this section refers to
+them in words.
+
+**What held.** On both the development and the sealed seeds the product made almost no false
+merges, its automatic links were almost always right, it found nearly every true pair (as a
+link or a review), it linked no twin, no same name father and son and no newborn sharing the
+mother's identifier, and its calibration error was small. Exact identifier matching collapsed
+when unrelated people shared placeholders, as predicted. The forced variant (the same model
+with no review and no guards) made orders of magnitude more false merges than the product,
+which is the main argument for abstention.
+
+**The misses, kept and explained.**
+
+- *G2 pair completeness (E1).* G2 changes how names are written but shares the people,
+  identifiers, phones and dates with G1, and several blocking passes do not use names, so
+  blocking lost less than predicted. The prediction overrated how much name noise alone would
+  hurt blocking.
+- *Review workload (E2 and E9).* The product sends more pairs to review than predicted. With a
+  false merge costing two hundred and fifty times a review, the LINK threshold sits very close
+  to certainty, and most true pairs without an agreeing identifier land in review. This is the
+  price of the safety setting, and the threshold lab shows how it moves with the costs.
+- *Arabizi (E4).* Arabizi was not the hardest style; formal transliteration was, and the gaps
+  between styles were small. A likely reason is circularity: G1 writes Arabizi with the same
+  digit conventions that the matcher decodes. Tahdeed's lesson did not transfer here because
+  this generator shares the matcher's assumptions. G2's different chat convention is the
+  better test, and the product's recall drops on G2.
+- *Clean records (E5).* On records without placeholders, exact identifier matching did not
+  reach the product's F1, and on the sealed seeds its precision fell just below the predicted
+  level because newborns registered under the mother's identifier are linked to the mother.
+  The simple baseline still wins on two things: it needs no review at all, and it is trivial to
+  explain. It does not win on F1 in this synthetic world.
+- *Origin groups (E7).* The lowest group was other Arab names, not Gulf Arab names, but every
+  group's interval overlaps the others and the spread across groups stayed within the
+  predicted bound; the ordering should not be read as a finding.
+- *Independence (E8).* The product's found recall dropped less on G2 than predicted, while its
+  calibration error rose as predicted. G2 is written by the same author and shares the people,
+  so it is a weaker test of independence than a second author's generator would be.
+
+**Where a baseline beats the product.** Every such case is listed under each results table.
+The most important one is the supervised reference (B6): trained with labels it links more
+true pairs automatically and sends far fewer pairs to review at a small cost in false merges.
+A deployment with a labelled sample from the data owner should compare against it; the
+product's unsupervised estimation is the safer default only when no labels exist.
+
+**Limits.** All of this describes synthetic data with synthetic errors. The generator and the
+matcher share an author; the lexicon is the build agent's; Synthea's demographics are not the
+UAE's; conditional independence is violated; nothing here is validated on a real registry.
 
 ## Development results
 
@@ -78,7 +124,7 @@ Written after the results; see the section below the tables.
 
 ### E2 systems on G1 (dev; mean [95% interval] over 20 seeds)
 
-| System | LINK precision | LINK recall | LINK F1 | False merges per 10k | Found recall | Reviews per 1k | B3 precision | B3 recall |
+| System | LINK precision | LINK recall | LINK F1 | False merges per 10k | Found recall | Reviews per 1k | B cubed precision | B cubed recall |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | B0 identifier exact | 0.0428 [0.0417, 0.0440] | 0.7314 [0.7294, 0.7333] | 0.0809 [0.0789, 0.0830] | 147698.2 [143925.8, 151470.6] | 0.7314 [0.7294, 0.7333] | 0.0 [0.0, 0.0] | 0.9165 [0.9157, 0.9174] | 0.8457 [0.8445, 0.8468] |
 | B1 name and date exact | 0.9995 [0.9990, 0.9999] | 0.0977 [0.0962, 0.0992] | 0.1780 [0.1755, 0.1805] | 0.5 [0.1, 0.8] | 0.0977 [0.0962, 0.0992] | 0.0 [0.0, 0.0] | 1.0000 [0.9999, 1.0000] | 0.4845 [0.4830, 0.4861] |
@@ -96,16 +142,16 @@ Where a baseline beats the product:
 - B3 Hawiyya, Latin only beats the product on LINK recall (0.7953 against 0.7933).
 - B3 Hawiyya, Latin only beats the product on LINK F1 (0.8860 against 0.8847).
 - B3 Hawiyya, Latin only beats the product on Reviews per 1k (221.3 against 228.6).
-- B3 Hawiyya, Latin only beats the product on B3 recall (0.8966 against 0.8939).
+- B3 Hawiyya, Latin only beats the product on B cubed recall (0.8966 against 0.8939).
 - B4 Hawiyya, forced (no review) beats the product on LINK recall (0.9771 against 0.7933).
 - B4 Hawiyya, forced (no review) beats the product on LINK F1 (0.9808 against 0.8847).
 - B4 Hawiyya, forced (no review) beats the product on Reviews per 1k (0.0 against 228.6).
-- B4 Hawiyya, forced (no review) beats the product on B3 recall (0.9928 against 0.8939).
+- B4 Hawiyya, forced (no review) beats the product on B cubed recall (0.9928 against 0.8939).
 - B6 supervised reference beats the product on LINK recall (0.9356 against 0.7933).
 - B6 supervised reference beats the product on LINK F1 (0.9666 against 0.8847).
 - B6 supervised reference beats the product on Found recall (0.9917 against 0.9907).
 - B6 supervised reference beats the product on Reviews per 1k (70.8 against 228.6).
-- B6 supervised reference beats the product on B3 recall (0.9741 against 0.8939).
+- B6 supervised reference beats the product on B cubed recall (0.9741 against 0.8939).
 
 ### E3 calibration and abstention (dev)
 
@@ -283,7 +329,7 @@ Costs: {'c_fm': 500.0, 'c_md': 20.0, 'c_r': 2.0}; simulated reviewer: {'accuracy
 
 ### Headline run, Tier M (dev, seeds [26, 27, 28, 29, 30])
 
-| System | LINK precision | LINK recall | LINK F1 | False merges per 10k | Found recall | Reviews per 1k | B3 precision | B3 recall |
+| System | LINK precision | LINK recall | LINK F1 | False merges per 10k | Found recall | Reviews per 1k | B cubed precision | B cubed recall |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | B0 identifier exact | 0.0110 [0.0107, 0.0112] | 0.7321 [0.7291, 0.7351] | 0.0216 [0.0212, 0.0221] | 593296.5 [582759.2, 603833.9] | 0.7321 [0.7291, 0.7351] | 0.0 [0.0, 0.0] | 0.9160 [0.9152, 0.9168] | 0.8466 [0.8455, 0.8477] |
 | B4 Hawiyya, forced (no review) | 0.9818 [0.9799, 0.9837] | 0.9766 [0.9757, 0.9775] | 0.9792 [0.9785, 0.9799] | 163.0 [145.5, 180.5] | 0.9766 [0.9757, 0.9775] | 0.0 [0.0, 0.0] | 0.9806 [0.9786, 0.9826] | 0.9926 [0.9921, 0.9931] |
@@ -302,7 +348,7 @@ Costs: {'c_fm': 500.0, 'c_md': 20.0, 'c_r': 2.0}; simulated reviewer: {'accuracy
 
 ### E2 systems on G1 (sealed; mean [95% interval] over 20 seeds)
 
-| System | LINK precision | LINK recall | LINK F1 | False merges per 10k | Found recall | Reviews per 1k | B3 precision | B3 recall |
+| System | LINK precision | LINK recall | LINK F1 | False merges per 10k | Found recall | Reviews per 1k | B cubed precision | B cubed recall |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | B0 identifier exact | 0.0416 [0.0400, 0.0432] | 0.7319 [0.7292, 0.7345] | 0.0787 [0.0758, 0.0816] | 152363.8 [146671.4, 158056.3] | 0.7319 [0.7292, 0.7345] | 0.0 [0.0, 0.0] | 0.9155 [0.9142, 0.9168] | 0.8463 [0.8447, 0.8478] |
 | B1 name and date exact | 0.9994 [0.9989, 1.0000] | 0.0975 [0.0961, 0.0990] | 0.1777 [0.1753, 0.1801] | 0.5 [-0.0, 1.0] | 0.0975 [0.0961, 0.0990] | 0.0 [0.0, 0.0] | 1.0000 [0.9999, 1.0000] | 0.4853 [0.4836, 0.4870] |
@@ -320,16 +366,16 @@ Where a baseline beats the product:
 - B3 Hawiyya, Latin only beats the product on LINK recall (0.7949 against 0.7921).
 - B3 Hawiyya, Latin only beats the product on LINK F1 (0.8857 against 0.8840).
 - B3 Hawiyya, Latin only beats the product on Reviews per 1k (221.1 against 228.8).
-- B3 Hawiyya, Latin only beats the product on B3 recall (0.8959 against 0.8930).
+- B3 Hawiyya, Latin only beats the product on B cubed recall (0.8959 against 0.8930).
 - B4 Hawiyya, forced (no review) beats the product on LINK recall (0.9776 against 0.7921).
 - B4 Hawiyya, forced (no review) beats the product on LINK F1 (0.9811 against 0.8840).
 - B4 Hawiyya, forced (no review) beats the product on Reviews per 1k (0.0 against 228.8).
-- B4 Hawiyya, forced (no review) beats the product on B3 recall (0.9929 against 0.8930).
+- B4 Hawiyya, forced (no review) beats the product on B cubed recall (0.9929 against 0.8930).
 - B6 supervised reference beats the product on LINK recall (0.9361 against 0.7921).
 - B6 supervised reference beats the product on LINK F1 (0.9670 against 0.8840).
 - B6 supervised reference beats the product on Found recall (0.9922 against 0.9913).
 - B6 supervised reference beats the product on Reviews per 1k (70.2 against 228.8).
-- B6 supervised reference beats the product on B3 recall (0.9742 against 0.8930).
+- B6 supervised reference beats the product on B cubed recall (0.9742 against 0.8930).
 
 ### E3 calibration and abstention (sealed)
 
