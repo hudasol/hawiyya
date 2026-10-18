@@ -110,7 +110,8 @@ def baseline_wins(doc: dict[str, Any] | None) -> list[str]:
             a, b = vals.get(m, {}).get("mean"), prod.get(m, {}).get("mean")
             if a is None or b is None:
                 continue
-            wins = a > b if m in better_high else (a < b if m != "review_rate" else a < b)
+            # Lower is better for false merges and for review workload.
+            wins = a > b if m in better_high else a < b
             if wins:
                 out.append(f"{SYSTEM_LABELS.get(key, key)} beats the product on {label} "
                            f"({a:.{digits}f} against {b:.{digits}f}).")  # fmt: skip
