@@ -39,6 +39,12 @@ def _example_inputs() -> list[tuple[str, str, RegistrationInput]]:
                 id_kind=r.id_kind if style == "bilingual_card" else None,
                 id_capture=r.id_capture if style == "bilingual_card" else None,
             )))  # fmt: skip
+    twin = next((r for r in st.registry.records
+                 if st.registry.truth.people.get(st.registry.truth.person_of(r.record_id)).twin_group
+                 and r.name_latin and r.dob), None)  # fmt: skip
+    if twin is not None:
+        out.append(("twin", "A twin registered again with name and date of birth only",
+                    RegistrationInput(name_latin=twin.name_latin, dob=twin.dob, sex=twin.sex)))
     out.append(("common_name_only", "A very common name with nothing else",
                 RegistrationInput(name_latin="Mohammed Ali")))
     out.append(("placeholder_id", "Placeholder identifier with a common name",

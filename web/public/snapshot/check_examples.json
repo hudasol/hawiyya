@@ -154,7 +154,43 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 3.7364130434782705,
+        "REVIEW": 2.0,
+        "KEEP_APART": 19.850543478260867
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "bd22d540932a8b01848e0e14",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.993; Date of birth is same (supports a match); Family name is same (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.993؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم العائلة: متطابق (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -285,7 +321,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 35.37735849056606,
+        "REVIEW": 2.0,
+        "KEEP_APART": 18.58490566037736
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "5efc1109435ff0f57cd427d5",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.929; Date of birth is same (supports a match); Father's name is same consonants (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.929؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -416,7 +487,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 35.37735849056606,
+        "REVIEW": 2.0,
+        "KEEP_APART": 18.58490566037736
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "5911ef8b1185812f1670fb6b",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.929; Date of birth is same (supports a match); Father's name is same consonants (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.929؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -547,7 +653,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 35.37735849056606,
+        "REVIEW": 2.0,
+        "KEEP_APART": 18.58490566037736
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "8d3ad9f6ab781300c4a4df28",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.929; Date of birth is same (supports a match); Father's name is same consonants (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.929؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -678,7 +819,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 35.37735849056606,
+        "REVIEW": 2.0,
+        "KEEP_APART": 18.58490566037736
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "de038ad827be2f91afefb72a",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.929; Date of birth is same (supports a match); Father's name is same consonants (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.929؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -809,7 +985,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [
+        "CONFLICTING_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "c1bf034e470dc66f608220ed",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Sex is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ الجنس: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -940,11 +1151,82 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [
+        "CONFLICTING_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "e3e35ae045e97da884c09e2c",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Given name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      }
     ],
     "note": "",
-    "next_best_question": null
+    "next_best_question": [
+     {
+      "key": "scan_card",
+      "field": "identifier",
+      "expected_cost_reduction": 1.996101,
+      "label_en": "Scan the identity card",
+      "label_ar": "امسح بطاقة الهوية"
+     },
+     {
+      "key": "date_of_birth",
+      "field": "dob",
+      "expected_cost_reduction": 1.966929,
+      "label_en": "Ask for the date of birth",
+      "label_ar": "اسأل عن تاريخ الميلاد"
+     },
+     {
+      "key": "passport",
+      "field": "identifier",
+      "expected_cost_reduction": 1.955515,
+      "label_en": "Ask for the passport number",
+      "label_ar": "اسأل عن رقم جواز السفر"
+     },
+     {
+      "key": "phone",
+      "field": "phone",
+      "expected_cost_reduction": 1.536811,
+      "label_en": "Ask for the phone number",
+      "label_ar": "اسأل عن رقم الهاتف"
+     },
+     {
+      "key": "father_name",
+      "field": "father",
+      "expected_cost_reduction": 0.864359,
+      "label_en": "Ask for the father's name",
+      "label_ar": "اسأل عن اسم الأب"
+     }
+    ]
    }
   },
   {
@@ -1100,7 +1382,43 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "LINK",
+       "model_decision": "LINK",
+       "reason_codes": [
+        "STRONG_ID_AGREEMENT",
+        "STRONG_DEMOGRAPHIC_AGREEMENT"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 0.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 20.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "1ecf108254f0024f96550ae5",
+       "explanation": {
+        "en": [
+         "Recommend a merge request to the health information management office.",
+         "The calibrated probability is 1.000; Identifier is same (supports a match); Date of birth is same (supports a match).",
+         "A disagreeing card read identifier or date of birth would stop the merge."
+        ],
+        "ar": [
+         "يوصى بإرسال طلب دمج إلى مكتب إدارة المعلومات الصحية.",
+         "الاحتمال المعاير 1.000؛ رقم الهوية: متطابق (يدعم التطابق)؛ تاريخ الميلاد: متطابق (يدعم التطابق).",
+         "رقم هوية مختلف من قارئ البطاقة أو تاريخ ميلاد مختلف سيوقف الدمج."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -1231,7 +1549,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.2057188244639,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.03177124702144559
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "ca515e3a030fd4a049162012",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.002; Identifier is different identifier kinds (argues against a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.002؛ رقم الهوية: أنواع هوية مختلفة (يعارض التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -1362,7 +1713,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.2057188244639,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.03177124702144559
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "c66bd06d75821fef038d435c",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.002; Father's name is different (argues against a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.002؛ اسم الأب: مختلف (يعارض التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -1493,7 +1877,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.24280666330134,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.03028773346794548
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "744deebfde536cca9654830f",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.002; Father's name is different (argues against a match); Identifier is different identifier kinds (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.002؛ اسم الأب: مختلف (يعارض التطابق)؛ رقم الهوية: أنواع هوية مختلفة (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -1624,7 +2041,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.24280666330134,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.03028773346794548
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "f347b8f0634eca6154c20822",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.002; Father's name is different (argues against a match); Identifier is different identifier kinds (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.002؛ اسم الأب: مختلف (يعارض التطابق)؛ رقم الهوية: أنواع هوية مختلفة (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -1755,7 +2205,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.24280666330134,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.03028773346794548
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "2c617b8501fce29f12553e64",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.002; Father's name is different (argues against a match); Identifier is different identifier kinds (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.002؛ اسم الأب: مختلف (يعارض التطابق)؛ رقم الهوية: أنواع هوية مختلفة (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -1886,7 +2369,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.8308525033829,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.006765899864682004
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "eba8eb7efb31b51268f16b94",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Sex is different (argues against a match); Father's name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ الجنس: مختلف (يعارض التطابق)؛ اسم الأب: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2017,7 +2533,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [
+        "CONFLICTING_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "543a881cf82f8ab5fe5b28ad",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2148,7 +2699,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "e4e86b2f0bf0873ea597594f",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is same (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: متطابق (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2279,7 +2863,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [
+        "CONFLICTING_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "c1147b121156d8ed33640445",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      }
     ],
     "note": "",
@@ -2439,7 +3058,43 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 23.31961591220849,
+        "REVIEW": 2.0,
+        "KEEP_APART": 19.06721536351166
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "80b7ae38f66cff3e89fb2661",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.953; Date of birth is same (supports a match); Father's name is same consonants (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.953؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2570,7 +3225,43 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 23.31961591220849,
+        "REVIEW": 2.0,
+        "KEEP_APART": 19.06721536351166
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "b77a1f4f03fef8f9fd06eb5d",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.953; Date of birth is same (supports a match); Father's name is same consonants (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.953؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2701,7 +3392,43 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 35.37735849056606,
+        "REVIEW": 2.0,
+        "KEEP_APART": 18.58490566037736
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "cbbcc22ab0cb5e2832a489dd",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.929; Date of birth is same (supports a match); Father's name is same (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.929؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: متطابق (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2832,7 +3559,43 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 35.37735849056606,
+        "REVIEW": 2.0,
+        "KEEP_APART": 18.58490566037736
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "61a90608aa9cf82e721ce13e",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.929; Date of birth is same (supports a match); Father's name is same (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.929؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: متطابق (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -2963,7 +3726,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 494.3661971830986,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.22535211267605634
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "9db2c544d1249d2f8da46080",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.011; Father's name is different (argues against a match); Family name is same (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.011؛ اسم الأب: مختلف (يعارض التطابق)؛ اسم العائلة: متطابق (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -3094,7 +3890,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [
+        "CONFLICTING_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.52030700351776,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.019187719859290055
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "53a398e71ef9913164fd1be3",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.001; Date of birth is different (argues against a match); Father's name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.001؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -3225,7 +4056,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [
+        "CONFLICTING_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.52030700351776,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.019187719859290055
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "877d871fc800e44562e080af",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.001; Date of birth is different (argues against a match); Father's name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.001؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -3356,7 +4222,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "dfbd94cfbe782423cb810e9a",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Family name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -3487,7 +4386,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "3e942a1b25e2d08118a0ae26",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -3618,11 +4550,1788 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "2def42047c0d61719056b839",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      }
     ],
     "note": "",
-    "next_best_question": null
+    "next_best_question": [
+     {
+      "key": "scan_card",
+      "field": "identifier",
+      "expected_cost_reduction": 1.992695,
+      "label_en": "Scan the identity card",
+      "label_ar": "امسح بطاقة الهوية"
+     },
+     {
+      "key": "date_of_birth",
+      "field": "dob",
+      "expected_cost_reduction": 1.879549,
+      "label_en": "Ask for the date of birth",
+      "label_ar": "اسأل عن تاريخ الميلاد"
+     },
+     {
+      "key": "passport",
+      "field": "identifier",
+      "expected_cost_reduction": 1.87773,
+      "label_en": "Ask for the passport number",
+      "label_ar": "اسأل عن رقم جواز السفر"
+     },
+     {
+      "key": "father_name",
+      "field": "father",
+      "expected_cost_reduction": 0.332706,
+      "label_en": "Ask for the father's name",
+      "label_ar": "اسأل عن اسم الأب"
+     },
+     {
+      "key": "phone",
+      "field": "phone",
+      "expected_cost_reduction": 0.081042,
+      "label_en": "Ask for the phone number",
+      "label_ar": "اسأل عن رقم الهاتف"
+     }
+    ]
+   }
+  },
+  {
+   "key": "twin",
+   "label": "A twin registered again with name and date of birth only",
+   "input": {
+    "name_ar": null,
+    "name_latin": "Moza Mubarak Al Hosani",
+    "sex": "F",
+    "dob": "2018-07-26",
+    "dob_precision": null,
+    "id_value": null,
+    "id_kind": null,
+    "id_capture": null,
+    "nationality": null,
+    "phone": null,
+    "area": null,
+    "top": 10
+   },
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "static",
+    "ok": true,
+    "n_scored": 23,
+    "candidates": [
+     {
+      "record": {
+       "record_id": "R000012",
+       "facility_id": "F1",
+       "name_ar": "موزة مبارك الحوسني",
+       "name_latin": "Moza Mubarak Al Hosani",
+       "sex": "F",
+       "dob": "2018-07-26",
+       "dob_precision": "day",
+       "id_value": "784201782085791",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": "0588877235",
+       "area": "A05",
+       "registered_on": "2025-12-19"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R000012",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 6.343467380450764,
+       "probability": 0.953360768175583,
+       "probability_low": 0.9355209978882197,
+       "probability_high": 0.9663805333175012,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "exact",
+         "m": 0.1486424085703731,
+         "u": 0.022729805634807417,
+         "llr": 1.8778663922012653,
+         "tf_adjustment": 0.0,
+         "weight": 1.8778663922012653,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": 1.3593077315259814,
+         "weight": 6.751717938467472,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "STRONG_DEMOGRAPHIC_AGREEMENT",
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 23.31961591220849,
+        "REVIEW": 2.0,
+        "KEEP_APART": 19.06721536351166
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "738851ba05a1eb49117a566e",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.953; Date of birth is same (supports a match); Father's name is same (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.953؛ تاريخ الميلاد: متطابق (يدعم التطابق)؛ اسم الأب: متطابق (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R009065",
+       "facility_id": "F1",
+       "name_ar": "ميثاء سعيد حسين الحوسني",
+       "name_latin": "Maitha Saeed Hussain Al Hosani",
+       "sex": "F",
+       "dob": "1995-01-01",
+       "dob_precision": "year",
+       "id_value": "784199548514261",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": null,
+       "area": null,
+       "registered_on": "2024-02-03"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R009065",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -5.140401534831022,
+       "probability": 0.0015885623510722795,
+       "probability_low": 0.0004912790232885004,
+       "probability_high": 0.005722003420519772,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "coarse",
+         "m": 0.018159645232815963,
+         "u": 0.027362515973921895,
+         "llr": -0.4099722092932055,
+         "tf_adjustment": 0.0,
+         "weight": -0.4099722092932055,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 499.2057188244639,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.03177124702144559
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "c75e0f8171f67c6ce91dbc1f",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.002; Father's name is different (argues against a match); Family name is same (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.002؛ اسم الأب: مختلف (يعارض التطابق)؛ اسم العائلة: متطابق (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R003092",
+       "facility_id": "F6",
+       "name_ar": null,
+       "name_latin": "muza al7ousoni",
+       "sex": "F",
+       "dob": "1969-09-06",
+       "dob_precision": "day",
+       "id_value": "784199650770871",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0584039441",
+       "area": "A31",
+       "registered_on": "2025-03-11"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R003092",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -10.014041446076453,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "bf27531b6ba18e3534a223fa",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R010829",
+       "facility_id": "F4",
+       "name_ar": "آمنة حسن",
+       "name_latin": null,
+       "sex": "F",
+       "dob": "2018-01-20",
+       "dob_precision": "day",
+       "id_value": "784201836605130",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "PAK",
+       "phone": "0552258436",
+       "area": "A15",
+       "registered_on": "2023-03-12"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R010829",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.006093772313417,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "b8f66d8b37918206af458e99",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Given name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ الاسم الأول: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R000530",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "Zaynab Hussain",
+       "sex": "F",
+       "dob": "2018-06-12",
+       "dob_precision": "day",
+       "id_value": "784201855780547",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "BGD",
+       "phone": "0504135384",
+       "area": "A11",
+       "registered_on": "2023-05-05"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R000530",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.375864975161011,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "fd3cbc51c88a76744948c21f",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Given name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ الاسم الأول: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R005026",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Amina Hasan",
+       "sex": "F",
+       "dob": "2018-01-20",
+       "dob_precision": "day",
+       "id_value": "111111111111111",
+       "id_kind": "PLACEHOLDER",
+       "id_capture": "placeholder",
+       "nationality": "PAK",
+       "phone": "0552258436",
+       "area": "A15",
+       "registered_on": "2024-02-28"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R005026",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.375864975161011,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "1f3fa026cdfb823263f96d47",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Given name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ الاسم الأول: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R007400",
+       "facility_id": "F1",
+       "name_ar": "آمنة حسن",
+       "name_latin": "AMNA HASSAN",
+       "sex": "F",
+       "dob": "2018-01-20",
+       "dob_precision": "day",
+       "id_value": "784201836605130",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "PAK",
+       "phone": "0552258436",
+       "area": "A15",
+       "registered_on": "2026-04-12"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R007400",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.375864975161011,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "8ce42937f88edc8140289967",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Given name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ الاسم الأول: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R003133",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Mozah Waleed Mansour Alhosani",
+       "sex": "F",
+       "dob": "1987-07-31",
+       "dob_precision": "day",
+       "id_value": "784198712928112",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0541813294",
+       "area": "A38",
+       "registered_on": "2023-04-05"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R003133",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.648840837749763,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "ecbf0c482c55f787d3868875",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R008126",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "Mouza Walid Alhosani",
+       "sex": "F",
+       "dob": "1969-09-06",
+       "dob_precision": "day",
+       "id_value": "784196950770871",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0584039441",
+       "area": "A31",
+       "registered_on": "2023-07-09"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R008126",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.648840837749763,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "85516c742d2f311a0c0c9684",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     },
+     {
+      "record": {
+       "record_id": "R008874",
+       "facility_id": "F1",
+       "name_ar": "موزة بنت أحمد الحوسني",
+       "name_latin": "Moza Ahmed Al Hosani",
+       "sex": "F",
+       "dob": "1969-09-06",
+       "dob_precision": "day",
+       "id_value": "784196950770871",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": "0584039441",
+       "area": "A31",
+       "registered_on": "2025-08-18"
+      },
+      "score": {
+       "record_a": "NEWC295F49A",
+       "record_b": "R008874",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -11.648840837749763,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 500.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.0
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "c459c45e566051d784a17ab5",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.000; Date of birth is different (argues against a match); Father's name is different (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.000؛ تاريخ الميلاد: مختلف (يعارض التطابق)؛ اسم الأب: مختلف (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
+     }
+    ],
+    "note": "",
+    "next_best_question": [
+     {
+      "key": "scan_card",
+      "field": "identifier",
+      "expected_cost_reduction": 1.992695,
+      "label_en": "Scan the identity card",
+      "label_ar": "امسح بطاقة الهوية"
+     },
+     {
+      "key": "date_of_birth",
+      "field": "dob",
+      "expected_cost_reduction": 1.879549,
+      "label_en": "Ask for the date of birth",
+      "label_ar": "اسأل عن تاريخ الميلاد"
+     },
+     {
+      "key": "passport",
+      "field": "identifier",
+      "expected_cost_reduction": 1.87773,
+      "label_en": "Ask for the passport number",
+      "label_ar": "اسأل عن رقم جواز السفر"
+     },
+     {
+      "key": "father_name",
+      "field": "father",
+      "expected_cost_reduction": 0.332706,
+      "label_en": "Ask for the father's name",
+      "label_ar": "اسأل عن اسم الأب"
+     },
+     {
+      "key": "phone",
+      "field": "phone",
+      "expected_cost_reduction": 0.081042,
+      "label_en": "Ask for the phone number",
+      "label_ar": "اسأل عن رقم الهاتف"
+     }
+    ]
    }
   },
   {
@@ -3778,7 +6487,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 380.0,
+        "REVIEW": 2.0,
+        "KEEP_APART": 4.8
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "19a8a4dc3a5970027145d282",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.240; Family name is same consonants (supports a match); Whole name spelling is close spelling (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.240؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -3909,7 +6653,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 395.3488372093023,
+        "REVIEW": 2.0,
+        "KEEP_APART": 4.186046511627907
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "b8633ab9689b8457ac7b7600",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.209; Family name is same (supports a match); Whole name spelling is close spelling (supports a match).",
+         "The most useful next step: scan the identity card."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.209؛ اسم العائلة: متطابق (يدعم التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: امسح بطاقة الهوية."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4040,7 +6819,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 413.22314049586777,
+        "REVIEW": 2.0,
+        "KEEP_APART": 3.4710743801652892
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "764a89dc0ab4c4f495bbcd92",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.174; Family name is same consonants (supports a match); Whole name spelling is close spelling (supports a match).",
+         "The most useful next step: ask for the passport number."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.174؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: اسأل عن رقم جواز السفر."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4171,7 +6985,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 441.1764705882353,
+        "REVIEW": 2.0,
+        "KEEP_APART": 2.3529411764705883
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "c44cf8b1dc148d79d65bdb2d",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.118; Family name is same consonants (supports a match); Given name is same consonants (supports a match).",
+         "The most useful next step: ask for the passport number."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.118؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: اسأل عن رقم جواز السفر."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4302,7 +7151,42 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "REVIEW",
+       "model_decision": "REVIEW",
+       "reason_codes": [
+        "INSUFFICIENT_EVIDENCE"
+       ],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 441.1764705882353,
+        "REVIEW": 2.0,
+        "KEEP_APART": 2.3529411764705883
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "14c2248640b16eb027823e95",
+       "explanation": {
+        "en": [
+         "Send this pair to a human reviewer; do not merge automatically.",
+         "The calibrated probability is 0.118; Family name is same consonants (supports a match); Given name is same consonants (supports a match).",
+         "The most useful next step: ask for the passport number."
+        ],
+        "ar": [
+         "أحل هذا الزوج إلى مراجع بشري، ولا تدمجه تلقائيا.",
+         "الاحتمال المعاير 0.118؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "الخطوة التالية الأكثر فائدة: اسأل عن رقم جواز السفر."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4433,7 +7317,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 456.43939393939394,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.7424242424242427
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "89b91027d34ef59bd9ac1449",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.087; Family name is same consonants (supports a match); Given name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.087؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4564,7 +7481,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 456.43939393939394,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.7424242424242427
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "ae35fd8450ae8c4457fef553",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.087; Family name is same consonants (supports a match); Given name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.087؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4695,7 +7645,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 456.43939393939394,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.7424242424242427
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "06d8926d868bdb4e2daeb1d9",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.087; Family name is same consonants (supports a match); Given name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.087؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4826,7 +7809,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 456.43939393939394,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.7424242424242427
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "2686e56abc0f1e37d8ad2522",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.087; Family name is same consonants (supports a match); Given name is same consonants (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.087؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: الحروف الساكنة نفسها (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -4957,11 +7973,80 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 456.43939393939394,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.7424242424242427
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "b41a947f00acf47ed5f79893",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.087; Family name is same consonants (supports a match); Given name is same (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.087؛ اسم العائلة: الحروف الساكنة نفسها (يدعم التطابق)؛ الاسم الأول: متطابق (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      }
     ],
     "note": "",
-    "next_best_question": null
+    "next_best_question": [
+     {
+      "key": "scan_card",
+      "field": "identifier",
+      "expected_cost_reduction": 1.930653,
+      "label_en": "Scan the identity card",
+      "label_ar": "امسح بطاقة الهوية"
+     },
+     {
+      "key": "passport",
+      "field": "identifier",
+      "expected_cost_reduction": 1.916904,
+      "label_en": "Ask for the passport number",
+      "label_ar": "اسأل عن رقم جواز السفر"
+     },
+     {
+      "key": "date_of_birth",
+      "field": "dob",
+      "expected_cost_reduction": 1.508956,
+      "label_en": "Ask for the date of birth",
+      "label_ar": "اسأل عن تاريخ الميلاد"
+     },
+     {
+      "key": "phone",
+      "field": "phone",
+      "expected_cost_reduction": 1.331723,
+      "label_en": "Ask for the phone number",
+      "label_ar": "اسأل عن رقم الهاتف"
+     },
+     {
+      "key": "father_name",
+      "field": "father",
+      "expected_cost_reduction": 0.0,
+      "label_en": "Ask for the father's name",
+      "label_ar": "اسأل عن اسم الأب"
+     }
+    ]
    }
   },
   {
@@ -5117,7 +8202,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 470.1492537313433,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.1940298507462686
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "7f08000a9580903f8f8d2e99",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.060; Whole name spelling is close spelling (supports a match); Family name is same (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.060؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق)؛ اسم العائلة: متطابق (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -5248,7 +8366,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 470.1492537313433,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.1940298507462686
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "03b93bd8e5a03a14ae83e0c4",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.060; Whole name spelling is close spelling (supports a match); Family name is same (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.060؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق)؛ اسم العائلة: متطابق (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -5379,7 +8530,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 470.1492537313433,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.1940298507462686
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "303afe9eef70874e3e0fffc3",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.060; Whole name spelling is close spelling (supports a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.060؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -5510,7 +8694,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 470.1492537313433,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.1940298507462686
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "669bd11dcde046647804cb6b",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.060; Whole name spelling is close spelling (supports a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.060؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -5641,7 +8858,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 470.1492537313433,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.1940298507462686
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "8b96697ead315d07443e8d9e",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.060; Whole name spelling is close spelling (supports a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.060؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -5772,7 +9022,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 470.1492537313433,
+        "REVIEW": 2.0,
+        "KEEP_APART": 1.1940298507462686
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "2b10c2c30c10b81db2cff818",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.060; Whole name spelling is close spelling (supports a match); Family name is same consonants (argues against a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.060؛ تهجئة الاسم كاملا: تهجئة متقاربة (يدعم التطابق)؛ اسم العائلة: الحروف الساكنة نفسها (يعارض التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -5903,7 +9186,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 483.3729216152019,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.665083135391924
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "d361e274f878667ff16b06a7",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.033; Family name is same (argues against a match); Whole name spelling is very close spelling (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.033؛ اسم العائلة: متطابق (يعارض التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة جدا (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -6034,7 +9350,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 483.3729216152019,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.665083135391924
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "465d9286d5568cea09b8fa7e",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.033; Family name is same (argues against a match); Whole name spelling is very close spelling (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.033؛ اسم العائلة: متطابق (يعارض التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة جدا (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -6165,7 +9514,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 483.3729216152019,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.665083135391924
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "72d2eef937ed61caf3ffad79",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.033; Family name is same (argues against a match); Whole name spelling is very close spelling (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.033؛ اسم العائلة: متطابق (يعارض التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة جدا (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      },
      {
       "record": {
@@ -6296,7 +9678,40 @@
        ],
        "model_version": "745b9178094f"
       },
-      "decision": null
+      "decision": {
+       "decision": "KEEP_APART",
+       "model_decision": "KEEP_APART",
+       "reason_codes": [],
+       "guards_fired": [],
+       "costs": {
+        "c_fm": 500.0,
+        "c_md": 20.0,
+        "c_r": 2.0
+       },
+       "expected_costs": {
+        "LINK": 483.3729216152019,
+        "REVIEW": 2.0,
+        "KEEP_APART": 0.665083135391924
+       },
+       "thresholds": {
+        "t_link": 0.996,
+        "t_keep": 0.1,
+        "t_mid": 0.9615384615384616
+       },
+       "inputs_hash": "228def47757e736d59969fe5",
+       "explanation": {
+        "en": [
+         "Keep the two records apart.",
+         "The calibrated probability is 0.033; Family name is same (argues against a match); Whole name spelling is very close spelling (supports a match).",
+         "A matching card read identifier would be the strongest new evidence."
+        ],
+        "ar": [
+         "أبق السجلين منفصلين.",
+         "الاحتمال المعاير 0.033؛ اسم العائلة: متطابق (يعارض التطابق)؛ تهجئة الاسم كاملا: تهجئة متقاربة جدا (يدعم التطابق).",
+         "رقم هوية متطابق من قارئ البطاقة سيكون أقوى دليل جديد."
+        ]
+       }
+      }
      }
     ],
     "note": "",

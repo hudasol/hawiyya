@@ -15,8 +15,13 @@ from hawiyya.api.schemas import (
     ScoreInput,
 )
 from hawiyya.api.state import DEMO_SEED, DEMO_TIER, get_state, is_ready
-from hawiyya.contract.models import Record
+from hawiyya.contract.enums import DecisionKind
+from hawiyya.contract.models import Decision, Record
 from hawiyya.core.determinism import stable_hash
+from hawiyya.decision.costs import DEFAULT_COSTS
+from hawiyya.decision.engine import decide
+from hawiyya.decision.explain import explain
+from hawiyya.decision.voi import next_best_questions
 from hawiyya.matching.compare import features
 from hawiyya.normalise.record import apply_learned, normalise_record
 from hawiyya.registry.facilities import FACILITIES
@@ -74,17 +79,36 @@ def check(body: RegistrationInput) -> CheckOut:
     rid = "NEW" + stable_hash(body.model_dump(mode="json"), length=8).upper()
     rec = to_record(body, rid)
     res = run_check(st.index, st.model, rec, top=body.top)
-    cands = [CandidateOut(record=c.record.model_dump(mode="json"), score=c.score)
-             for c in res.candidates]  # fmt: skip
-    return CheckOut(ok=res.ok, n_scored=res.n_scored, candidates=cands, note=res.note)
+    cands = []
+    nbq: list[dict[str, Any]] | None = None
+    for c in res.candidates:
+        d = decide(c.score, rec, c.record, DEFAULT_COSTS)
+        questions = None
+        if d.decision == DecisionKind.REVIEW:
+            questions = next_best_questions(c.score.probability, st.model.params, DEFAULT_COSTS)
+            if nbq is None:
+                nbq = [vars(q) for q in questions]
+        top_q = (questions[0].label_en, questions[0].label_ar) if questions else None
+        cands.append(CandidateOut(record=c.record.model_dump(mode="json"), score=c.score,
+                                  decision=decision_payload(d, top_q)))  # fmt: skip
+    return CheckOut(ok=res.ok, n_scored=res.n_scored, candidates=cands, note=res.note,
+                    next_best_question=nbq)  # fmt: skip
+
+
+def decision_payload(d: Decision, top_q: tuple[str, str] | None = None) -> dict[str, Any]:
+    out = d.model_dump(mode="json", exclude={"evidence"})
+    out["explanation"] = explain(d, top_q)
+    return out
 
 
 def score(body: ScoreInput) -> dict[str, Any]:
     st = get_state()
-    a = features(apply_learned(normalise_record(to_record(body.a, "A")), st.index.ctx.learned))
-    b = features(apply_learned(normalise_record(to_record(body.b, "B")), st.index.ctx.learned))
+    ra, rb = to_record(body.a, "A"), to_record(body.b, "B")
+    a = features(apply_learned(normalise_record(ra), st.index.ctx.learned))
+    b = features(apply_learned(normalise_record(rb), st.index.ctx.learned))
     ps = Scorer(st.model, st.index.ctx.tf).pair_score(a, b)
-    return _envelope({"score": ps.model_dump(mode="json")})
+    d = decide(ps, ra, rb, DEFAULT_COSTS)
+    return _envelope({"score": ps.model_dump(mode="json"), "decision": decision_payload(d)})
 
 
 def names_analyse(body: NameInput) -> dict[str, Any]:
