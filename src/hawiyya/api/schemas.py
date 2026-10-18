@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -39,6 +39,11 @@ class RegistrationInput(_In):
 class ScoreInput(_In):
     a: RegistrationInput
     b: RegistrationInput
+
+
+class ActionInput(_In):
+    action: Literal["assign", "request_merge", "keep_apart", "cross_reference",
+                    "need_information", "reopen"]  # fmt: skip
 
 
 class NameInput(_In):
