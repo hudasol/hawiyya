@@ -1,0 +1,49 @@
+{
+ "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+ "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+ "mode": "static",
+ "records": 11779,
+ "facilities": [
+  {
+   "facility_id": "F1",
+   "style": "card_reader",
+   "description": "Identifier captured by card reader; both scripts from the card"
+  },
+  {
+   "facility_id": "F2",
+   "style": "manual_entry",
+   "description": "Identifier typed by hand; Latin names with spelling variants"
+  },
+  {
+   "facility_id": "F3",
+   "style": "high_placeholder",
+   "description": "Busy walk in desk with a high placeholder rate"
+  },
+  {
+   "facility_id": "F4",
+   "style": "arabic_only",
+   "description": "Names entered in Arabic script only"
+  },
+  {
+   "facility_id": "F5",
+   "style": "english_only",
+   "description": "Names entered in Latin script only, Gulf style transliteration"
+  },
+  {
+   "facility_id": "F6",
+   "style": "mobile_app",
+   "description": "Self registration in a mobile app; Arabizi and casual typing"
+  }
+ ],
+ "placeholder_identifier_share": 0.0734,
+ "suspected_default_dob_share": 0.0387,
+ "data_source": "synthea",
+ "seed": 7,
+ "tier": "S",
+ "model_version": "745b9178094f",
+ "synthetic_ground_truth": {
+  "label": "synthetic ground truth",
+  "persons": 5000,
+  "duplicate_record_share": 0.5755
+ }
+}

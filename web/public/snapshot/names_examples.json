@@ -1,0 +1,309 @@
+{
+ "mode": "static",
+ "examples": [
+  {
+   "name": "محمد بن راشد المنصوري",
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "live",
+    "input_script": "ar",
+    "normalised": "محمد بن راشد المنصوري",
+    "tokens": [
+     {
+      "token": "محمد",
+      "skeleton": "mhmd",
+      "coarse": "mhmt"
+     },
+     {
+      "token": "راشد",
+      "skeleton": "rSd",
+      "coarse": "rst"
+     },
+     {
+      "token": "منصوري",
+      "skeleton": "mnsr",
+      "coarse": "mnsr"
+     }
+    ],
+    "structure": {
+     "given": "محمد",
+     "father": "راشد",
+     "grandfather": null,
+     "family": "منصوري",
+     "initials": [],
+     "connector": true
+    },
+    "generator_variants": {
+     "formal": [
+      "Mahamad Bun Rashud Al Manesouri",
+      "Mahimad Ban Rashd Al Mnusouri",
+      "Mhamad Ban Rashad Elmonsoori",
+      "Mhomd Bon Rashad Al Menisouri",
+      "Mohumud Bn Rashod Al Mnsouri",
+      "muhumid bn rashod al minosourie"
+     ],
+     "gulf": [
+      "Mahamd Ban Rashod Al Mnasouri",
+      "Mahemad Bn Rashd Al Mansouri",
+      "Muhamod Bn Rashad Almnasouri",
+      "mahamad ben rashad almanasoory",
+      "mohmud bin rashid alminesouree",
+      "muhamod bin rashid el mansury"
+     ],
+     "arabizi": [
+      "ma7mad bon rashud al mane9ouree",
+      "ma7md ban rashod al meno9oury",
+      "ma7mid ban rashid el minu9urie",
+      "ma7mid bin rashod elmni9ori",
+      "mahomad bun rachud al manasouri",
+      "mo7md bon rashid al men9oori"
+     ]
+    },
+    "collisions": [
+     [
+      "Al Mansoori",
+      "Mansour"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "Mohd Rashid Almansoori",
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "live",
+    "input_script": "en",
+    "normalised": "mohd rashid almansoori",
+    "tokens": [
+     {
+      "token": "mohammed",
+      "skeleton": "mhmd",
+      "coarse": "mhmt"
+     },
+     {
+      "token": "rashid",
+      "skeleton": "rSd",
+      "coarse": "rst"
+     },
+     {
+      "token": "mansoori",
+      "skeleton": "mnsr",
+      "coarse": "mnsr"
+     }
+    ],
+    "structure": {
+     "given": "mohammed",
+     "father": "rashid",
+     "grandfather": null,
+     "family": "mansoori",
+     "initials": [],
+     "connector": false
+    },
+    "generator_variants": {
+     "lexicon": [
+      "Rashid",
+      "Rashed",
+      "Rasheed"
+     ]
+    },
+    "collisions": [
+     [
+      "Al Mansoori",
+      "Mansour"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "mo7amed rashed",
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "live",
+    "input_script": "arabizi",
+    "normalised": "mo7amed rashed",
+    "tokens": [
+     {
+      "token": "mo7amed",
+      "skeleton": "mhmd",
+      "coarse": "mhmt"
+     },
+     {
+      "token": "rashed",
+      "skeleton": "rSd",
+      "coarse": "rst"
+     }
+    ],
+    "structure": {
+     "given": "mo7amed",
+     "father": null,
+     "grandfather": null,
+     "family": "rashed",
+     "initials": [],
+     "connector": false
+    },
+    "generator_variants": {
+     "lexicon": [
+      "Mohammed",
+      "Muhammad",
+      "Mohamed",
+      "Mohamad",
+      "Mohd",
+      "Rashid",
+      "Rashed",
+      "Rasheed"
+     ]
+    },
+    "collisions": []
+   }
+  },
+  {
+   "name": "Abdul Rahman Al Kaabi",
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "live",
+    "input_script": "en",
+    "normalised": "abdul rahman al kaabi",
+    "tokens": [
+     {
+      "token": "abdulrahman",
+      "skeleton": "bdlrhmn",
+      "coarse": "btlrhmn"
+     },
+     {
+      "token": "kaabi",
+      "skeleton": "kb",
+      "coarse": "kb"
+     }
+    ],
+    "structure": {
+     "given": "abdulrahman",
+     "father": null,
+     "grandfather": null,
+     "family": "kaabi",
+     "initials": [],
+     "connector": false
+    },
+    "generator_variants": {
+     "lexicon": [
+      "Ali",
+      "Aly",
+      "Abdulla",
+      "Abdullah",
+      "Abdalla",
+      "Abd Allah",
+      "Laila",
+      "Layla",
+      "Leila",
+      "Al Mazrouei",
+      "Almazrouei",
+      "Al Mazroui"
+     ]
+    },
+    "collisions": []
+   }
+  },
+  {
+   "name": "Hassan Ali",
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "live",
+    "input_script": "en",
+    "normalised": "hassan ali",
+    "tokens": [
+     {
+      "token": "hassan",
+      "skeleton": "hsn",
+      "coarse": "hsn"
+     },
+     {
+      "token": "ali",
+      "skeleton": "l",
+      "coarse": "l"
+     }
+    ],
+    "structure": {
+     "given": "hassan",
+     "father": null,
+     "grandfather": null,
+     "family": "ali",
+     "initials": [],
+     "connector": false
+    },
+    "generator_variants": {
+     "lexicon": [
+      "Ali",
+      "Aly",
+      "Hassan",
+      "Hasan",
+      "Hassen",
+      "Hussain",
+      "Hussein",
+      "Hossain",
+      "Husain",
+      "Laila",
+      "Layla",
+      "Leila"
+     ]
+    },
+    "collisions": [
+     [
+      "Al Ali",
+      "Al Alili",
+      "Ali",
+      "Laila"
+     ],
+     [
+      "Al Hosani",
+      "Al Husseini",
+      "Hassan",
+      "Hussain"
+     ]
+    ]
+   }
+  },
+  {
+   "name": "Priya Sharma",
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "live",
+    "input_script": "en",
+    "normalised": "priya sharma",
+    "tokens": [
+     {
+      "token": "priya",
+      "skeleton": "br",
+      "coarse": "br"
+     },
+     {
+      "token": "sharma",
+      "skeleton": "Srm",
+      "coarse": "srm"
+     }
+    ],
+    "structure": {
+     "given": "priya",
+     "father": null,
+     "grandfather": null,
+     "family": "sharma",
+     "initials": [],
+     "connector": false
+    },
+    "generator_variants": {
+     "lexicon": [
+      "Priya",
+      "Pria",
+      "Sharma",
+      "Sharmaa"
+     ]
+    },
+    "collisions": []
+   }
+  }
+ ]
+}

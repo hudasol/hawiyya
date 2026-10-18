@@ -1,0 +1,6307 @@
+{
+ "mode": "static",
+ "examples": [
+  {
+   "key": "arabizi_name",
+   "label": "Arabizi name and date of birth, no identifier",
+   "input": {
+    "name_ar": null,
+    "name_latin": "aaeucha yasur alma9rie",
+    "sex": "F",
+    "dob": "2004-11-03",
+    "dob_precision": null,
+    "id_value": null,
+    "id_kind": null,
+    "id_capture": null,
+    "nationality": null,
+    "phone": null,
+    "area": null,
+    "top": 10
+   },
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "static",
+    "ok": true,
+    "n_scored": 7,
+    "candidates": [
+     {
+      "record": {
+       "record_id": "R000002",
+       "facility_id": "F6",
+       "name_ar": null,
+       "name_latin": "aaeucha yasur alma9rie",
+       "sex": "F",
+       "dob": "2004-11-03",
+       "dob_precision": "day",
+       "id_value": "784200496999754",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "JOR",
+       "phone": "0501430496",
+       "area": "A12",
+       "registered_on": "2024-04-26"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R000002",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 8.618930827899469,
+       "probability": 0.9925271739130435,
+       "probability_low": 0.9866774961388901,
+       "probability_high": 0.9957836325475744,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": 1.4191393483922075,
+         "weight": 1.5708606723998608,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 2.0,
+         "weight": 2.0,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "exact",
+         "m": 0.1486424085703731,
+         "u": 0.022729805634807417,
+         "llr": 1.8778663922012653,
+         "tf_adjustment": 0.0,
+         "weight": 1.8778663922012653,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R005581",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Aysha Yasir Al Masri",
+       "sex": "F",
+       "dob": "2004-11-03",
+       "dob_precision": "day",
+       "id_value": "784200496999754",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "JOR",
+       "phone": null,
+       "area": "A12",
+       "registered_on": "2025-06-15"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R005581",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.113514750787266,
+       "probability": 0.9292452830188679,
+       "probability_low": 0.8865082854693794,
+       "probability_high": 0.9564561735667313,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 2.0,
+         "weight": 1.9305079413415722,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R006569",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "Aisha Yasser Al Masri",
+       "sex": "F",
+       "dob": "2004-11-03",
+       "dob_precision": "day",
+       "id_value": "784200496999754",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "JOR",
+       "phone": "0501430496",
+       "area": "A12",
+       "registered_on": "2023-05-09"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R006569",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.113514750787266,
+       "probability": 0.9292452830188679,
+       "probability_low": 0.8865082854693794,
+       "probability_high": 0.9564561735667313,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 2.0,
+         "weight": 1.9305079413415722,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R008184",
+       "facility_id": "F1",
+       "name_ar": "عائشة ياسر المصري",
+       "name_latin": "Al Masri Aisha Yasser",
+       "sex": "F",
+       "dob": "2004-11-03",
+       "dob_precision": "day",
+       "id_value": "784200496999754",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "JOR",
+       "phone": "0501430496",
+       "area": "A12",
+       "registered_on": "2025-04-14"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R008184",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.113514750787266,
+       "probability": 0.9292452830188679,
+       "probability_low": 0.8865082854693794,
+       "probability_high": 0.9564561735667313,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 2.0,
+         "weight": 1.9305079413415722,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011515",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Aeasha Yaasar Almosri",
+       "sex": "F",
+       "dob": "2004-11-03",
+       "dob_precision": "day",
+       "id_value": "784200496999754",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "JOR",
+       "phone": "0501430496",
+       "area": "A12",
+       "registered_on": "2023-02-02"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R011515",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.113514750787266,
+       "probability": 0.9292452830188679,
+       "probability_low": 0.8865082854693794,
+       "probability_high": 0.9564561735667313,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 2.0,
+         "weight": 1.9305079413415722,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R009747",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Abdulla Yasir El Masry",
+       "sex": "M",
+       "dob": "2004-06-06",
+       "dob_precision": "day",
+       "id_value": "784200445570138",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "JOR",
+       "phone": "0552149768",
+       "area": "A12",
+       "registered_on": "2025-04-16"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R009747",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -9.266492801574072,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "mismatch",
+         "m": 0.07062084257206208,
+         "u": 0.2756546600532825,
+         "llr": -1.3618235290845597,
+         "tf_adjustment": 0.0,
+         "weight": -1.3618235290845597,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 2.0,
+         "weight": 1.9305079413415722,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "disagree",
+         "m": 0.02108739837398374,
+         "u": 0.2081473365257149,
+         "llr": -2.2895705490155316,
+         "tf_adjustment": 0.0,
+         "weight": -2.2895705490155316,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R001599",
+       "facility_id": "F6",
+       "name_ar": null,
+       "name_latin": "3aeicha bint a7mod abdalaaziz al mzeroo3ie",
+       "sex": "F",
+       "dob": "2007-12-07",
+       "dob_precision": "day",
+       "id_value": "6971415142",
+       "id_kind": "GCC_ID",
+       "id_capture": "manual",
+       "nationality": null,
+       "phone": "0583256109",
+       "area": "A24",
+       "registered_on": "2024-01-16"
+      },
+      "score": {
+       "record_a": "NEW2C76567C",
+       "record_b": "R001599",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -9.38700393797549,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 2.0,
+         "weight": 2.314142989261352,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "coarse",
+         "m": 0.04419068736141907,
+         "u": 0.07649171294651753,
+         "llr": -0.5486683337639782,
+         "tf_adjustment": 0.0,
+         "weight": -0.5486683337639782,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     }
+    ],
+    "note": "",
+    "next_best_question": null
+   }
+  },
+  {
+   "key": "card_read",
+   "label": "Card read registration with identifier",
+   "input": {
+    "name_ar": "نورة حسين الحوسني",
+    "name_latin": "Noura Hussain Al Hosani",
+    "sex": "F",
+    "dob": "1982-03-25",
+    "dob_precision": null,
+    "id_value": "6777769937",
+    "id_kind": "GCC_ID",
+    "id_capture": "manual",
+    "nationality": null,
+    "phone": null,
+    "area": null,
+    "top": 10
+   },
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "static",
+    "ok": true,
+    "n_scored": 84,
+    "candidates": [
+     {
+      "record": {
+       "record_id": "R000003",
+       "facility_id": "F1",
+       "name_ar": "نورة حسين الحوسني",
+       "name_latin": "Noura Hussain Al Hosani",
+       "sex": "F",
+       "dob": "1982-03-25",
+       "dob_precision": "day",
+       "id_value": "6777769937",
+       "id_kind": "GCC_ID",
+       "id_capture": "manual",
+       "nationality": "KWT",
+       "phone": "0569415538",
+       "area": null,
+       "registered_on": "2023-11-11"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R000003",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 15.56691949962617,
+       "probability": 1.0,
+       "probability_low": 0.9998475974734662,
+       "probability_high": 1.0,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "exact",
+         "m": 0.1486424085703731,
+         "u": 0.022729805634807417,
+         "llr": 1.8778663922012653,
+         "tf_adjustment": 0.0,
+         "weight": 1.8778663922012653,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.026986629593908518,
+         "weight": 5.365423577347582,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "exact",
+         "m": 0.8595408334264328,
+         "u": 2.1208607866979612e-05,
+         "llr": 10.609746480295296,
+         "tf_adjustment": 0.0,
+         "weight": 10.609746480295296,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R006395",
+       "facility_id": "F6",
+       "name_ar": null,
+       "name_latin": "nura 7sen",
+       "sex": "F",
+       "dob": "1999-01-01",
+       "dob_precision": "day",
+       "id_value": "784199931319442",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "SYR",
+       "phone": "0556768098",
+       "area": "A28",
+       "registered_on": "2026-04-07"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R006395",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -4.563305710667791,
+       "probability": 0.0015885623510722795,
+       "probability_low": 0.0004912790232885004,
+       "probability_high": 0.005722003420519772,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R002479",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Nora Umar Hassan",
+       "sex": "F",
+       "dob": "1941-01-01",
+       "dob_precision": "day",
+       "id_value": "111111111111111",
+       "id_kind": "PLACEHOLDER",
+       "id_capture": "placeholder",
+       "nationality": null,
+       "phone": "0568924634",
+       "area": "A08",
+       "registered_on": "2024-02-27"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R002479",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -4.799921384196244,
+       "probability": 0.0015885623510722795,
+       "probability_low": 0.0004912790232885004,
+       "probability_high": 0.005722003420519772,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R005964",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Noura Aly Al Hosani",
+       "sex": "F",
+       "dob": "1988-01-01",
+       "dob_precision": "day",
+       "id_value": "784198804013307",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": null,
+       "phone": null,
+       "area": "A40",
+       "registered_on": "2023-08-27"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R005964",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -6.198105102341102,
+       "probability": 0.001514386673397274,
+       "probability_low": 0.0005501468137368314,
+       "probability_high": 0.004417015920084845,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R008851",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "NOORA HAMDAN ALHOSANI",
+       "sex": "F",
+       "dob": "2001-01-01",
+       "dob_precision": "day",
+       "id_value": "784200190565618",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0543235123",
+       "area": "A01",
+       "registered_on": "2025-06-30"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R008851",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -6.198105102341102,
+       "probability": 0.001514386673397274,
+       "probability_low": 0.0005501468137368314,
+       "probability_high": 0.004417015920084845,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011613",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "Nourah Omer Hasan",
+       "sex": "F",
+       "dob": "1941-01-01",
+       "dob_precision": "year",
+       "id_value": "XA5348025",
+       "id_kind": "PASSPORT",
+       "id_capture": "manual",
+       "nationality": "SDN",
+       "phone": "0568924634",
+       "area": "A08",
+       "registered_on": "2024-11-02"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R011613",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -6.26759716099953,
+       "probability": 0.001514386673397274,
+       "probability_low": 0.0005501468137368314,
+       "probability_high": 0.004417015920084845,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R004236",
+       "facility_id": "F1",
+       "name_ar": "نورة علي الحوسني",
+       "name_latin": "Noura Ali Al Hosani",
+       "sex": "M",
+       "dob": null,
+       "dob_precision": null,
+       "id_value": "784192670436345",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": "0540030471",
+       "area": "A32",
+       "registered_on": "2024-03-10"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R004236",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -7.57569600412279,
+       "probability": 0.00033829499323410016,
+       "probability_low": 8.192097451096582e-05,
+       "probability_high": 0.0018827657437195965,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "disagree",
+         "m": 0.02108739837398374,
+         "u": 0.2081473365257149,
+         "llr": -2.2895705490155316,
+         "tf_adjustment": 0.0,
+         "weight": -2.2895705490155316,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011765",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Nourah Hossain Hassan",
+       "sex": "F",
+       "dob": "2022-11-01",
+       "dob_precision": "day",
+       "id_value": "784202175608448",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "EGY",
+       "phone": "0583180528",
+       "area": "A39",
+       "registered_on": "2024-05-04"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R011765",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -8.243023053531434,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.3141429892613519,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R004652",
+       "facility_id": "F1",
+       "name_ar": "نورة حسين حسن",
+       "name_latin": "Noura Hussain Hassan",
+       "sex": "F",
+       "dob": "2021-11-01",
+       "dob_precision": "day",
+       "id_value": "784202175608448",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "EGY",
+       "phone": "0583180528",
+       "area": "A39",
+       "registered_on": "2023-06-07"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R004652",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -8.479804161550184,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "exact",
+         "m": 0.1486424085703731,
+         "u": 0.022729805634807417,
+         "llr": 1.8778663922012653,
+         "tf_adjustment": 0.0,
+         "weight": 1.8778663922012653,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R009518",
+       "facility_id": "F1",
+       "name_ar": "نورة حسن حسن",
+       "name_latin": "HASSAN NOURA HASSAN",
+       "sex": "F",
+       "dob": "2002-01-10",
+       "dob_precision": "day",
+       "id_value": "784200201896275",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "JOR",
+       "phone": null,
+       "area": "A19",
+       "registered_on": "2025-11-05"
+      },
+      "score": {
+       "record_a": "NEWF42B89A7",
+       "record_b": "R009518",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -9.367069722659721,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "different_kinds",
+         "m": 0.04655904368227014,
+         "u": 0.2020261290048921,
+         "llr": -1.467675776803285,
+         "tf_adjustment": 0.0,
+         "weight": -1.467675776803285,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     }
+    ],
+    "note": "",
+    "next_best_question": null
+   }
+  },
+  {
+   "key": "arabic_only",
+   "label": "Arabic script name only, with date of birth",
+   "input": {
+    "name_ar": "فاطمة عمر الزعابي",
+    "name_latin": null,
+    "sex": "F",
+    "dob": "1994-05-20",
+    "dob_precision": null,
+    "id_value": null,
+    "id_kind": null,
+    "id_capture": null,
+    "nationality": null,
+    "phone": null,
+    "area": null,
+    "top": 10
+   },
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "static",
+    "ok": true,
+    "n_scored": 21,
+    "candidates": [
+     {
+      "record": {
+       "record_id": "R001359",
+       "facility_id": "F5",
+       "name_ar": null,
+       "name_latin": "fatama amr alzabi",
+       "sex": "F",
+       "dob": "1994-05-20",
+       "dob_precision": "day",
+       "id_value": "784199410122860",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0559333522",
+       "area": "A10",
+       "registered_on": "2026-01-20"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R001359",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.352617526529674,
+       "probability": 0.953360768175583,
+       "probability_low": 0.9355209978882197,
+       "probability_high": 0.9663805333175012,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.251192085264205,
+         "weight": 0.06295090399714692,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.3750650811546779,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R010463",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Fatama Mer Abdel Leh Al Zaby",
+       "sex": "F",
+       "dob": "1994-05-20",
+       "dob_precision": "day",
+       "id_value": "784199410122860",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": null,
+       "area": null,
+       "registered_on": "2024-12-06"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R010463",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.352617526529674,
+       "probability": 0.953360768175583,
+       "probability_low": 0.9355209978882197,
+       "probability_high": 0.9663805333175012,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.251192085264205,
+         "weight": 0.06295090399714692,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.3750650811546779,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R000010",
+       "facility_id": "F4",
+       "name_ar": "فاطمة عمر الزعابي",
+       "name_latin": null,
+       "sex": "F",
+       "dob": "1994-05-20",
+       "dob_precision": "day",
+       "id_value": "784199410122860",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0559333522",
+       "area": null,
+       "registered_on": "2024-09-28"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R000010",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.122377573172204,
+       "probability": 0.9292452830188679,
+       "probability_low": 0.8865082854693794,
+       "probability_high": 0.9564561735667313,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.44455713981310574,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "exact",
+         "m": 0.1486424085703731,
+         "u": 0.022729805634807417,
+         "llr": 1.8778663922012653,
+         "tf_adjustment": 0.0,
+         "weight": 1.8778663922012653,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R005066",
+       "facility_id": "F1",
+       "name_ar": "فاطمة عمر الزعابي",
+       "name_latin": "Fatima Omar Al Zaabi",
+       "sex": "F",
+       "dob": "1994-05-20",
+       "dob_precision": "day",
+       "id_value": "784199410122860",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": "0559333522",
+       "area": "A10",
+       "registered_on": "2023-04-13"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R005066",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": 5.122377573172204,
+       "probability": 0.9292452830188679,
+       "probability_low": 0.8865082854693794,
+       "probability_high": 0.9564561735667313,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.44455713981310574,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "exact",
+         "m": 0.1486424085703731,
+         "u": 0.022729805634807417,
+         "llr": 1.8778663922012653,
+         "tf_adjustment": 0.0,
+         "weight": 1.8778663922012653,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "exact",
+         "m": 0.9367641189383357,
+         "u": 0.004263205332742092,
+         "llr": 5.3924102069414905,
+         "tf_adjustment": -0.4324517377020731,
+         "weight": 4.959958469239417,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R010906",
+       "facility_id": "F1",
+       "name_ar": "فاطمة منصور الزعابي",
+       "name_latin": "Fatima Mansour Al Zaabi",
+       "sex": "F",
+       "dob": null,
+       "dob_precision": null,
+       "id_value": "784198805382147",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": null,
+       "area": "A09",
+       "registered_on": "2025-01-18"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R010906",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -3.4197387386002163,
+       "probability": 0.011267605633802818,
+       "probability_low": 0.004575665843684099,
+       "probability_high": 0.02851715289174323,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.44455713981310574,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R006478",
+       "facility_id": "F5",
+       "name_ar": null,
+       "name_latin": "Fatemah Mur Abdull Al Zabi",
+       "sex": "F",
+       "dob": "2003-10-20",
+       "dob_precision": "day",
+       "id_value": "784200378289925",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": null,
+       "area": null,
+       "registered_on": "2025-02-22"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R006478",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -6.52575245492169,
+       "probability": 0.0009593859929645027,
+       "probability_low": 0.0003485288733969752,
+       "probability_high": 0.002800253823471494,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.251192085264205,
+         "weight": 0.06295090399714692,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.3750650811546779,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R010252",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "Fatimah bint Omer Al Zaabi",
+       "sex": "F",
+       "dob": "2003-10-20",
+       "dob_precision": "day",
+       "id_value": "784200378289925",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0563760768",
+       "area": "A30",
+       "registered_on": "2026-03-06"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R010252",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -6.52575245492169,
+       "probability": 0.0009593859929645027,
+       "probability_low": 0.0003485288733969752,
+       "probability_high": 0.002800253823471494,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.251192085264205,
+         "weight": 0.06295090399714692,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.3750650811546779,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "skeleton",
+         "m": 0.6358053195419283,
+         "u": 0.0767263284593438,
+         "llr": 2.1146475002200154,
+         "tf_adjustment": 0.0,
+         "weight": 2.1146475002200154,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R001735",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Fatimah Alzaabi",
+       "sex": "F",
+       "dob": "2003-10-20",
+       "dob_precision": "day",
+       "id_value": "784200378289925",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": null,
+       "area": "A30",
+       "registered_on": "2024-10-30"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R001735",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -8.640399955141707,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": -0.251192085264205,
+         "weight": 0.06295090399714692,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.3750650811546779,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R001171",
+       "facility_id": "F4",
+       "name_ar": "فاطمة منصور عبدالله الزعابي",
+       "name_latin": null,
+       "sex": "F",
+       "dob": "1988-09-19",
+       "dob_precision": "day",
+       "id_value": "784298805382147",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0582408504",
+       "area": "A09",
+       "registered_on": "2024-11-29"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R001171",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -10.338150250812163,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.44455713981310574,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R002659",
+       "facility_id": "F4",
+       "name_ar": "فاطمة هادي الزعابي",
+       "name_latin": null,
+       "sex": "F",
+       "dob": "1952-09-25",
+       "dob_precision": "day",
+       "id_value": "784195235151116",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0550449644",
+       "area": "A08",
+       "registered_on": "2023-10-11"
+      },
+      "score": {
+       "record_a": "NEW94AFFA59",
+       "record_b": "R002659",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -10.338150250812163,
+       "probability": 0.0,
+       "probability_low": 0.0,
+       "probability_high": 1.124240740623014e-05,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 0.44455713981310574,
+         "weight": 0.44455713981310574,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "mismatch",
+         "m": 0.15917066863686738,
+         "u": 0.8750390067760342,
+         "llr": -1.704291450331738,
+         "tf_adjustment": 0.0,
+         "weight": -1.704291450331738,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "conflict",
+         "m": 0.0009728597086409898,
+         "u": 0.9832821620162624,
+         "llr": -6.9184115122119465,
+         "tf_adjustment": 0.0,
+         "weight": -6.9184115122119465,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "agree",
+         "m": 0.9789126016260162,
+         "u": 0.7918526634742851,
+         "llr": 0.2120670218944432,
+         "tf_adjustment": 0.0,
+         "weight": 0.2120670218944432,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     }
+    ],
+    "note": "",
+    "next_best_question": null
+   }
+  },
+  {
+   "key": "common_name_only",
+   "label": "A very common name with nothing else",
+   "input": {
+    "name_ar": null,
+    "name_latin": "Mohammed Ali",
+    "sex": null,
+    "dob": null,
+    "dob_precision": null,
+    "id_value": null,
+    "id_kind": null,
+    "id_capture": null,
+    "nationality": null,
+    "phone": null,
+    "area": null,
+    "top": 10
+   },
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "static",
+    "ok": true,
+    "n_scored": 10,
+    "candidates": [
+     {
+      "record": {
+       "record_id": "R009984",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "MOHAMED SAEED ALALILI",
+       "sex": "M",
+       "dob": "2002-02-18",
+       "dob_precision": "day",
+       "id_value": "784200206838356",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": null,
+       "area": "A06",
+       "registered_on": "2025-01-22"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R009984",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -0.22295178303484686,
+       "probability": 0.24,
+       "probability_low": 0.115732213291504,
+       "probability_high": 0.4364750969413865,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011304",
+       "facility_id": "F1",
+       "name_ar": "محمد يوسف العلي",
+       "name_latin": "Mohammed Yousef Al Ali",
+       "sex": "M",
+       "dob": "1985-02-23",
+       "dob_precision": "day",
+       "id_value": "784198540821596",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "JOR",
+       "phone": null,
+       "area": "A07",
+       "registered_on": "2026-05-06"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R011304",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -0.315881389630118,
+       "probability": 0.20930232558139536,
+       "probability_low": 0.11473351393859561,
+       "probability_high": 0.35304505677824954,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": 0.22722202249012713,
+         "weight": 0.3789433464977804,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.9229712475674378,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R003453",
+       "facility_id": "F1",
+       "name_ar": "محمد أحمد العليلي",
+       "name_latin": "Mohammed Ahmed Al Alili",
+       "sex": "M",
+       "dob": "2015-06-05",
+       "dob_precision": "day",
+       "id_value": "784201554373366",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": "0507097201",
+       "area": "A20",
+       "registered_on": "2026-03-16"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R003453",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -0.3853734482885458,
+       "probability": 0.17355371900826447,
+       "probability_low": 0.11659763166404324,
+       "probability_high": 0.25100488654347525,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": 0.22722202249012713,
+         "weight": 0.3789433464977804,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R003112",
+       "facility_id": "F4",
+       "name_ar": "محمد بن أحمد العليلي",
+       "name_latin": null,
+       "sex": "M",
+       "dob": "2015-06-05",
+       "dob_precision": "day",
+       "id_value": "784201554373366",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0507097201",
+       "area": "A20",
+       "registered_on": "2026-02-26"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R003112",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -0.9772272493155381,
+       "probability": 0.11764705882352941,
+       "probability_low": 0.08377961467746281,
+       "probability_high": 0.16305071699498377,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R008598",
+       "facility_id": "F4",
+       "name_ar": "العليلي نورة عادل محمد",
+       "name_latin": null,
+       "sex": "F",
+       "dob": "1981-04-10",
+       "dob_precision": "day",
+       "id_value": "784198118221320",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0527964842",
+       "area": "A31",
+       "registered_on": "2024-05-09"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R008598",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -0.9772272493155381,
+       "probability": 0.11764705882352941,
+       "probability_low": 0.08377961467746281,
+       "probability_high": 0.16305071699498377,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "not_comparable",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R000769",
+       "facility_id": "F6",
+       "name_ar": null,
+       "name_latin": "mi7mad sa3yd 7sin al3leeli",
+       "sex": null,
+       "dob": "2002-02-18",
+       "dob_precision": "day",
+       "id_value": "784200206838356",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0564185539",
+       "area": "A06",
+       "registered_on": "2024-06-14"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R000769",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -1.3469984521631333,
+       "probability": 0.08712121212121213,
+       "probability_low": 0.0588910283026021,
+       "probability_high": 0.12738447465726555,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R001607",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Muhmad Sid Hasin Al Leeli",
+       "sex": "M",
+       "dob": "2002-02-18",
+       "dob_precision": "day",
+       "id_value": "111111111111111",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": null,
+       "area": "A06",
+       "registered_on": "2026-03-07"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R001607",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -1.3469984521631333,
+       "probability": 0.08712121212121213,
+       "probability_low": 0.0588910283026021,
+       "probability_high": 0.12738447465726555,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R006460",
+       "facility_id": "F5",
+       "name_ar": null,
+       "name_latin": "Muhimad Sid Hasin Al Lili",
+       "sex": "M",
+       "dob": "2002-02-18",
+       "dob_precision": "day",
+       "id_value": "784200206838356",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": null,
+       "area": "A06",
+       "registered_on": "2023-05-09"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R006460",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -1.3469984521631333,
+       "probability": 0.08712121212121213,
+       "probability_low": 0.0588910283026021,
+       "probability_high": 0.12738447465726555,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011368",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Mohamd Ahmed Ibrahim Alalili",
+       "sex": "M",
+       "dob": "2015-06-05",
+       "dob_precision": "day",
+       "id_value": "784201554373366",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": "0507097201",
+       "area": "A20",
+       "registered_on": "2025-01-10"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R011368",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -1.3469984521631333,
+       "probability": 0.08712121212121213,
+       "probability_low": 0.0588910283026021,
+       "probability_high": 0.12738447465726555,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "skeleton",
+         "m": 0.6366518847006651,
+         "u": 0.46501981849292817,
+         "llr": 0.3141429892613519,
+         "tf_adjustment": 0.22722202249012718,
+         "weight": 0.5413650117514791,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011323",
+       "facility_id": "F2",
+       "name_ar": null,
+       "name_latin": "Mohammed Ahmed Ibrahim Alalili",
+       "sex": "M",
+       "dob": "2015-06-05",
+       "dob_precision": "day",
+       "id_value": "784201554373366",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "ARE",
+       "phone": null,
+       "area": "A20",
+       "registered_on": "2025-02-25"
+      },
+      "score": {
+       "record_a": "NEW5BD5B672",
+       "record_b": "R011323",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -1.5094201174168322,
+       "probability": 0.08712121212121213,
+       "probability_low": 0.0588910283026021,
+       "probability_high": 0.12738447465726555,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": 0.22722202249012713,
+         "weight": 0.3789433464977804,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": 0.9229712475674378,
+         "weight": 0.8534791889090099,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "far",
+         "m": 0.48257822524923505,
+         "u": 0.6984853712285806,
+         "llr": -0.36977120284759535,
+         "tf_adjustment": 0.0,
+         "weight": -0.36977120284759535,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     }
+    ],
+    "note": "",
+    "next_best_question": null
+   }
+  },
+  {
+   "key": "placeholder_id",
+   "label": "Placeholder identifier with a common name",
+   "input": {
+    "name_ar": null,
+    "name_latin": "Ahmed Hassan",
+    "sex": null,
+    "dob": null,
+    "dob_precision": null,
+    "id_value": "111111111111111",
+    "id_kind": "PLACEHOLDER",
+    "id_capture": "placeholder",
+    "nationality": null,
+    "phone": null,
+    "area": null,
+    "top": 10
+   },
+   "response": {
+    "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+    "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+    "mode": "static",
+    "ok": true,
+    "n_scored": 57,
+    "candidates": [
+     {
+      "record": {
+       "record_id": "R002932",
+       "facility_id": "F1",
+       "name_ar": "أحمد كريم حسن",
+       "name_latin": "Ahmed Karim Hassan",
+       "sex": "M",
+       "dob": "1958-10-10",
+       "dob_precision": "day",
+       "id_value": "TV4725019",
+       "id_kind": "PASSPORT",
+       "id_capture": "manual",
+       "nationality": "MAR",
+       "phone": null,
+       "area": "A37",
+       "registered_on": "2024-08-12"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R002932",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.114158227972235,
+       "probability": 0.05970149253731343,
+       "probability_low": 0.03910121427869399,
+       "probability_high": 0.09043511904700785,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R008616",
+       "facility_id": "F1",
+       "name_ar": "أحمد ماجد حسن",
+       "name_latin": "Ahmed Majid Hassan",
+       "sex": "M",
+       "dob": "1961-10-23",
+       "dob_precision": "day",
+       "id_value": "784196198851533",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": null,
+       "phone": "0509845561",
+       "area": "A38",
+       "registered_on": "2024-10-31"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R008616",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.114158227972235,
+       "probability": 0.05970149253731343,
+       "probability_low": 0.03910121427869399,
+       "probability_high": 0.09043511904700785,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R000757",
+       "facility_id": "F1",
+       "name_ar": "أحمد حسين",
+       "name_latin": "Ahmed Hussain",
+       "sex": "M",
+       "dob": "2006-10-04",
+       "dob_precision": "day",
+       "id_value": "784200607758303",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": null,
+       "phone": "0569335904",
+       "area": "A02",
+       "registered_on": "2024-11-03"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R000757",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.1836502866306633,
+       "probability": 0.05970149253731343,
+       "probability_low": 0.03910121427869399,
+       "probability_high": 0.09043511904700785,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R002222",
+       "facility_id": "F1",
+       "name_ar": "أحمد بن سلطان الحوسني",
+       "name_latin": "AHMED SULTAN AL HOSANI",
+       "sex": "M",
+       "dob": "1978-06-28",
+       "dob_precision": "day",
+       "id_value": "784197808532347",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "ARE",
+       "phone": null,
+       "area": null,
+       "registered_on": "2025-07-02"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R002222",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.1836502866306633,
+       "probability": 0.05970149253731343,
+       "probability_low": 0.03910121427869399,
+       "probability_high": 0.09043511904700785,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R008092",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "Ahmed Abdalla Hasan",
+       "sex": "M",
+       "dob": "2018-03-07",
+       "dob_precision": "day",
+       "id_value": "784201888344878",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "MAR",
+       "phone": "0529916645",
+       "area": "A20",
+       "registered_on": "2023-09-03"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R008092",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.1836502866306633,
+       "probability": 0.05970149253731343,
+       "probability_low": 0.03910121427869399,
+       "probability_high": 0.09043511904700785,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R009247",
+       "facility_id": "F1",
+       "name_ar": "أحمد حسين",
+       "name_latin": "Ahmed Hussain",
+       "sex": "M",
+       "dob": "2006-10-04",
+       "dob_precision": "day",
+       "id_value": "784200607758303",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "BGD",
+       "phone": "0569335904",
+       "area": "A02",
+       "registered_on": "2023-08-05"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R009247",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.1836502866306633,
+       "probability": 0.05970149253731343,
+       "probability_low": 0.03910121427869399,
+       "probability_high": 0.09043511904700785,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "skeleton",
+         "m": 0.5941685144124168,
+         "u": 0.6369269890227948,
+         "llr": -0.06949205865842785,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.565854302935327,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "close",
+         "m": 0.2533807126641003,
+         "u": 0.11917794168383951,
+         "llr": 0.7542754662806911,
+         "tf_adjustment": 0.0,
+         "weight": 0.7542754662806911,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R000070",
+       "facility_id": "F6",
+       "name_ar": null,
+       "name_latin": "ahmed hassan",
+       "sex": "M",
+       "dob": "1972-07-16",
+       "dob_precision": "day",
+       "id_value": "784197213466668",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "PAK",
+       "phone": "0540012238",
+       "area": "A22",
+       "registered_on": "2023-04-11"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R000070",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.4981839721124173,
+       "probability": 0.0332541567695962,
+       "probability_low": 0.020028233987660855,
+       "probability_high": 0.055036587328493064,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R001631",
+       "facility_id": "F1",
+       "name_ar": "أحمد حسن",
+       "name_latin": "Ahmed Hassan",
+       "sex": "M",
+       "dob": "1994-12-29",
+       "dob_precision": "day",
+       "id_value": "ME3367647",
+       "id_kind": "PASSPORT",
+       "id_capture": "manual",
+       "nationality": "BGD",
+       "phone": "0552538798",
+       "area": "A21",
+       "registered_on": "2023-02-01"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R001631",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.4981839721124173,
+       "probability": 0.0332541567695962,
+       "probability_low": 0.020028233987660855,
+       "probability_high": 0.055036587328493064,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R010966",
+       "facility_id": "F3",
+       "name_ar": null,
+       "name_latin": "AHMED HASSAN",
+       "sex": "M",
+       "dob": "1972-07-16",
+       "dob_precision": "day",
+       "id_value": "784197213466668",
+       "id_kind": "EID",
+       "id_capture": "manual",
+       "nationality": "PAK",
+       "phone": "0540012238",
+       "area": null,
+       "registered_on": "2024-12-16"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R010966",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.4981839721124173,
+       "probability": 0.0332541567695962,
+       "probability_low": 0.020028233987660855,
+       "probability_high": 0.055036587328493064,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     },
+     {
+      "record": {
+       "record_id": "R011357",
+       "facility_id": "F1",
+       "name_ar": "أحمد حسن",
+       "name_latin": "AHMED HASSAN",
+       "sex": "M",
+       "dob": "1964-02-27",
+       "dob_precision": "day",
+       "id_value": "784196483468511",
+       "id_kind": "EID",
+       "id_capture": "reader",
+       "nationality": "IND",
+       "phone": "0581004651",
+       "area": "A29",
+       "registered_on": "2024-07-16"
+      },
+      "score": {
+       "record_a": "NEWDDEB0E8B",
+       "record_b": "R011357",
+       "prior_log_odds": -2.372071449976027,
+       "log_odds": -2.4981839721124173,
+       "probability": 0.0332541567695962,
+       "probability_low": 0.020028233987660855,
+       "probability_high": 0.055036587328493064,
+       "evidence": [
+        {
+         "field": "given",
+         "level": "exact",
+         "m": 0.26751662971175166,
+         "u": 0.22985769672290932,
+         "llr": 0.15172132400765326,
+         "tf_adjustment": -0.15172132400765326,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "family",
+         "level": "exact",
+         "m": 0.27638580931263856,
+         "u": 0.277001152303307,
+         "llr": 0.0,
+         "tf_adjustment": -0.4963622442768992,
+         "weight": -0.4963622442768992,
+         "placeholder": false
+        },
+        {
+         "field": "father",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "whole_name",
+         "level": "very_close",
+         "m": 0.26404106208666467,
+         "u": 0.1823366870875799,
+         "llr": 0.37024972214050883,
+         "tf_adjustment": 0.0,
+         "weight": 0.37024972214050883,
+         "placeholder": false
+        },
+        {
+         "field": "dob",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "sex",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "identifier",
+         "level": "placeholder",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": true
+        },
+        {
+         "field": "phone",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "nationality",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        },
+        {
+         "field": "area",
+         "level": "missing",
+         "m": 1.0,
+         "u": 1.0,
+         "llr": 0.0,
+         "tf_adjustment": 0.0,
+         "weight": 0.0,
+         "placeholder": false
+        }
+       ],
+       "model_version": "745b9178094f"
+      },
+      "decision": null
+     }
+    ],
+    "note": "",
+    "next_best_question": null
+   }
+  }
+ ]
+}

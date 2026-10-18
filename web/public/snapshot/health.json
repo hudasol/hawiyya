@@ -1,0 +1,7 @@
+{
+ "synthetic_note": "All patients in this demonstration are synthetic. Identifiers are synthetic and belong to no person. Results describe synthetic data and say nothing about any real registry.",
+ "advisory_note": "Advisory software for planning and learning. Recommendations are requests to a human reviewer, never automatic actions.",
+ "mode": "static",
+ "status": "ok",
+ "registry_ready": false
+}
