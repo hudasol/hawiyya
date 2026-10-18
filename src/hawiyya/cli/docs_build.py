@@ -74,7 +74,15 @@ def _block_renderer(path: Path) -> Renderer:
     return render
 
 
-RENDERERS: list[Renderer] = [_traceability, _claims] + [_block_renderer(p) for p in BLOCKS]
+def _predictions() -> tuple[Path, str]:
+    from hawiyya.lab.predictions import render_predictions
+
+    return render_predictions()
+
+
+RENDERERS: list[Renderer] = [_traceability, _claims, _predictions] + [
+    _block_renderer(p) for p in BLOCKS
+]
 
 
 def register(renderer: Renderer) -> None:

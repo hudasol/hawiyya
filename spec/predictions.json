@@ -1,0 +1,51 @@
+{
+  "note": "Registered before any experiment run. Pointers are relative to results/experiments/<EXPERIMENT>_<split>.json and are judged on every split that exists (dev, sealed). Operators: ge, le, between, lt_ptr, ge_ptr, diff_ge (value of other minus this >= value), argmin_eq (this dict's argmin over field equals value), range_le (max minus min over field <= value).",
+  "predictions": [
+    {"id": "P-E1-1", "experiment": "E1", "text": "G1 pair completeness is at least 0.98.", "pointer": "/generators/G1/pair_completeness/mean", "op": "ge", "value": 0.98},
+    {"id": "P-E1-2", "experiment": "E1", "text": "G2 pair completeness lies between 0.85 and 0.97 (lower than G1).", "pointer": "/generators/G2/pair_completeness/mean", "op": "between", "value": [0.85, 0.97]},
+    {"id": "P-E1-3", "experiment": "E1", "text": "The block cap costs at most 0.005 of pair completeness on G1.", "pointer": "/generators/G1/pc_lost_to_cap/mean", "op": "le", "value": 0.005},
+    {"id": "P-E1-4", "experiment": "E1", "text": "G1 reduction ratio is at least 0.99.", "pointer": "/generators/G1/reduction_ratio/mean", "op": "ge", "value": 0.99},
+
+    {"id": "P-E2-1", "experiment": "E2", "text": "Hawiyya makes at most 5 false merges per 10,000 records.", "pointer": "/systems/B5_hawiyya/false_merges_per_10k/mean", "op": "le", "value": 5},
+    {"id": "P-E2-2", "experiment": "E2", "text": "Hawiyya's automatic LINKs have precision of at least 0.995.", "pointer": "/systems/B5_hawiyya/link_precision/mean", "op": "ge", "value": 0.995},
+    {"id": "P-E2-3", "experiment": "E2", "text": "Hawiyya finds (LINK or REVIEW) at least 95 percent of true pairs.", "pointer": "/systems/B5_hawiyya/found_recall/mean", "op": "ge", "value": 0.95},
+    {"id": "P-E2-4", "experiment": "E2", "text": "Exact identifier matching makes at least 1,000 false merges per 10,000 records because unrelated people share placeholders.", "pointer": "/systems/B0_eid_exact/false_merges_per_10k/mean", "op": "ge", "value": 1000},
+    {"id": "P-E2-5", "experiment": "E2", "text": "Exact name and date matching recalls at most 35 percent of true pairs.", "pointer": "/systems/B1_name_dob_exact/link_recall/mean", "op": "le", "value": 0.35},
+    {"id": "P-E2-6", "experiment": "E2", "text": "Hawiyya makes fewer false merges than its own forced (no review) variant.", "pointer": "/systems/B5_hawiyya/false_merges_per_10k/mean", "op": "lt_ptr", "value": "/systems/B4_forced/false_merges_per_10k/mean"},
+    {"id": "P-E2-7", "experiment": "E2", "text": "The supervised reference makes at most 10 false merges per 10,000 records.", "pointer": "/systems/B6_gbm/false_merges_per_10k/mean", "op": "le", "value": 10},
+    {"id": "P-E2-8", "experiment": "E2", "text": "Removing Arabic and skeleton handling lowers found recall.", "pointer": "/systems/B3_latin_only/found_recall/mean", "op": "lt_ptr", "value": "/systems/B5_hawiyya/found_recall/mean"},
+    {"id": "P-E2-9", "experiment": "E2", "text": "Hawiyya sends between 20 and 200 pairs to review per 1,000 records.", "pointer": "/systems/B5_hawiyya/review_rate/mean", "op": "between", "value": [20, 200]},
+
+    {"id": "P-E3-1", "experiment": "E3", "text": "Expected calibration error is at most 0.01.", "pointer": "/ece/mean", "op": "le", "value": 0.01},
+    {"id": "P-E3-2", "experiment": "E3", "text": "Automatic LINK precision is at least 0.995.", "pointer": "/auto_link_precision/mean", "op": "ge", "value": 0.995},
+    {"id": "P-E3-3", "experiment": "E3", "text": "Between 2 and 20 percent of candidate pairs go to review.", "pointer": "/review_share/mean", "op": "between", "value": [0.02, 0.20]},
+
+    {"id": "P-E4-1", "experiment": "E4", "text": "Arabizi is the hardest name style (lowest found recall).", "pointer": "/by_style", "op": "argmin_eq", "field": "found_recall/rate", "value": "arabizi"},
+    {"id": "P-E4-2", "experiment": "E4", "text": "Arabizi found recall is at least 0.05 below card read bilingual records.", "pointer": "/by_style/arabizi/found_recall/rate", "op": "diff_ge", "other": "/by_style/bilingual_card/found_recall/rate", "value": 0.05},
+
+    {"id": "P-E5-1", "experiment": "E5", "text": "With no placeholders, exact identifier matching has LINK precision of at least 0.98.", "pointer": "/levels/0.0/B0_eid_exact/link_precision/mean", "op": "ge", "value": 0.98},
+    {"id": "P-E5-2", "experiment": "E5", "text": "With no placeholders, exact identifier matching reaches an F1 at least as high as Hawiyya's automatic LINKs (the simple baseline wins on clean records).", "pointer": "/levels/0.0/B0_eid_exact/link_f1/mean", "op": "ge_ptr", "value": "/levels/0.0/B5_hawiyya/link_f1/mean"},
+    {"id": "P-E5-3", "experiment": "E5", "text": "At a 40 percent placeholder share exact identifier matching makes at least 1,000 false merges per 10,000 records.", "pointer": "/levels/0.4/B0_eid_exact/false_merges_per_10k/mean", "op": "ge", "value": 1000},
+    {"id": "P-E5-4", "experiment": "E5", "text": "At a 40 percent placeholder share Hawiyya makes at most 10 false merges per 10,000 records.", "pointer": "/levels/0.4/B5_hawiyya/false_merges_per_10k/mean", "op": "le", "value": 10},
+
+    {"id": "P-E6-1", "experiment": "E6", "text": "Hawiyya links at most 1 percent of twin pairs.", "pointer": "/categories/twin/B5_hawiyya/link_rate/rate", "op": "le", "value": 0.01},
+    {"id": "P-E6-2", "experiment": "E6", "text": "Hawiyya links at most 1 percent of same name father and son pairs.", "pointer": "/categories/father_son_same_name/B5_hawiyya/link_rate/rate", "op": "le", "value": 0.01},
+    {"id": "P-E6-3", "experiment": "E6", "text": "Hawiyya links at most 1 percent of newborn and mother pairs sharing an identifier.", "pointer": "/categories/newborn_mother_shared_id/B5_hawiyya/link_rate/rate", "op": "le", "value": 0.01},
+    {"id": "P-E6-4", "experiment": "E6", "text": "Exact identifier matching links at least 99 percent of newborn and mother pairs sharing an identifier.", "pointer": "/categories/newborn_mother_shared_id/B0_eid_exact/link_rate/rate", "op": "ge", "value": 0.99},
+    {"id": "P-E6-5", "experiment": "E6", "text": "The forced variant links siblings at least as often as Hawiyya.", "pointer": "/categories/sibling/B4_forced/link_rate/rate", "op": "ge_ptr", "value": "/categories/sibling/B5_hawiyya/link_rate/rate"},
+
+    {"id": "P-E7-1", "experiment": "E7", "text": "Found recall differs by at most 0.05 between name origin groups.", "pointer": "/by_origin", "op": "range_le", "field": "found_recall/rate", "value": 0.05},
+    {"id": "P-E7-2", "experiment": "E7", "text": "Gulf Arab names have the lowest found recall.", "pointer": "/by_origin", "op": "argmin_eq", "field": "found_recall/rate", "value": "gulf_arab"},
+
+    {"id": "P-E8-1", "experiment": "E8", "text": "Hawiyya's found recall drops by between 0.05 and 0.30 from G1 to G2.", "pointer": "/systems/B5_hawiyya/drop_found_recall", "op": "between", "value": [0.05, 0.30]},
+    {"id": "P-E8-2", "experiment": "E8", "text": "Exact identifier matching's recall drops by at most 0.05 from G1 to G2.", "pointer": "/systems/B0_eid_exact/drop_found_recall", "op": "le", "value": 0.05},
+    {"id": "P-E8-3", "experiment": "E8", "text": "Calibration error is higher on G2 than on G1.", "pointer": "/ece/G1", "op": "lt_ptr", "value": "/ece/G2"},
+
+    {"id": "P-E9-1", "experiment": "E9", "text": "With a perfect reviewer, Hawiyya's total cost is below the cost of doing nothing.", "pointer": "/default/cost_hawiyya_perfect_reviewer", "op": "lt_ptr", "value": "/default/cost_do_nothing"},
+    {"id": "P-E9-2", "experiment": "E9", "text": "Between 10 and 150 review cases arise per 1,000 records.", "pointer": "/default/reviews_per_1000", "op": "between", "value": [10, 150]},
+    {"id": "P-E9-3", "experiment": "E9", "text": "Raising the false merge cost from 500 to 2,000 raises the review rate.", "pointer": "/sweeps/c_fm/500/review_rate", "op": "lt_ptr", "value": "/sweeps/c_fm/2000/review_rate"},
+
+    {"id": "P-H-1", "experiment": "headline", "text": "On Tier M, Hawiyya makes at most 5 false merges per 10,000 records.", "pointer": "/systems/B5_hawiyya/false_merges_per_10k/mean", "op": "le", "value": 5},
+    {"id": "P-H-2", "experiment": "headline", "text": "On Tier M, Hawiyya finds at least 93 percent of true pairs.", "pointer": "/systems/B5_hawiyya/found_recall/mean", "op": "ge", "value": 0.93}
+  ]
+}
