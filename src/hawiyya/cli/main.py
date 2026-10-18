@@ -147,6 +147,17 @@ def lab_blocking_smoke() -> None:
                f"reduction ratio {rep['reduction_ratio']}")
 
 
+@lab_app.command("gold")
+def lab_gold() -> None:
+    """Run the gold set smoke test on the demonstration registry (results/gold_smoke.json)."""
+    from hawiyya.api.state import get_state
+    from hawiyya.lab.gold import write_gold_report
+
+    st = get_state()
+    rep = write_gold_report(st.model, st.index.ctx)
+    typer.echo(f"gold pairs {rep['pairs']}; non matches linked: {len(rep['non_matches_linked'])}")
+
+
 @lab_app.command("train")
 def lab_train() -> None:
     """Fit and freeze the scoring model on development seeds (results/model/)."""

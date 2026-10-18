@@ -1,0 +1,608 @@
+{
+ "author": "build_agent, not independent",
+ "note": "Smoke test and reading aid only; never a headline claim.",
+ "pairs": 84,
+ "by_label_and_decision": {
+  "hard_negative|KEEP_APART": 11,
+  "hard_negative|REVIEW": 13,
+  "match|LINK": 25,
+  "match|REVIEW": 10,
+  "non_match|KEEP_APART": 23,
+  "non_match|REVIEW": 2
+ },
+ "non_matches_linked": [],
+ "rows": [
+  {
+   "id": "G001",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G002",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.992527,
+   "guards": []
+  },
+  {
+   "id": "G003",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G004",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G005",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G006",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G007",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G008",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G009",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G010",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G011",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G012",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G013",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G014",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G015",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G016",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G017",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G018",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G019",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G020",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G021",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G022",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G023",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G024",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G025",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.992527,
+   "guards": []
+  },
+  {
+   "id": "G026",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.986425,
+   "guards": []
+  },
+  {
+   "id": "G027",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.958974,
+   "guards": []
+  },
+  {
+   "id": "G028",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G029",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G030",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G031",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G032",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.986425,
+   "guards": []
+  },
+  {
+   "id": "G033",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G034",
+   "label": "match",
+   "decision": "LINK",
+   "probability": 1.0,
+   "guards": []
+  },
+  {
+   "id": "G035",
+   "label": "match",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G036",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G037",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G038",
+   "label": "non_match",
+   "decision": "REVIEW",
+   "probability": 0.166667,
+   "guards": []
+  },
+  {
+   "id": "G039",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G040",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G041",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.011268,
+   "guards": []
+  },
+  {
+   "id": "G042",
+   "label": "non_match",
+   "decision": "REVIEW",
+   "probability": 0.784504,
+   "guards": []
+  },
+  {
+   "id": "G043",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.000338,
+   "guards": []
+  },
+  {
+   "id": "G044",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G045",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G046",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.005051,
+   "guards": []
+  },
+  {
+   "id": "G047",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.000959,
+   "guards": []
+  },
+  {
+   "id": "G048",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.001514,
+   "guards": []
+  },
+  {
+   "id": "G049",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G050",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.049383,
+   "guards": []
+  },
+  {
+   "id": "G051",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G052",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G053",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G054",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G055",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.033254,
+   "guards": []
+  },
+  {
+   "id": "G056",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G057",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.033254,
+   "guards": []
+  },
+  {
+   "id": "G058",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.000959,
+   "guards": []
+  },
+  {
+   "id": "G059",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G060",
+   "label": "non_match",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G061",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 1.0,
+   "guards": [
+    "POSSIBLE_TWIN_OR_SIBLING"
+   ]
+  },
+  {
+   "id": "G062",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G063",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.953361,
+   "guards": []
+  },
+  {
+   "id": "G064",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.953361,
+   "guards": []
+  },
+  {
+   "id": "G065",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.574124,
+   "guards": []
+  },
+  {
+   "id": "G066",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.375,
+   "guards": []
+  },
+  {
+   "id": "G067",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.953361,
+   "guards": []
+  },
+  {
+   "id": "G068",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G069",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G070",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.000959,
+   "guards": []
+  },
+  {
+   "id": "G071",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.000959,
+   "guards": []
+  },
+  {
+   "id": "G072",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.992527,
+   "guards": []
+  },
+  {
+   "id": "G073",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G074",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.574124,
+   "guards": []
+  },
+  {
+   "id": "G075",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.37415,
+   "guards": []
+  },
+  {
+   "id": "G076",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.000959,
+   "guards": []
+  },
+  {
+   "id": "G077",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G078",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.998466,
+   "guards": [
+    "POSSIBLE_TWIN_OR_SIBLING"
+   ]
+  },
+  {
+   "id": "G079",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.005051,
+   "guards": []
+  },
+  {
+   "id": "G080",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.0,
+   "guards": []
+  },
+  {
+   "id": "G081",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.087121,
+   "guards": []
+  },
+  {
+   "id": "G082",
+   "label": "hard_negative",
+   "decision": "REVIEW",
+   "probability": 0.995446,
+   "guards": []
+  },
+  {
+   "id": "G083",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.001514,
+   "guards": []
+  },
+  {
+   "id": "G084",
+   "label": "hard_negative",
+   "decision": "KEEP_APART",
+   "probability": 0.001514,
+   "guards": []
+  }
+ ]
+}
