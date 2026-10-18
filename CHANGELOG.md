@@ -2,6 +2,11 @@
 
 All notable changes are listed per phase tag.
 
+## v0.7.0 (P6)
+
+- L6 workflow: review queue, audit hash chain, FHIR style export with its own schema, review
+  CSV and summary, simulated reviewer, batch deduplication run.
+
 ## v0.6.0 (P5)
 
 - L5 decision: cost based thresholds, guards with reason codes, fail closed rule, batch

@@ -26,8 +26,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 | P3 matching | done | placeholders never block and comparisons are symmetric (tests); `results/dev/blocking_smoke.json` on dev seed 7: pair completeness 0.9928, reduction ratio 0.998164, 0.0003 completeness lost to the cap | v0.4.0 |
 | P4 scoring and walking skeleton | done | hand worked example matches to six decimals; `results/model/fit_report.json` (plain EM lambda 0.162 against true 0.084, anchored estimation 0.085); live API answered a check through `hawiyya serve`; static build passes 8 Playwright tests with axe; screenshots in `docs/img/` reviewed | v0.5.0 |
 | P5 decision | done | 13 decision tests incl. hypothesis monotonicity and VOI non negativity; every guard triggers and does not over trigger; batch decisions equal pairwise decisions | v0.6.0 |
-| P6 workflow | next | | v0.7.0 |
-| P7 lab | not started | | v0.8.0 |
+| P6 workflow | done | audit tamper test passes; FHIR style bundles validate against `contract/fhir_patient_bundle.schema.json`; audit log scanned for names and identifiers | v0.7.0 |
+| P7 lab | next | | v0.8.0 |
 | P8 evaluation | not started | | v0.9.0 |
 | P9 console | not started | | v0.10.0 |
 | P10 hardening | not started | | v1.0.0 |
@@ -43,8 +43,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 
 ## Next
 
-P6: review queue state machine, append only audit log with hash chain, FHIR R4 style export,
-CSV and one page summary, simulated reviewer.
+P7: commit PREREGISTRATION and PREDICTIONS first; then G2, baselines B0 to B6, metrics,
+fairness, gold set and the experiment harness.
 
 ## Environment notes
 

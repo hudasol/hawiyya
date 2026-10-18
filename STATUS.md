@@ -24,4 +24,7 @@ What works today, in plain words.
 - L5 turns each score into LINK (recommend a merge request), REVIEW or KEEP_APART by
   explicit costs, with six guards that can only lower a LINK, conflict aware clustering,
   three sentence explanations in English and Arabic, and a next best question.
-- The review queue, audit log, exports and the experiments do not exist yet.
+- L6 runs batch deduplication into a review queue (a state machine with priorities), keeps
+  an append only audit log with a hash chain and no names or identifiers, and exports
+  FHIR R4 style Patient bundles with Patient.link, a review CSV and a summary.
+- The independent generator, baselines and experiments do not exist yet.
