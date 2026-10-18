@@ -49,9 +49,21 @@ def data_source_block() -> str:
     return "\n".join(lines)
 
 
+def _eval_blocks() -> dict[str, BlockFn]:
+    from hawiyya.lab import report
+
+    return {
+        "sealed_record": report.sealed_record_block,
+        "predictions": report.predictions_block,
+        "dev_tables": lambda: report.experiments_block("dev"),
+        "sealed_tables": lambda: report.experiments_block("sealed"),
+    }
+
+
 BLOCKS: dict[Path, dict[str, BlockFn]] = {
     ROOT / "README.md": {"data_source": data_source_block},
     DOCS / "DATA_STATEMENT.md": {"data_source": data_source_block},
+    DOCS / "EVALUATION.md": _eval_blocks(),
 }
 
 
