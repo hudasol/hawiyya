@@ -18,7 +18,7 @@ phase without a naming test fails the build.
 | HW-X-008 | MUST | P0 | No institutional affiliation is mentioned and no real authority is named outside docs/CONTEXT.md. | `tests/test_harness.py` | tested |
 | HW-X-009 | MUST | P1 | Same inputs and seed give byte identical outputs. | `tests/test_registry.py` | tested |
 | HW-X-010 | MUST | P0 | The logging helper refuses values that could carry a name or an identifier. | `tests/test_harness.py` | tested |
-| HW-X-011 | MUST | P8 | Every number in a rendered document matches its source file in results/. |  | planned |
+| HW-X-011 | MUST | P8 | Every number in a rendered document matches its source file in results/. | `tests/test_evaluation.py` | tested |
 | HW-X-012 | MUST | P0 | Generated documents (traceability matrix, claims register) are fresh. | `tests/test_harness.py` | tested |
 | HW-L0-001 | MUST | P1 | Every contract model round trips through JSON. | `tests/test_contract.py` | tested |
 | HW-L0-002 | MUST | P1 | Generated JSON Schema, TypeScript types and the bilingual field dictionary are fresh. | `tests/test_contract.py` | tested |
@@ -103,15 +103,15 @@ phase without a naming test fails the build.
 | HW-L7-006 | MUST | P8 | Sealed seeds are touched only by `hawiyya eval --sealed`; the run is recorded in results/SEALED_RUN.json. | `tests/test_lab.py` | tested |
 | HW-L7-007 | MUST | P7 | Decision policies used by the lab are pure functions. | `tests/test_lab.py` | tested |
 | HW-L7-008 | MUST | P7 | The name origin label is provably not a model input. | `tests/test_lab.py` | tested |
-| HW-L7-009 | MUST | P8 | Experiments E1 to E9 write results/*.json. |  | planned |
-| HW-L7-010 | MUST | P8 | Predictions were committed before the first experiment result and each is marked hit or miss. |  | planned |
+| HW-L7-009 | MUST | P8 | Experiments E1 to E9 write results/*.json. | `tests/test_evaluation.py` | tested |
+| HW-L7-010 | MUST | P8 | Predictions were committed before the first experiment result and each is marked hit or miss. | `tests/test_evaluation.py` | tested |
 | HW-L8-001 | MUST | P4 | Health, registry summary, registration check and name analysis endpoints. | `tests/test_api.py` | tested |
-| HW-L8-002 | MUST | P9 | Every listed endpoint exists under /v1 and has an API test. |  | planned |
+| HW-L8-002 | MUST | P9 | Every listed endpoint exists under /v1 and has an API test. | `tests/test_api_full.py` | tested |
 | HW-L8-003 | MUST | P4 | Errors use application/problem+json. | `tests/test_api.py` | tested |
 | HW-L8-004 | MUST | P4 | Bounded inputs and a request size limit. | `tests/test_api.py` | tested |
 | HW-L8-005 | MUST | P4 | Static mode: `hawiyya snapshot` writes every response the console needs. | `tests/test_api.py` | tested |
 | HW-L8-006 | SHOULD | P9 | A browser side scorer for the registration check in static mode. |  | planned |
-| HW-L8-007 | MUST | P9 | Server logs contain no names or identifiers. |  | planned |
+| HW-L8-007 | MUST | P9 | Server logs contain no names or identifiers. | `tests/test_api_full.py` | tested |
 | HW-L9-001 | MUST | P4 | The synthetic data banner is on every screen and cannot be dismissed. | `web/src/components/components.test.tsx`<br>`web/e2e/console.spec.ts` | tested |
 | HW-L9-002 | MUST | P9 | All ten console screens exist with loading, empty and error states. |  | planned |
 | HW-L9-003 | MUST | P9 | English and Arabic with right to left layout. | `web/e2e/console.spec.ts` | tested |
