@@ -95,14 +95,14 @@ phase without a naming test fails the build.
 | HW-L6-007 | SHOULD | P6 | Simulated reviewer with configurable accuracy and time per case. | `tests/test_workflow.py` | tested |
 | HW-L6-008 | MUST | P6 | Review priority by expected cost and age. | `tests/test_workflow.py` | tested |
 | HW-L6-009 | MUST | P6 | Fail open for registration: an internal failure returns an empty advisory result, never blocks registration. | `tests/test_api.py` | tested |
-| HW-L7-001 | MUST | P7 | G2 independent generator with its own variant tables and heavier noise. |  | planned |
-| HW-L7-002 | MUST | P7 | Baselines B0 to B5 run on the same pairs as the product. |  | planned |
-| HW-L7-003 | MUST | P7 | Metrics: pairwise precision, recall, F1, false merges per 10,000 records, B cubed, review rate, risk coverage, ECE. |  | planned |
-| HW-L7-004 | MUST | P7 | Stratification by name origin group and script pair with counts and 95 percent intervals; strata add up to totals. |  | planned |
-| HW-L7-005 | MUST | P7 | A gold set of at least 80 pairs used as a smoke test. |  | planned |
-| HW-L7-006 | MUST | P8 | Sealed seeds are touched only by `hawiyya eval --sealed`; the run is recorded in results/SEALED_RUN.json. |  | planned |
-| HW-L7-007 | MUST | P7 | Decision policies used by the lab are pure functions. |  | planned |
-| HW-L7-008 | MUST | P7 | The name origin label is provably not a model input. |  | planned |
+| HW-L7-001 | MUST | P7 | G2 independent generator with its own variant tables and heavier noise. | `tests/test_lab.py` | tested |
+| HW-L7-002 | MUST | P7 | Baselines B0 to B5 run on the same pairs as the product. | `tests/test_lab.py` | tested |
+| HW-L7-003 | MUST | P7 | Metrics: pairwise precision, recall, F1, false merges per 10,000 records, B cubed, review rate, risk coverage, ECE. | `tests/test_lab.py` | tested |
+| HW-L7-004 | MUST | P7 | Stratification by name origin group and script pair with counts and 95 percent intervals; strata add up to totals. | `tests/test_lab.py` | tested |
+| HW-L7-005 | MUST | P7 | A gold set of at least 80 pairs used as a smoke test. | `tests/test_lab.py` | tested |
+| HW-L7-006 | MUST | P8 | Sealed seeds are touched only by `hawiyya eval --sealed`; the run is recorded in results/SEALED_RUN.json. | `tests/test_lab.py` | tested |
+| HW-L7-007 | MUST | P7 | Decision policies used by the lab are pure functions. | `tests/test_lab.py` | tested |
+| HW-L7-008 | MUST | P7 | The name origin label is provably not a model input. | `tests/test_lab.py` | tested |
 | HW-L7-009 | MUST | P8 | Experiments E1 to E9 write results/*.json. |  | planned |
 | HW-L7-010 | MUST | P8 | Predictions were committed before the first experiment result and each is marked hit or miss. |  | planned |
 | HW-L8-001 | MUST | P4 | Health, registry summary, registration check and name analysis endpoints. | `tests/test_api.py` | tested |
