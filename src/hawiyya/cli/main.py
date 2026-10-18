@@ -158,6 +158,23 @@ def lab_train() -> None:
                f"ECE on check seeds {rep['calibration_check']['ece_product']}")
 
 
+@app.command("eval")
+def eval_cmd(
+    sealed: bool = typer.Option(False, help="Run the sealed seeds (once only)."),
+    smoke: bool = typer.Option(False, help="One development seed, nothing written."),
+    workers: int = typer.Option(0, help="Worker processes (0 picks a default)."),
+) -> None:
+    """Run the preregistered experiments E1 to E9 (development seeds unless --sealed)."""
+    from hawiyya.lab import experiments
+
+    if sealed:
+        rec = experiments.run_sealed(workers or None)
+        typer.echo(f"sealed run recorded at commit {rec['commit'][:12]}")
+        return
+    docs = experiments.run_suite("dev", workers or None, smoke=smoke)
+    typer.echo(f"experiments: {', '.join(sorted(docs))}")
+
+
 @app.command()
 def snapshot() -> None:
     """Precompute every API response the console needs (static mode, web/public/snapshot)."""
