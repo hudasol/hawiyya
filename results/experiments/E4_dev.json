@@ -1,0 +1,165 @@
+{
+ "experiment": "E4",
+ "split": "dev",
+ "seeds": {
+  "g1": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25
+  ]
+ },
+ "note": "Synthetic data; generator and method share an author.",
+ "by_style": {
+  "arabizi": {
+   "found_recall": {
+    "rate": 0.992554,
+    "lo": 0.991837,
+    "hi": 0.993208,
+    "k": 60116,
+    "n": 60567
+   }
+  },
+  "bilingual_card": {
+   "found_recall": {
+    "rate": 0.994816,
+    "lo": 0.994307,
+    "hi": 0.99528,
+    "k": 83474,
+    "n": 83909
+   }
+  },
+  "formal_ar": {
+   "found_recall": {
+    "rate": 0.991942,
+    "lo": 0.99123,
+    "hi": 0.992597,
+    "k": 65244,
+    "n": 65774
+   }
+  },
+  "formal_translit": {
+   "found_recall": {
+    "rate": 0.98206,
+    "lo": 0.980191,
+    "hi": 0.983756,
+    "k": 20966,
+    "n": 21349
+   }
+  },
+  "gulf": {
+   "found_recall": {
+    "rate": 0.992058,
+    "lo": 0.991381,
+    "hi": 0.992682,
+    "k": 71077,
+    "n": 71646
+   }
+  },
+  "variant_en": {
+   "found_recall": {
+    "rate": 0.987474,
+    "lo": 0.986786,
+    "hi": 0.988127,
+    "k": 104455,
+    "n": 105780
+   }
+  }
+ },
+ "by_tag": {
+  "name:ar_swap": {
+   "found_recall": {
+    "rate": 0.960195,
+    "lo": 0.953397,
+    "hi": 0.966037,
+    "k": 3546,
+    "n": 3693
+   }
+  },
+  "name:ar_typo": {
+   "found_recall": {
+    "rate": 0.98642,
+    "lo": 0.981258,
+    "hi": 0.990175,
+    "k": 2615,
+    "n": 2651
+   }
+  },
+  "name:bin": {
+   "found_recall": {
+    "rate": 0.991046,
+    "lo": 0.989589,
+    "hi": 0.9923,
+    "k": 18483,
+    "n": 18650
+   }
+  },
+  "name:drop_father": {
+   "found_recall": {
+    "rate": 0.987044,
+    "lo": 0.985407,
+    "hi": 0.9885,
+    "k": 20341,
+    "n": 20608
+   }
+  },
+  "name:honorific": {
+   "found_recall": {
+    "rate": 0.988451,
+    "lo": 0.986198,
+    "hi": 0.99034,
+    "k": 10185,
+    "n": 10304
+   }
+  },
+  "name:initial": {
+   "found_recall": {
+    "rate": 0.986911,
+    "lo": 0.983976,
+    "hi": 0.989315,
+    "k": 6937,
+    "n": 7029
+   }
+  },
+  "name:swap": {
+   "found_recall": {
+    "rate": 0.934165,
+    "lo": 0.92989,
+    "hi": 0.938197,
+    "k": 12799,
+    "n": 13701
+   }
+  },
+  "name:typo": {
+   "found_recall": {
+    "rate": 0.981319,
+    "lo": 0.979361,
+    "hi": 0.983096,
+    "k": 19857,
+    "n": 20235
+   }
+  }
+ },
+ "overall_found_recall": {
+  "mean": 0.990683,
+  "lo": 0.990271,
+  "hi": 0.991095,
+  "n": 20
+ }
+}

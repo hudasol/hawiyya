@@ -1,0 +1,167 @@
+{
+ "experiment": "headline",
+ "split": "dev",
+ "seeds": {
+  "m": [
+   26,
+   27,
+   28,
+   29,
+   30
+  ]
+ },
+ "note": "Synthetic data; generator and method share an author.",
+ "tier": "M",
+ "systems": {
+  "B0_eid_exact": {
+   "link_precision": {
+    "mean": 0.010981,
+    "lo": 0.010736,
+    "hi": 0.011226,
+    "n": 5
+   },
+   "link_recall": {
+    "mean": 0.732134,
+    "lo": 0.729142,
+    "hi": 0.735126,
+    "n": 5
+   },
+   "link_f1": {
+    "mean": 0.021637,
+    "lo": 0.021162,
+    "hi": 0.022113,
+    "n": 5
+   },
+   "false_merges_per_10k": {
+    "mean": 593296.54043,
+    "lo": 582759.19577,
+    "hi": 603833.885089,
+    "n": 5
+   },
+   "found_recall": {
+    "mean": 0.732134,
+    "lo": 0.729142,
+    "hi": 0.735126,
+    "n": 5
+   },
+   "review_rate": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 5
+   },
+   "bcubed_precision": {
+    "mean": 0.916016,
+    "lo": 0.915228,
+    "hi": 0.916804,
+    "n": 5
+   },
+   "bcubed_recall": {
+    "mean": 0.846565,
+    "lo": 0.84545,
+    "hi": 0.84768,
+    "n": 5
+   }
+  },
+  "B4_forced": {
+   "link_precision": {
+    "mean": 0.981784,
+    "lo": 0.979898,
+    "hi": 0.98367,
+    "n": 5
+   },
+   "link_recall": {
+    "mean": 0.976588,
+    "lo": 0.975693,
+    "hi": 0.977483,
+    "n": 5
+   },
+   "link_f1": {
+    "mean": 0.979178,
+    "lo": 0.978472,
+    "hi": 0.979885,
+    "n": 5
+   },
+   "false_merges_per_10k": {
+    "mean": 163.030167,
+    "lo": 145.519756,
+    "hi": 180.540579,
+    "n": 5
+   },
+   "found_recall": {
+    "mean": 0.976588,
+    "lo": 0.975693,
+    "hi": 0.977483,
+    "n": 5
+   },
+   "review_rate": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 5
+   },
+   "bcubed_precision": {
+    "mean": 0.980639,
+    "lo": 0.97863,
+    "hi": 0.982649,
+    "n": 5
+   },
+   "bcubed_recall": {
+    "mean": 0.992584,
+    "lo": 0.992057,
+    "hi": 0.993111,
+    "n": 5
+   }
+  },
+  "B5_hawiyya": {
+   "link_precision": {
+    "mean": 0.999971,
+    "lo": 0.999926,
+    "hi": 1.000015,
+    "n": 5
+   },
+   "link_recall": {
+    "mean": 0.798971,
+    "lo": 0.796642,
+    "hi": 0.8013,
+    "n": 5
+   },
+   "link_f1": {
+    "mean": 0.888241,
+    "lo": 0.886814,
+    "hi": 0.889668,
+    "n": 5
+   },
+   "false_merges_per_10k": {
+    "mean": 0.212527,
+    "lo": -0.110522,
+    "hi": 0.535577,
+    "n": 5
+   },
+   "found_recall": {
+    "mean": 0.988895,
+    "lo": 0.98848,
+    "hi": 0.98931,
+    "n": 5
+   },
+   "review_rate": {
+    "mean": 230.626074,
+    "lo": 227.869693,
+    "hi": 233.382455,
+    "n": 5
+   },
+   "bcubed_precision": {
+    "mean": 0.999974,
+    "lo": 0.999942,
+    "hi": 1.000005,
+    "n": 5
+   },
+   "bcubed_recall": {
+    "mean": 0.897959,
+    "lo": 0.896928,
+    "hi": 0.898989,
+    "n": 5
+   }
+  }
+ }
+}

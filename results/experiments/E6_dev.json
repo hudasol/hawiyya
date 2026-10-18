@@ -1,0 +1,542 @@
+{
+ "experiment": "E6",
+ "split": "dev",
+ "seeds": {
+  "g1": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25
+  ]
+ },
+ "note": "Synthetic data; generator and method share an author.",
+ "categories": {
+  "cousin": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.054539,
+     "lo": 0.051171,
+     "hi": 0.058114,
+     "k": 897,
+     "n": 16447
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.000234,
+     "k": 0,
+     "n": 16447
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.000122,
+     "lo": 3.3e-05,
+     "hi": 0.000443,
+     "k": 2,
+     "n": 16447
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.000234,
+     "k": 0,
+     "n": 16447
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.000234,
+     "k": 0,
+     "n": 16447
+    },
+    "review_rate": {
+     "rate": 0.000912,
+     "lo": 0.000553,
+     "hi": 0.001504,
+     "k": 15,
+     "n": 16447
+    }
+   }
+  },
+  "father_son_same_name": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.001838,
+     "lo": 0.000891,
+     "hi": 0.00379,
+     "k": 7,
+     "n": 3808
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001008,
+     "k": 0,
+     "n": 3808
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.014443,
+     "lo": 0.011114,
+     "hi": 0.018752,
+     "k": 55,
+     "n": 3808
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001008,
+     "k": 0,
+     "n": 3808
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001008,
+     "k": 0,
+     "n": 3808
+    },
+    "review_rate": {
+     "rate": 0.060399,
+     "lo": 0.053267,
+     "hi": 0.068418,
+     "k": 230,
+     "n": 3808
+    }
+   }
+  },
+  "newborn_mother_shared_id": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 1.0,
+     "lo": 0.998568,
+     "hi": 1.0,
+     "k": 2678,
+     "n": 2678
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001432,
+     "k": 0,
+     "n": 2678
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001432,
+     "k": 0,
+     "n": 2678
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001432,
+     "k": 0,
+     "n": 2678
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.001432,
+     "k": 0,
+     "n": 2678
+    },
+    "review_rate": {
+     "rate": 0.002614,
+     "lo": 0.001267,
+     "hi": 0.005386,
+     "k": 7,
+     "n": 2678
+    }
+   }
+  },
+  "other_nonmatch": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 2e-06,
+     "k": 0,
+     "n": 2065005
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 2e-06,
+     "k": 0,
+     "n": 2065005
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 3.6e-05,
+     "lo": 2.9e-05,
+     "hi": 4.5e-05,
+     "k": 74,
+     "n": 2065005
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 2e-06,
+     "k": 0,
+     "n": 2065005
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 2e-06,
+     "k": 0,
+     "n": 2065005
+    },
+    "review_rate": {
+     "rate": 0.000833,
+     "lo": 0.000795,
+     "hi": 0.000874,
+     "k": 1721,
+     "n": 2065005
+    }
+   }
+  },
+  "parent_child": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.009885,
+     "lo": 0.009252,
+     "hi": 0.01056,
+     "k": 870,
+     "n": 88016
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 4.4e-05,
+     "k": 0,
+     "n": 88016
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.004942,
+     "lo": 0.0045,
+     "hi": 0.005428,
+     "k": 435,
+     "n": 88016
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 4.4e-05,
+     "k": 0,
+     "n": 88016
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 4.4e-05,
+     "k": 0,
+     "n": 88016
+    },
+    "review_rate": {
+     "rate": 0.029177,
+     "lo": 0.028085,
+     "hi": 0.030309,
+     "k": 2568,
+     "n": 88016
+    }
+   }
+  },
+  "same_dob_sex": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.002561,
+     "k": 0,
+     "n": 1496
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.002561,
+     "k": 0,
+     "n": 1496
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.010695,
+     "lo": 0.006594,
+     "hi": 0.017303,
+     "k": 16,
+     "n": 1496
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.002561,
+     "k": 0,
+     "n": 1496
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.002561,
+     "k": 0,
+     "n": 1496
+    },
+    "review_rate": {
+     "rate": 0.014037,
+     "lo": 0.0092,
+     "hi": 0.021365,
+     "k": 21,
+     "n": 1496
+    }
+   }
+  },
+  "shared_placeholder": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 1.0,
+     "lo": 0.999999,
+     "hi": 1.0,
+     "k": 3467252,
+     "n": 3467252
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 1e-06,
+     "k": 0,
+     "n": 3467252
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 2e-06,
+     "k": 1,
+     "n": 3467252
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 1e-06,
+     "k": 0,
+     "n": 3467252
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 1e-06,
+     "k": 0,
+     "n": 3467252
+    },
+    "review_rate": {
+     "rate": 9e-06,
+     "lo": 7e-06,
+     "hi": 1.3e-05,
+     "k": 32,
+     "n": 3467252
+    }
+   }
+  },
+  "sibling": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.011232,
+     "lo": 0.010567,
+     "hi": 0.011939,
+     "k": 1018,
+     "n": 90631
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 4.2e-05,
+     "k": 0,
+     "n": 90631
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.010427,
+     "lo": 0.009786,
+     "hi": 0.011109,
+     "k": 945,
+     "n": 90631
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 4.2e-05,
+     "k": 0,
+     "n": 90631
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 4.2e-05,
+     "k": 0,
+     "n": 90631
+    },
+    "review_rate": {
+     "rate": 0.045956,
+     "lo": 0.044612,
+     "hi": 0.047338,
+     "k": 4165,
+     "n": 90631
+    }
+   }
+  },
+  "spouse": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.144287,
+     "lo": 0.125533,
+     "hi": 0.165313,
+     "k": 173,
+     "n": 1199
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.003194,
+     "k": 0,
+     "n": 1199
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.003194,
+     "k": 0,
+     "n": 1199
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.003194,
+     "k": 0,
+     "n": 1199
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.003194,
+     "k": 0,
+     "n": 1199
+    },
+    "review_rate": {
+     "rate": 0.001668,
+     "lo": 0.000458,
+     "hi": 0.006062,
+     "k": 2,
+     "n": 1199
+    }
+   }
+  },
+  "twin": {
+   "B0_eid_exact": {
+    "link_rate": {
+     "rate": 0.012378,
+     "lo": 0.009649,
+     "hi": 0.015867,
+     "k": 61,
+     "n": 4928
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.000779,
+     "k": 0,
+     "n": 4928
+    }
+   },
+   "B4_forced": {
+    "link_rate": {
+     "rate": 0.351258,
+     "lo": 0.338051,
+     "hi": 0.364697,
+     "k": 1731,
+     "n": 4928
+    },
+    "review_rate": {
+     "rate": 0.0,
+     "lo": 0.0,
+     "hi": 0.000779,
+     "k": 0,
+     "n": 4928
+    }
+   },
+   "B5_hawiyya": {
+    "link_rate": {
+     "rate": 0.000203,
+     "lo": 3.6e-05,
+     "hi": 0.001149,
+     "k": 1,
+     "n": 4928
+    },
+    "review_rate": {
+     "rate": 0.640016,
+     "lo": 0.626511,
+     "hi": 0.653304,
+     "k": 3154,
+     "n": 4928
+    }
+   }
+  }
+ },
+ "hard_negative_categories": [
+  "twin",
+  "sibling",
+  "father_son_same_name",
+  "parent_child",
+  "newborn_mother_shared_id",
+  "cousin",
+  "spouse",
+  "shared_placeholder",
+  "same_dob_sex"
+ ]
+}
