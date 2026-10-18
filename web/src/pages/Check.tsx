@@ -10,14 +10,32 @@ import {
 } from "../api";
 import { DecisionBadge, Empty, ErrorBox, Ident, Loading, Names } from "../components/Basics";
 import { EvidenceWaterfall } from "../components/EvidenceWaterfall";
-import { useFormat } from "../prefs";
+import { useFormat, usePrefs } from "../prefs";
 
 function Results({ data }: { data: CheckResponse }) {
   const { t } = useTranslation();
+  const { lang } = usePrefs();
   const f = useFormat();
   if (!data.ok) return <p role="status">{t("check.failed_open")}</p>;
   return (
     <section aria-labelledby="cands" style={{ marginBlockStart: "1rem" }}>
+      {data.next_best_question && data.next_best_question.length ? (
+        <div className="card" data-testid="next-question">
+          <h3>{t("check.nbq_title")}</h3>
+          <p className="muted">{t("check.nbq_intro")}</p>
+          <ol>
+            {data.next_best_question.slice(0, 3).map((q) => (
+              <li key={q.key}>
+                {lang === "ar" ? q.label_ar : q.label_en}{" "}
+                <span className="muted">
+                  ({t("check.nbq_saving")}:{" "}
+                  <span className="num">{f.num(q.expected_cost_reduction, 2)}</span>)
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ) : null}
       <h3 id="cands">
         {t("check.candidates")}{" "}
         <span className="muted">
@@ -54,6 +72,23 @@ function Results({ data }: { data: CheckResponse }) {
                 )}
               </div>
             </div>
+            {c.decision?.explanation ? (
+              <ol className="explanation" aria-label={t("check.why")}>
+                {c.decision.explanation[lang].map((s) => (
+                  <li key={s}>{s}</li>
+                ))}
+              </ol>
+            ) : null}
+            {c.decision && c.decision.reason_codes.length ? (
+              <p className="muted">
+                {t("check.reasons")}:{" "}
+                {c.decision.reason_codes.map((r) => (
+                  <code key={r} style={{ marginInlineEnd: "0.5rem" }}>
+                    {r}
+                  </code>
+                ))}
+              </p>
+            ) : null}
             <details>
               <summary>{t("check.evidence")}</summary>
               <EvidenceWaterfall score={c.score} />

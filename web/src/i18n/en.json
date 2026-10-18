@@ -64,7 +64,12 @@
     "evidence": "Evidence",
     "record": "Record",
     "scored": "Records compared",
-    "failed_open": "The check is unavailable. Registration continues as normal."
+    "failed_open": "The check is unavailable. Registration continues as normal.",
+    "why": "Explanation",
+    "reasons": "Reason codes",
+    "nbq_title": "Next best question",
+    "nbq_intro": "One more field would settle the review most cheaply. Expected cost saved, in abstract cost units:",
+    "nbq_saving": "expected saving"
   },
   "evidence": {
     "title": "Evidence waterfall",

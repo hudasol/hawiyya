@@ -48,7 +48,15 @@ export interface CheckResponse extends Envelope {
   n_scored: number;
   candidates: Candidate[];
   note: string;
-  next_best_question?: { field: string; expected_cost_reduction: number }[] | null;
+  next_best_question?:
+    | {
+        key: string;
+        field: string;
+        expected_cost_reduction: number;
+        label_en: string;
+        label_ar: string;
+      }[]
+    | null;
 }
 
 export interface CheckExample {
