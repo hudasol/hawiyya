@@ -24,8 +24,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 | P1 contract and registry | done | contract tests; same seed gives byte identical registry; Tier S 5,000 persons (about 11,800 records), Tier M 20,000 persons (slow test); `results/lexicon_report.json` | v0.2.0 |
 | P2 normalisation | done | golden table (64 rows) and hypothesis idempotence pass; `results/placeholder_detector.json` (learned detector precision 1.0 on seeds 1 to 3, it finds the dummy value that no pattern catches) | v0.3.0 |
 | P3 matching | done | placeholders never block and comparisons are symmetric (tests); `results/dev/blocking_smoke.json` on dev seed 7: pair completeness 0.9928, reduction ratio 0.998164, 0.0003 completeness lost to the cap | v0.4.0 |
-| P4 scoring and walking skeleton | next | | v0.5.0 |
-| P5 decision | not started | | v0.6.0 |
+| P4 scoring and walking skeleton | done | hand worked example matches to six decimals; `results/model/fit_report.json` (plain EM lambda 0.162 against true 0.084, anchored estimation 0.085); live API answered a check through `hawiyya serve`; static build passes 8 Playwright tests with axe; screenshots in `docs/img/` reviewed | v0.5.0 |
+| P5 decision | next | | v0.6.0 |
 | P6 workflow | not started | | v0.7.0 |
 | P7 lab | not started | | v0.8.0 |
 | P8 evaluation | not started | | v0.9.0 |
@@ -43,9 +43,15 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 
 ## Next
 
-P4: Fellegi Sunter scoring (EM, label fit, term frequency, isotonic calibration on family
-grouped development data), then the walking skeleton: FastAPI (health, summary, check, name
-analysis) and the console (Overview, Registration check, Name lab) in live and static mode.
+P5: decision engine (costs and closed form thresholds, guards with reason codes, clustering
+with conflict splitting, bilingual explanations, next best question), wired into the check
+endpoint and the console.
+
+## Environment notes
+
+- Other projects on this machine run heavy jobs at the same time, so test timings vary.
+- The console preview uses port 4791 (4173 was taken by another project).
+- Never round trip UTF-8 files through PowerShell Get-Content and Set-Content.
 
 ## Blockers
 

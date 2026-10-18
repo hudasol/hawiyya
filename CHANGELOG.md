@@ -2,6 +2,13 @@
 
 All notable changes are listed per phase tag.
 
+## v0.5.0 (P4)
+
+- L4 scoring: parameters with sign constraints, plain EM, anchored estimation, label fit,
+  term frequency adjustment, isotonic calibration with Beta intervals, frozen model.
+- Walking skeleton: registration check (fails open), FastAPI service, static snapshot, and
+  the console with three screens in English and Arabic.
+
 ## v0.4.0 (P3)
 
 - L3 matching: multi pass blocking with a cap and sorted neighbourhood fallback, symmetric

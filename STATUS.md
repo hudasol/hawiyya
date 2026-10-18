@@ -16,4 +16,9 @@ What works today, in plain words.
   frequency tables from the registry itself.
 - L3 finds candidate pairs with seven blocking passes (placeholders never block) and gives
   each pair a discrete agreement level per field.
-- Scoring, decisions, the API and the console do not exist yet.
+- L4 scores pairs with a Fellegi Sunter model (anchored estimation, frequency adjustment,
+  isotonic calibration with intervals); every score carries an evidence table that adds up.
+- The API serves health, registry summary, registration check, pair score and name analysis;
+  the console shows Overview, Registration check and Name lab in English and Arabic, in live
+  or static mode.
+- Decisions (LINK, REVIEW, KEEP_APART), the review queue and the experiments do not exist yet.
