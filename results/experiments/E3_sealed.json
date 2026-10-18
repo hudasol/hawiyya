@@ -1,0 +1,158 @@
+{
+ "experiment": "E3",
+ "split": "sealed",
+ "seeds": {
+  "g1": [
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020
+  ]
+ },
+ "note": "Synthetic data; generator and method share an author.",
+ "ece": {
+  "mean": 0.000454,
+  "lo": 0.000404,
+  "hi": 0.000503,
+  "n": 20
+ },
+ "auto_link_precision": {
+  "mean": 1.0,
+  "lo": 1.0,
+  "hi": 1.0,
+  "n": 20
+ },
+ "review_share": {
+  "mean": 0.021627,
+  "lo": 0.021212,
+  "hi": 0.022041,
+  "n": 20
+ },
+ "reliability": [
+  {
+   "bin": 0.0,
+   "n": 2264338,
+   "mean_predicted": 0.000268,
+   "observed": 0.000244
+  },
+  {
+   "bin": 0.1,
+   "n": 3946,
+   "mean_predicted": 0.136634,
+   "observed": 0.118348
+  },
+  {
+   "bin": 0.2,
+   "n": 3301,
+   "mean_predicted": 0.260211,
+   "observed": 0.241442
+  },
+  {
+   "bin": 0.3,
+   "n": 2427,
+   "mean_predicted": 0.373674,
+   "observed": 0.356819
+  },
+  {
+   "bin": 0.4,
+   "n": 1699,
+   "mean_predicted": 0.45613,
+   "observed": 0.447911
+  },
+  {
+   "bin": 0.5,
+   "n": 2316,
+   "mean_predicted": 0.574124,
+   "observed": 0.588515
+  },
+  {
+   "bin": 0.6,
+   "n": 1179,
+   "mean_predicted": 0.690164,
+   "observed": 0.675997
+  },
+  {
+   "bin": 0.7,
+   "n": 3509,
+   "mean_predicted": 0.76978,
+   "observed": 0.768595
+  },
+  {
+   "bin": 0.8,
+   "n": 2407,
+   "mean_predicted": 0.862934,
+   "observed": 0.855006
+  },
+  {
+   "bin": 0.9,
+   "n": 199904,
+   "mean_predicted": 0.996494,
+   "observed": 0.996353
+  }
+ ],
+ "risk_coverage": [
+  {
+   "coverage": 0.01,
+   "precision": 0.99996
+  },
+  {
+   "coverage": 0.02,
+   "precision": 0.99998
+  },
+  {
+   "coverage": 0.05,
+   "precision": 0.999984
+  },
+  {
+   "coverage": 0.1,
+   "precision": 0.843629
+  },
+  {
+   "coverage": 0.2,
+   "precision": 0.421898
+  },
+  {
+   "coverage": 0.3,
+   "precision": 0.281266
+  },
+  {
+   "coverage": 0.5,
+   "precision": 0.168761
+  },
+  {
+   "coverage": 0.75,
+   "precision": 0.112509
+  },
+  {
+   "coverage": 1.0,
+   "precision": 0.084382
+  }
+ ],
+ "estimation": {
+  "plain_em_lambda": 0.161872,
+  "anchored_lambda": 0.085327,
+  "label_lambda": 0.083595,
+  "plain_em_average_precision": 0.959849,
+  "anchored_average_precision": 0.999135,
+  "label_average_precision": 0.999218,
+  "plain_em_mean_absolute_weight_gap": 2.1953,
+  "anchored_mean_absolute_weight_gap": 0.2953,
+  "source": "results/model/fit_report.json (fitting seeds 1 to 3, checked on 4 and 5)"
+ }
+}

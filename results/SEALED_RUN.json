@@ -1,0 +1,67 @@
+{
+  "commit": "825bb3fe2e988476ad1c76044cf156d3fea82195",
+  "started_at": "2026-10-18T11:04:12Z",
+  "finished_at": "2026-10-18T11:22:39Z",
+  "seeds": {
+    "g1": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020
+    ],
+    "g2": [
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029,
+      1030
+    ],
+    "e5": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ],
+    "sweep": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ],
+    "headline": []
+  },
+  "files": [
+    "results/experiments/E1_sealed.json",
+    "results/experiments/E2_sealed.json",
+    "results/experiments/E3_sealed.json",
+    "results/experiments/E4_sealed.json",
+    "results/experiments/E5_sealed.json",
+    "results/experiments/E6_sealed.json",
+    "results/experiments/E7_sealed.json",
+    "results/experiments/E8_sealed.json",
+    "results/experiments/E9_sealed.json"
+  ]
+}
