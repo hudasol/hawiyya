@@ -29,4 +29,5 @@ What works today, in plain words.
   FHIR R4 style Patient bundles with Patient.link, a review CSV and a summary.
 - L7 has an independent generator (G2), seven systems on one pair universe, metrics with
   intervals, fairness strata, a gold set and the experiment harness. The predictions were
-  registered before any experiment ran; the experiments have not been run yet.
+  registered before any experiment ran; the development and sealed runs are done and
+  `docs/EVALUATION.md` shows every prediction as a hit or a miss.

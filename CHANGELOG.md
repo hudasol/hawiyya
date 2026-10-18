@@ -2,6 +2,12 @@
 
 All notable changes are listed per phase tag.
 
+## v0.9.0 (P8)
+
+- Development results for E1 to E9 and the Tier M headline; the sealed run, once.
+- EVALUATION.md rendered from results with mechanical hit and miss verdicts and a discussion
+  of every miss; gold set smoke test.
+
 ## v0.8.0 (P7)
 
 - Preregistration and 37 machine checkable predictions, committed before any run.

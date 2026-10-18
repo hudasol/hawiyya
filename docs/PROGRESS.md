@@ -28,8 +28,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 | P5 decision | done | 13 decision tests incl. hypothesis monotonicity and VOI non negativity; every guard triggers and does not over trigger; batch decisions equal pairwise decisions | v0.6.0 |
 | P6 workflow | done | audit tamper test passes; FHIR style bundles validate against `contract/fhir_patient_bundle.schema.json`; audit log scanned for names and identifiers | v0.7.0 |
 | P7 lab | done | preregistration and 37 predictions committed before any run; G2 behind the independence contract; baselines B0 to B6 on one pair universe; strata add up; gold set of 84 pairs | v0.8.0 |
-| P8 evaluation | next | | v0.9.0 |
-| P9 console | not started | | v0.10.0 |
+| P8 evaluation | done | development run (60 jobs) and the sealed run once (`results/SEALED_RUN.json`, commit 825bb3f); 29 of 37 development and 26 of 35 sealed predictions hit, misses kept and discussed in `docs/EVALUATION.md`; gold smoke `results/gold_smoke.json` | v0.9.0 |
+| P9 console | in progress | API endpoints for every screen done and tested | v0.10.0 |
 | P10 hardening | not started | | v1.0.0 |
 
 ## State of the data
@@ -43,8 +43,9 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 
 ## Next
 
-P8: `hawiyya eval` on development seeds, render EVALUATION.md with hits and misses, freeze,
-then `hawiyya eval --sealed` once (it refuses a second run).
+P9: finish the eight remaining console screens (written, not yet built), extend the static
+snapshot, Playwright and axe on every screen, screenshots at three widths in both languages
+and both themes. The sealed run must never be repeated (`run_sealed` refuses).
 
 ## Environment notes
 
