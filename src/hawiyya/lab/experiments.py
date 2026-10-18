@@ -13,7 +13,7 @@ import subprocess
 import time
 from collections import Counter, defaultdict
 from collections.abc import Iterable
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
@@ -22,7 +22,7 @@ from typing import Any
 import numpy as np
 
 from hawiyya.contract.models import Costs
-from hawiyya.core.paths import RESULTS, ROOT
+from hawiyya.core.paths import RESULTS, ROOT, VAR
 from hawiyya.core.sealed import DEV_SEEDS, SEALED_SEEDS, sealed_access
 from hawiyya.decision.costs import DEFAULT_COSTS, LINK, REVIEW
 from hawiyya.lab import baselines as B
@@ -473,11 +473,33 @@ def run_suite(split: str, workers: int | None = None, smoke: bool = False,
     fitted = fit_all()
     jobs = _jobs(split, fitted, smoke)
     workers = workers or max(1, min(4, (os.cpu_count() or 2) - 1))
+    # Each finished job is cached so an interrupted run resumes; the cache lives in var/
+    # (ignored by git) and is keyed by the model version.
+    cache = VAR / "eval_cache" / f"{split}_{fitted.model.version}"
+    cache.mkdir(parents=True, exist_ok=True)
+
+    def key(job: dict[str, Any]) -> Path:
+        return cache / f"{job['kind']}_{job['generator']}_{job['tier']}_{job['seed']}_{job.get('share')}.json"
+
+    results: list[dict[str, Any] | None] = [
+        None if smoke or not key(j).exists() else json.loads(key(j).read_text(encoding="utf-8"))
+        for j in jobs
+    ]
+    todo = [i for i, r in enumerate(results) if r is None]
     with ProcessPoolExecutor(max_workers=workers) as pool:
-        results = list(pool.map(evaluate_seed, jobs))
+        futures = {pool.submit(evaluate_seed, jobs[i]): i for i in todo}
+        for fut in as_completed(futures):
+            i = futures[fut]
+            res = fut.result()
+            results[i] = res
+            if not smoke:
+                key(jobs[i]).write_text(json.dumps(res), encoding="utf-8")
+    done = [r for r in results if r is not None]
     by = defaultdict(list)
-    for job, res in zip(jobs, results, strict=True):
+    for job, res in zip(jobs, done, strict=True):
         by[job["kind"]].append(res)
+    for rows in by.values():
+        rows.sort(key=lambda r: (r["seed"], r.get("share") or 0.0))
     docs = aggregate(split, by["g1"], by["g2"], by["e5"], by["headline"])
     if not smoke:
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -485,7 +507,7 @@ def run_suite(split: str, workers: int | None = None, smoke: bool = False,
             (out_dir / f"{name}_{split}.json").write_text(
                 json.dumps(doc, indent=1, ensure_ascii=False) + "\n", encoding="utf-8",
                 newline="\n")
-        timing = {"jobs": len(jobs), "seconds_per_job": [r["seconds"] for r in results]}
+        timing = {"jobs": len(jobs), "seconds_per_job": [r["seconds"] for r in done]}
         (out_dir / f"timing_{split}.json").write_text(json.dumps(timing) + "\n", encoding="utf-8")
     return docs
 
