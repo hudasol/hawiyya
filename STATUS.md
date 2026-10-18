@@ -21,4 +21,7 @@ What works today, in plain words.
 - The API serves health, registry summary, registration check, pair score and name analysis;
   the console shows Overview, Registration check and Name lab in English and Arabic, in live
   or static mode.
-- Decisions (LINK, REVIEW, KEEP_APART), the review queue and the experiments do not exist yet.
+- L5 turns each score into LINK (recommend a merge request), REVIEW or KEEP_APART by
+  explicit costs, with six guards that can only lower a LINK, conflict aware clustering,
+  three sentence explanations in English and Arabic, and a next best question.
+- The review queue, audit log, exports and the experiments do not exist yet.

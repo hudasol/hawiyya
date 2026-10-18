@@ -25,8 +25,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 | P2 normalisation | done | golden table (64 rows) and hypothesis idempotence pass; `results/placeholder_detector.json` (learned detector precision 1.0 on seeds 1 to 3, it finds the dummy value that no pattern catches) | v0.3.0 |
 | P3 matching | done | placeholders never block and comparisons are symmetric (tests); `results/dev/blocking_smoke.json` on dev seed 7: pair completeness 0.9928, reduction ratio 0.998164, 0.0003 completeness lost to the cap | v0.4.0 |
 | P4 scoring and walking skeleton | done | hand worked example matches to six decimals; `results/model/fit_report.json` (plain EM lambda 0.162 against true 0.084, anchored estimation 0.085); live API answered a check through `hawiyya serve`; static build passes 8 Playwright tests with axe; screenshots in `docs/img/` reviewed | v0.5.0 |
-| P5 decision | next | | v0.6.0 |
-| P6 workflow | not started | | v0.7.0 |
+| P5 decision | done | 13 decision tests incl. hypothesis monotonicity and VOI non negativity; every guard triggers and does not over trigger; batch decisions equal pairwise decisions | v0.6.0 |
+| P6 workflow | next | | v0.7.0 |
 | P7 lab | not started | | v0.8.0 |
 | P8 evaluation | not started | | v0.9.0 |
 | P9 console | not started | | v0.10.0 |
@@ -43,9 +43,8 @@ Updated at every phase gate. A fresh session can continue from this file, the gi
 
 ## Next
 
-P5: decision engine (costs and closed form thresholds, guards with reason codes, clustering
-with conflict splitting, bilingual explanations, next best question), wired into the check
-endpoint and the console.
+P6: review queue state machine, append only audit log with hash chain, FHIR R4 style export,
+CSV and one page summary, simulated reviewer.
 
 ## Environment notes
 

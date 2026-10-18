@@ -2,6 +2,12 @@
 
 All notable changes are listed per phase tag.
 
+## v0.6.0 (P5)
+
+- L5 decision: cost based thresholds, guards with reason codes, fail closed rule, batch
+  decisions, conflict aware clustering, bilingual explanations, next best question.
+- The check endpoint and the console show decisions.
+
 ## v0.5.0 (P4)
 
 - L4 scoring: parameters with sign constraints, plain EM, anchored estimation, label fit,
